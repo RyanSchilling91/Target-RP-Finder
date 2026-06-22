@@ -1,1 +1,23 @@
-{"0": "Trinity DB Engine", "1": "ADR Concurrency & Evidence Rules", "2": "Failure Catalog", "3": "RP Finder Planning Docs", "4": "Project Skill Conductors", "5": "Lock Manager Tests", "6": "Lock Manager Module", "7": "Dev Workflow Skills", "8": "Data Model & Audit Log", "9": "Session Contracts", "10": "Working State Contracts", "11": "Architecture ADRs & House Rules", "12": "Trinity Schema & Modules", "13": "Judgment Skills", "14": "RP Finder Sample Discovery", "15": "Trinity Package Init", "16": "Code Discovery Skill"}
+{
+  "0": "Trinity DB Engine",
+  "1": "ADR Concurrency & Evidence Rules",
+  "2": "Failure Catalog",
+  "3": "RP Finder Planning Docs",
+  "4": "Project Skill Conductors",
+  "5": "Lock Manager Tests",
+  "6": "Lock Manager Module",
+  "7": "Dev Workflow Skills",
+  "8": "Data Model & Audit Log",
+  "9": "Session Contracts",
+  "10": "Working State Contracts",
+  "11": "Architecture ADRs & House Rules",
+  "12": "Trinity Schema & Modules",
+  "13": "Judgment Skills",
+  "14": "RP Finder Sample Discovery",
+  "15": "Trinity Package Init",
+  "16": "Code Discovery Skill",
+  "17": "Community 17",
+  "18": "Community 18",
+  "19": "Community 19",
+  "20": "Community 20"
+}
