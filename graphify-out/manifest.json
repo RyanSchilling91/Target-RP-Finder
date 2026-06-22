@@ -1,0 +1,342 @@
+{
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\.claude\\settings.json": {
+    "mtime": 1782152068.9786537,
+    "ast_hash": "fb7c9b773840e419b72521a8236ab4b7",
+    "semantic_hash": "fb7c9b773840e419b72521a8236ab4b7"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\__init__.py": {
+    "mtime": 1774564043.225986,
+    "ast_hash": "519ee6ac430286a92dd8d58ac81018e1",
+    "semantic_hash": "519ee6ac430286a92dd8d58ac81018e1"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\audit_log.py": {
+    "mtime": 1774564043.2339854,
+    "ast_hash": "c26d0e8ddb09d2114848b9695c230954",
+    "semantic_hash": "c26d0e8ddb09d2114848b9695c230954"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\db.py": {
+    "mtime": 1774564043.2419534,
+    "ast_hash": "415197a606661d2602a139934530da40",
+    "semantic_hash": "415197a606661d2602a139934530da40"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\lock_manager.py": {
+    "mtime": 1774564043.2486155,
+    "ast_hash": "e0eb2ffa8b5c9599f246e6e7cb51536c",
+    "semantic_hash": "e0eb2ffa8b5c9599f246e6e7cb51536c"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\session.py": {
+    "mtime": 1774564043.2566168,
+    "ast_hash": "a31e8048b7d6855ef7ee28803ba4f553",
+    "semantic_hash": "a31e8048b7d6855ef7ee28803ba4f553"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\conftest.py": {
+    "mtime": 1774564043.268453,
+    "ast_hash": "d5b1bd95e7c3c45f742be9e57bf7d9f2",
+    "semantic_hash": "d5b1bd95e7c3c45f742be9e57bf7d9f2"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\test_audit_log.py": {
+    "mtime": 1774564043.2809944,
+    "ast_hash": "9be5491a40295812c6c9323c27403efe",
+    "semantic_hash": "9be5491a40295812c6c9323c27403efe"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\test_db.py": {
+    "mtime": 1774564043.2897153,
+    "ast_hash": "f4cdd34480fd17b9ea5602242203c279",
+    "semantic_hash": "f4cdd34480fd17b9ea5602242203c279"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\test_lock_manager.py": {
+    "mtime": 1774564043.2957332,
+    "ast_hash": "a02d41735d436d8b1dd0ea263c756c79",
+    "semantic_hash": "a02d41735d436d8b1dd0ea263c756c79"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\test_session.py": {
+    "mtime": 1774564043.3013675,
+    "ast_hash": "02123e4fc2398586a18b0ca531017ac0",
+    "semantic_hash": "02123e4fc2398586a18b0ca531017ac0"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\tests\\test_working_state.py": {
+    "mtime": 1774564043.309888,
+    "ast_hash": "142e00f17bcf82c7c1d4e6d65b05bbd5",
+    "semantic_hash": "142e00f17bcf82c7c1d4e6d65b05bbd5"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\working_state.py": {
+    "mtime": 1774564043.3316374,
+    "ast_hash": "b6aa7c482c9c153dbbf810fd8d14130b",
+    "semantic_hash": "b6aa7c482c9c153dbbf810fd8d14130b"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\CLAUDE.md": {
+    "mtime": 1782151763.2557018,
+    "ast_hash": "df07db90532e27d4bcebc1044bc2030b",
+    "semantic_hash": "df07db90532e27d4bcebc1044bc2030b"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\add-feature\\SKILL.md": {
+    "mtime": 1780520425.7854965,
+    "ast_hash": "05d222032b8512a513ca4d2a4f445f32",
+    "semantic_hash": "05d222032b8512a513ca4d2a4f445f32"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\co-pilot\\SKILL.md": {
+    "mtime": 1780520358.276118,
+    "ast_hash": "af1a9360a8eb5aaa94a49c9bbad1532f",
+    "semantic_hash": "af1a9360a8eb5aaa94a49c9bbad1532f"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\code-discovery\\Skills.md": {
+    "mtime": 1780682531.382848,
+    "ast_hash": "a68481c6bea36daf5692a30213bd9ea7",
+    "semantic_hash": "a68481c6bea36daf5692a30213bd9ea7"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\council-of-experts\\SKILL.md": {
+    "mtime": 1780520373.89493,
+    "ast_hash": "4e3b162477de4fea81b4645ceba0c02a",
+    "semantic_hash": "4e3b162477de4fea81b4645ceba0c02a"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\data-modeler\\SKILL.md": {
+    "mtime": 1780520618.7769637,
+    "ast_hash": "948e1c590b2a2a9938901b50663c4d92",
+    "semantic_hash": "948e1c590b2a2a9938901b50663c4d92"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\debugcheck\\SKILL.md": {
+    "mtime": 1780520446.0314248,
+    "ast_hash": "694f36f902241c217771de502dc5dea3",
+    "semantic_hash": "694f36f902241c217771de502dc5dea3"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\dev-contract\\SKILL.md": {
+    "mtime": 1780520454.8393288,
+    "ast_hash": "9025b06511fc6de060a262032782a324",
+    "semantic_hash": "9025b06511fc6de060a262032782a324"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\doc-router\\SKILL.md": {
+    "mtime": 1780520639.17004,
+    "ast_hash": "4d0efe097bd8307bfd7e5fd8fa0a8ddf",
+    "semantic_hash": "4d0efe097bd8307bfd7e5fd8fa0a8ddf"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\done-checker\\SKILL.md": {
+    "mtime": 1780520487.4371243,
+    "ast_hash": "79743c5d58f137df9ff46f7199f051e3",
+    "semantic_hash": "79743c5d58f137df9ff46f7199f051e3"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\failure-memory\\SKILL.md": {
+    "mtime": 1780520464.5228896,
+    "ast_hash": "1835b4e67db84ebf40d73628a42db332",
+    "semantic_hash": "1835b4e67db84ebf40d73628a42db332"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\project-continue\\SKILL.md": {
+    "mtime": 1780520437.331411,
+    "ast_hash": "cff5187cef7211a66d31c11c335793cc",
+    "semantic_hash": "cff5187cef7211a66d31c11c335793cc"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\project-designer\\SKILL.md": {
+    "mtime": 1780520387.001794,
+    "ast_hash": "74b77aaa5d16138e199c878c5a0a206e",
+    "semantic_hash": "74b77aaa5d16138e199c878c5a0a206e"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\project-executor\\SKILL.md": {
+    "mtime": 1780520401.2543893,
+    "ast_hash": "c32b85b3382ed03e4a895c5968e0153c",
+    "semantic_hash": "c32b85b3382ed03e4a895c5968e0153c"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\project-init\\SKILL.md": {
+    "mtime": 1780609851.6506374,
+    "ast_hash": "ae3b819741a3eff743b9c8847a878230",
+    "semantic_hash": "ae3b819741a3eff743b9c8847a878230"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\repo-trim\\SKILL.md": {
+    "mtime": 1780520479.092321,
+    "ast_hash": "085af60c3234f1b7899c4758c728d168",
+    "semantic_hash": "085af60c3234f1b7899c4758c728d168"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\state-classifier\\SKILL.md": {
+    "mtime": 1780520572.8690329,
+    "ast_hash": "9ead1071297be8dbacd9c3e9cf7ef690",
+    "semantic_hash": "9ead1071297be8dbacd9c3e9cf7ef690"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\step-by-step-teacher\\SKILL.md": {
+    "mtime": 1780520648.2301416,
+    "ast_hash": "969aef49019b7a90645e5feb0627c769",
+    "semantic_hash": "969aef49019b7a90645e5feb0627c769"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\test-planner\\SKILL.md": {
+    "mtime": 1780520581.658395,
+    "ast_hash": "a771508ca91aade8eef971d5a0f51ae5",
+    "semantic_hash": "a771508ca91aade8eef971d5a0f51ae5"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\uncertainty-log\\SKILL.md": {
+    "mtime": 1780520494.7245758,
+    "ast_hash": "588100681d95b245fd8312ead1c7f1b6",
+    "semantic_hash": "588100681d95b245fd8312ead1c7f1b6"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\visualize-workflow\\SKILL.md": {
+    "mtime": 1780520561.2529187,
+    "ast_hash": "54beeca3250a234bf62d41c1e9756761",
+    "semantic_hash": "54beeca3250a234bf62d41c1e9756761"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\.claude\\skills\\workflow-mapper\\SKILL.md": {
+    "mtime": 1780520504.035579,
+    "ast_hash": "3049d62f27bade3ad58ebc213c0c5b2c",
+    "semantic_hash": "3049d62f27bade3ad58ebc213c0c5b2c"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\AGENTS.md": {
+    "mtime": 1774549119.584404,
+    "ast_hash": "5be94873259c35133cf05db0c0104523",
+    "semantic_hash": "5be94873259c35133cf05db0c0104523"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md": {
+    "mtime": 1774382964.0086472,
+    "ast_hash": "00493841ae234aba88d6d0feeb6fd58b",
+    "semantic_hash": "00493841ae234aba88d6d0feeb6fd58b"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-0002 - Persist Mutable Working State with Version-Aware Rehydration and Keep Published Evidence Separate.md": {
+    "mtime": 1774383027.2680564,
+    "ast_hash": "64c28a6b8c6c5fe7e0a475d0d700f1eb",
+    "semantic_hash": "64c28a6b8c6c5fe7e0a475d0d700f1eb"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-0003-concurrency-model-single-editor-lock.md": {
+    "mtime": 1773943067.3136768,
+    "ast_hash": "b93abf5b27f169c178b9f6e5418aa2ce",
+    "semantic_hash": "b93abf5b27f169c178b9f6e5418aa2ce"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-0004-published-revision-reentry-policy.md": {
+    "mtime": 1773943067.3163133,
+    "ast_hash": "7fc33f28e21fd8b9dc45f8cb0fb25d8e",
+    "semantic_hash": "7fc33f28e21fd8b9dc45f8cb0fb25d8e"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-0005 - Use Password-Only Admin Challenges as a Near-Term Protected-Action Bootstrap.md": {
+    "mtime": 1774383063.3767838,
+    "ast_hash": "d34b11c19dd57ee6a4ae778adab7551b",
+    "semantic_hash": "d34b11c19dd57ee6a4ae778adab7551b"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ADR-TEMPLATE.md": {
+    "mtime": 1773765061.3069339,
+    "ast_hash": "26a6bf879a3af17bff2c74f14f82cf71",
+    "semantic_hash": "26a6bf879a3af17bff2c74f14f82cf71"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ARCHITECTURE_SELECTION.md": {
+    "mtime": 1774380918.715521,
+    "ast_hash": "5a544ca4c9c2d2cf9f23625ef4b20aa0",
+    "semantic_hash": "5a544ca4c9c2d2cf9f23625ef4b20aa0"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\ASSUMPTIONS_AND_OPEN_QUESTIONS.md": {
+    "mtime": 1774381911.6140366,
+    "ast_hash": "000c20e00d59a17fe15f0a7427b094b8",
+    "semantic_hash": "000c20e00d59a17fe15f0a7427b094b8"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\BOOTSTRAP_QUESTIONNAIRE.md": {
+    "mtime": 1774378593.4359622,
+    "ast_hash": "4917e11496747331e27ae5bb3b1deead",
+    "semantic_hash": "4917e11496747331e27ae5bb3b1deead"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\DATA_MODEL.md": {
+    "mtime": 1774379979.2067816,
+    "ast_hash": "9e2de0b5f3eca798fe912bdf51f12373",
+    "semantic_hash": "9e2de0b5f3eca798fe912bdf51f12373"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\FAILURE_CATALOG.md": {
+    "mtime": 1774467402.3070686,
+    "ast_hash": "5a730fe9b67dc5a5dece5ed84e1a778e",
+    "semantic_hash": "5a730fe9b67dc5a5dece5ed84e1a778e"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\INDEX.md": {
+    "mtime": 1774449673.1812391,
+    "ast_hash": "7f1444e253c2113dc8fac18c4609e6c5",
+    "semantic_hash": "7f1444e253c2113dc8fac18c4609e6c5"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\PROJECT_BRIEF.md": {
+    "mtime": 1774379396.9491408,
+    "ast_hash": "d8cb77d40e0799d6f56f3061b0b3f30d",
+    "semantic_hash": "d8cb77d40e0799d6f56f3061b0b3f30d"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\QUALITY_GATES.md": {
+    "mtime": 1774382140.317893,
+    "ast_hash": "d3c69c260a4c7dde2e3c99eeb7777e89",
+    "semantic_hash": "d3c69c260a4c7dde2e3c99eeb7777e89"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\README.md": {
+    "mtime": 1774382168.9782817,
+    "ast_hash": "26e79ed5bf6147e72496b4378b1d9d92",
+    "semantic_hash": "26e79ed5bf6147e72496b4378b1d9d92"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\RETROSPECTIVE.md": {
+    "mtime": 1774361639.9097285,
+    "ast_hash": "631fa34b5a43435921dc8d29d1ca6e5f",
+    "semantic_hash": "631fa34b5a43435921dc8d29d1ca6e5f"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\STATE_CLASSIFICATION.md": {
+    "mtime": 1774380174.1829698,
+    "ast_hash": "e9da65ead32d4225b6190bc72de56be1",
+    "semantic_hash": "e9da65ead32d4225b6190bc72de56be1"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\TEST_STRATEGY.md": {
+    "mtime": 1774382107.2365499,
+    "ast_hash": "a2c67feff3ae980ea55ab3636f026d4b",
+    "semantic_hash": "a2c67feff3ae980ea55ab3636f026d4b"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\TRINITY_SCHEMA.md": {
+    "mtime": 1774552503.2064655,
+    "ast_hash": "66ab6d0260e1895a6549af8dc9e717ef",
+    "semantic_hash": "66ab6d0260e1895a6549af8dc9e717ef"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\docs\\WORKFLOW_TIMELINE.md": {
+    "mtime": 1774379595.8809931,
+    "ast_hash": "1df4867e81718df907733cba79dce301",
+    "semantic_hash": "1df4867e81718df907733cba79dce301"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\AGENTS.md": {
+    "mtime": 1780602669.8214855,
+    "ast_hash": "8f4df3e1e49ba1be7888675889cdff8a",
+    "semantic_hash": "8f4df3e1e49ba1be7888675889cdff8a"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\README.md": {
+    "mtime": 1780601889.837662,
+    "ast_hash": "1b7ea519f3e4da54c5fd265082d503c4",
+    "semantic_hash": "1b7ea519f3e4da54c5fd265082d503c4"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\Trinity\\trinity\\SCHEMA.md": {
+    "mtime": 1780602669.8368583,
+    "ast_hash": "abf1eb760c6ffb9f8038470836d8c63e",
+    "semantic_hash": "abf1eb760c6ffb9f8038470836d8c63e"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\ARCHITECTURE_SELECTION.md": {
+    "mtime": 1782149145.8826907,
+    "ast_hash": "b8f5aa264d8bf09fcfa1c869dade1c1c",
+    "semantic_hash": "b8f5aa264d8bf09fcfa1c869dade1c1c"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\ASSUMPTIONS_AND_OPEN_QUESTIONS.md": {
+    "mtime": 1782151617.5714445,
+    "ast_hash": "4207cd0978328e7ae5dc7dd771f77cf3",
+    "semantic_hash": "4207cd0978328e7ae5dc7dd771f77cf3"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\DATA_MODEL.md": {
+    "mtime": 1782151738.6629264,
+    "ast_hash": "b55b1d4387f90b08e7f1ec6446682334",
+    "semantic_hash": "b55b1d4387f90b08e7f1ec6446682334"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\DEPLOYMENT.md": {
+    "mtime": 1781714383.5442126,
+    "ast_hash": "c09812f1c477a127c098de24b896ec12",
+    "semantic_hash": "c09812f1c477a127c098de24b896ec12"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\PROJECT_BRIEF.md": {
+    "mtime": 1782149878.0185847,
+    "ast_hash": "91b3e97227dea5221d0ccfdac40ee78d",
+    "semantic_hash": "91b3e97227dea5221d0ccfdac40ee78d"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\STATE_CLASSIFICATION.md": {
+    "mtime": 1782151378.1780262,
+    "ast_hash": "f69029f3185cf44cb5664144ec7bfc85",
+    "semantic_hash": "f69029f3185cf44cb5664144ec7bfc85"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\TEST_STRATEGY.md": {
+    "mtime": 1782151563.8265896,
+    "ast_hash": "8d0747615cb7507c09a90fce01baf044",
+    "semantic_hash": "8d0747615cb7507c09a90fce01baf044"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\TRINITY.md": {
+    "mtime": 1781714360.3807907,
+    "ast_hash": "731ab23aee02d36858ee8e9d59808c0f",
+    "semantic_hash": "731ab23aee02d36858ee8e9d59808c0f"
+  },
+  "C:\\Users\\rschilling\\OneDrive - DOI\\Desktop\\Python Tools\\Target RP finder\\docs\\WORKFLOW_TIMELINE.md": {
+    "mtime": 1782150752.139225,
+    "ast_hash": "496abc627d66466668c0ff97eb4b9460",
+    "semantic_hash": "496abc627d66466668c0ff97eb4b9460"
+  }
+}
