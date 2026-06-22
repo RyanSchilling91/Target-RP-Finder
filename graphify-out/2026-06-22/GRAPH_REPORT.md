@@ -1,13 +1,18 @@
 # Graph Report - Target RP finder  (2026-06-22)
 
 ## Corpus Check
-- 68 files · ~47,165 words
+- 75 files · ~47,899 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 353 nodes · 551 edges · 21 communities (18 shown, 3 thin omitted)
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.74)
+- 390 nodes · 595 edges · 32 communities (26 shown, 6 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `7f0a65c8`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Trinity DB Engine|Trinity DB Engine]]
@@ -31,6 +36,17 @@
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `TrinityDB` - 39 edges
@@ -51,10 +67,10 @@
   Trinity/docs/WORKFLOW_TIMELINE.md → docs/TRINITY.md
 - `LockRecord` --semantically_similar_to--> `LockToken`  [INFERRED] [semantically similar]
   Trinity/trinity/tests/test_lock_manager.py → Trinity/trinity/lock_manager.py
-- `datetime` --uses--> `DBConfig`  [INFERRED]
-  Trinity/trinity/tests/test_lock_manager.py → Trinity/trinity/db.py
-- `LockHeldError` --uses--> `DBConfig`  [INFERRED]
-  Trinity/trinity/tests/test_lock_manager.py → Trinity/trinity/db.py
+- `New Working Revision on Re-entry` --conceptually_related_to--> `Working Revision (entity)`  [INFERRED]
+  Trinity/docs/ADR-0004-published-revision-reentry-policy.md → Trinity/docs/DATA_MODEL.md
+- `Run Status Lifecycle (Draft->...->Published)` --conceptually_related_to--> `Run (entity)`  [INFERRED]
+  Trinity/docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md → Trinity/docs/DATA_MODEL.md
 
 ## Import Cycles
 - 1-file cycle: `Trinity/trinity/tests/test_lock_manager.py -> Trinity/trinity/tests/test_lock_manager.py`
@@ -71,15 +87,15 @@
 - **Trinity working-to-evidence lifecycle (run/revision/lock/audit)** — trinity_table_runs, trinity_table_revisions, trinity_table_locks, trinity_table_audit_events [EXTRACTED 1.00]
 - **Target RP finder entity chain (Batch -> Revision -> Sample -> Flagged Compound)** — entity_batch, entity_revision, entity_sample, entity_flagged_compound [EXTRACTED 1.00]
 
-## Communities (21 total, 3 thin omitted)
+## Communities (32 total, 6 thin omitted)
 
 ### Community 0 - "Trinity DB Engine"
-Cohesion: 0.06
-Nodes (46): Connection, _extract_sql_blocks, SCHEMA.md schema source, _utc_now_iso, RuntimeError, append_event, list_for_run, _seed_run_revision (audit log test) (+38 more)
+Cohesion: 0.07
+Nodes (61): datetime, _extract_sql_blocks, SCHEMA.md schema source, _utc_now_iso, append_event, list_for_run, _seed_run_revision (audit log test), test_audit_append_and_ordered_retrieval (+53 more)
 
 ### Community 1 - "ADR Concurrency & Evidence Rules"
-Cohesion: 0.07
-Nodes (37): ADR-0002: Version-Aware Rehydration, Working State vs Published Evidence, Run (entity referenced in ADR-0002), Version-Aware Rehydration, Working Revision (entity referenced in ADR-0002), ADR-0003: Single-Editor Per Run Locking, 60s Heartbeat / 20min Stale Timeout Policy, Lock Record (concurrency control object), Reviewer Independence Rule (reviewer != primary_user) (+29 more)
+Cohesion: 0.21
+Nodes (16): ADR-0002: Version-Aware Rehydration, Working State vs Published Evidence, Run (entity referenced in ADR-0002), Version-Aware Rehydration, Working Revision (entity referenced in ADR-0002), Audit Event (entity), Criteria Configuration (entity), Derived Result Set (entity), Match Mapping (entity) (+8 more)
 
 ### Community 2 - "Failure Catalog"
 Cohesion: 0.12
@@ -90,12 +106,12 @@ Cohesion: 0.17
 Nodes (10): App-specific details (intake gaps), Auth, Commands, Constraints, `.d` folder classification rules, File format, Goals, Hosting / deployment (+2 more)
 
 ### Community 4 - "Project Skill Conductors"
-Cohesion: 0.10
-Nodes (25): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), doc-router (loads docs in project-continue), project-continue skill, Intake Summary (Problem/Goals/Constraints/Unknowns), project-designer skill, Phased Execution Plan, project-executor skill, Generated CLAUDE.md (+17 more)
+Cohesion: 0.11
+Nodes (24): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), doc-router (loads docs in project-continue), project-continue skill, project-designer skill, Phased Execution Plan, project-executor skill, Generated CLAUDE.md, project-init skill (+16 more)
 
 ### Community 5 - "Lock Manager Tests"
-Cohesion: 0.22
-Nodes (22): datetime, acquire_lock, get_active_lock, release_lock, _seed_run_revision (lock manager test), test_acquire_raises_lock_held_error_for_fresh_competing_lock, test_acquire_verify_release_lock, test_stale_lock_can_be_taken_over_after_expiry_threshold (+14 more)
+Cohesion: 0.18
+Nodes (15): RP parser service - extracts flagged compounds from Target.RP files., _extract_sample_id(), FlaggedCompound, _is_known_code_or_anomaly(), _is_numeric_token(), _parse_compound_row(), parse_target_rp(), Parse Target.RP fixed-width text files and extract flagged compounds. (+7 more)
 
 ### Community 6 - "Lock Manager Module"
 Cohesion: 0.16
@@ -118,8 +134,8 @@ Cohesion: 0.20
 Nodes (11): Any, Working-state contracts for Trinity run revisions., Identity for mutable workflow truth., Result metadata for an explicit save boundary., Contract for loading/saving canonical mutable working state., Return canonical working-state payload for a run revision., Persist canonical working-state payload for a run revision., Delete mutable working-state payload for a run revision. (+3 more)
 
 ### Community 11 - "Architecture ADRs & House Rules"
-Cohesion: 0.08
-Nodes (24): Shared-Storage Deployment Model, Streamlit as Renderer, Not Architecture Owner, ADR-0001: Thin Presentation Layer with Shared-Storage Deployment, ADR-0004 published revision re-entry policy, Architecture Rules (file size, split-first), Docs-First Rule, Failure Documentation Rule, Persistence Design Rules (+16 more)
+Cohesion: 0.17
+Nodes (11): Shared-Storage Deployment Model, Streamlit as Renderer, Not Architecture Owner, ADR-0001: Thin Presentation Layer with Shared-Storage Deployment, Thin UI Layer Rule, Run/Revision Artifact Folder Layout, Workflow-Governed Python Application Core, Architecture laws applied, Contract-doc references (+3 more)
 
 ### Community 12 - "Trinity Schema & Modules"
 Cohesion: 0.24
@@ -145,25 +161,57 @@ Nodes (5): Classification table, Derived state rules, Forbidden state transition
 Cohesion: 0.33
 Nodes (4): Edge cases, Handoff points, Review and approval points, Step-by-step
 
+### Community 21 - "Community 21"
+Cohesion: 0.21
+Nodes (7): Connection, RuntimeError, Create required tables/metadata if not present., Load durable metadata (schema/app/storage versions, timestamps)., Persist durable metadata., _utc_now_iso(), Any
+
+### Community 22 - "Community 22"
+Cohesion: 0.23
+Nodes (10): ClassifiedFolder, classify_folder(), discover_samples(), Discover and classify .d folders in a .b batch folder., Result of classifying a .d folder., Classify a .d folder by name using case-insensitive prefix matching and numeric, Scan a .b batch folder, classify all .d subfolders, return only samples.      Re, Batch discovery service - scans .b folders and classifies .d subfolders. (+2 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.22
+Nodes (6): Required Document Set, LIMS ID Canonical Identifier Assumption, Run Status Lifecycle (Draft->...->Published), Assumptions, Deferred decisions, Open questions
+
+### Community 24 - "Community 24"
+Cohesion: 0.25
+Nodes (8): ADR-0003: Single-Editor Per Run Locking, 60s Heartbeat / 20min Stale Timeout Policy, Lock Record (concurrency control object), Reviewer Independence Rule (reviewer != primary_user), Bootstrap Fallback Credential, ADR-0005: Password-Only Admin Challenges Bootstrap, Workstation Identity as Actor Attribution, Lock Record (entity)
+
+### Community 25 - "Community 25"
+Cohesion: 0.25
+Nodes (7): Architecture Rules (file size, split-first), Docs-First Rule, Failure Documentation Rule, Persistence Design Rules, Failure Catalog Entry Format, Failure Catalog Check Before Risky Behavior, failure-memory skill
+
+### Community 26 - "Community 26"
+Cohesion: 0.29
+Nodes (6): ADR-0004 published revision re-entry policy, Two-stage VBS launcher, Trinity backup mechanism (open item), TRINITY.md (Target RP finder), Trinity entry surface (open item), README.md (Trinity module)
+
+### Community 27 - "Community 27"
+Cohesion: 0.40
+Nodes (4): ADR Candidates List, Planned Sample Set Enters First, Planned Sample Set Line (entity), Intake Summary (Problem/Goals/Constraints/Unknowns)
+
+### Community 28 - "Community 28"
+Cohesion: 0.50
+Nodes (4): Immutable Published Revision Principle, New Working Revision on Re-entry, ADR-0004: Published Revision Re-entry Policy, Anti-Failure Rules
+
 ## Knowledge Gaps
-- **83 isolated node(s):** `What this is`, `What it owns`, `What the caller provides`, `Architecture`, `Deployment` (+78 more)
+- **86 isolated node(s):** `FolderType`, `Path`, `Path`, `What this is`, `What it owns` (+81 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `datetime` connect `Lock Manager Tests` to `Trinity DB Engine`, `Lock Manager Module`, `Data Model & Audit Log`, `Session Contracts`, `Working State Contracts`?**
-  _High betweenness centrality (0.074) - this node is a cross-community bridge._
-- **Why does `TrinityDB` connect `Trinity DB Engine` to `Lock Manager Tests`?**
-  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+- **Why does `datetime` connect `Trinity DB Engine` to `Data Model & Audit Log`, `Session Contracts`, `Working State Contracts`, `Lock Manager Module`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
+- **Why does `TrinityDB` connect `Trinity DB Engine` to `Community 21`?**
+  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+- **Why does `TRINITY.md (Target RP finder)` connect `Community 26` to `Architecture ADRs & House Rules`?**
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `TrinityDB` (e.g. with `datetime` and `LockHeldError`) actually correct?**
   _`TrinityDB` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 11 inferred relationships involving `DBConfig` (e.g. with `datetime` and `LockHeldError`) actually correct?**
   _`DBConfig` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `datetime` (e.g. with `DBConfig` and `TrinityDB`) actually correct?**
   _`datetime` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `What this is`, `What it owns`, `What the caller provides` to the rest of the system?**
-  _142 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Trinity DB Engine` be split into smaller, more focused modules?**
-  _Cohesion score 0.062146892655367235 - nodes in this community are weakly interconnected._
+- **What connects `Services for Target RP Finder.`, `Batch discovery service - scans .b folders and classifies .d subfolders.`, `FolderType` to the rest of the system?**
+  _161 weakly-connected nodes found - possible documentation gaps or missing edges._

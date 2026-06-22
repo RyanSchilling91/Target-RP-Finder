@@ -18,11 +18,12 @@ def classify_folder(folder_name: str) -> FolderType:
 
     Rules (applied in order):
     1. Prefix (case-insensitive): cal → calibration, ccv → ccv, cstpc/tpc → tpc, idl → idl, peb → blank
-    2. 11-digit numeric: YYYY (year) + DDD (Julian day) + 4-digit run number
+    2. 11-digit numeric (with optional .d suffix): YYYY (year) + DDD (Julian day) + 4-digit run number
        - Thousands digit of run number: 9 → prep_blank, 8 → surrogate, else → sample
     3. Else → unclassified
     """
     name_lower = folder_name.lower()
+    name_clean = folder_name.rstrip('.d') if folder_name.endswith('.d') else folder_name
 
     if name_lower.startswith("cal"):
         return "calibration"
@@ -35,8 +36,8 @@ def classify_folder(folder_name: str) -> FolderType:
     if name_lower.startswith("peb"):
         return "blank"
 
-    if re.match(r"^\d{11}$", folder_name):
-        run_number_str = folder_name[7:11]
+    if re.match(r"^\d{11}$", name_clean):
+        run_number_str = name_clean[7:11]
         thousands_digit = int(run_number_str[0])
 
         if thousands_digit == 9:

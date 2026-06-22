@@ -135,14 +135,384 @@
   },
   "nodes": [
     {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/services/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_init",
+      "community": 30,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "Services for Target RP Finder.",
+      "file_type": "rationale",
+      "source_file": "src/services/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_init_rationale_1",
+      "community": 30,
+      "norm_label": "services for target rp finder."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "batch_discovery_init",
+      "community": 22,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "Batch discovery service - scans .b folders and classifies .d subfolders.",
+      "file_type": "rationale",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "batch_discovery_init_rationale_1",
+      "community": 22,
+      "norm_label": "batch discovery service - scans .b folders and classifies .d subfolders."
+    },
+    {
+      "label": "discovery.py",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery",
+      "community": 22,
+      "norm_label": "discovery.py"
+    },
+    {
+      "label": "ClassifiedFolder",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_classifiedfolder",
+      "community": 22,
+      "norm_label": "classifiedfolder"
+    },
+    {
+      "label": "classify_folder()",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_classify_folder",
+      "community": 22,
+      "norm_label": "classify_folder()"
+    },
+    {
+      "label": "FolderType",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "foldertype",
+      "community": 22,
+      "norm_label": "foldertype"
+    },
+    {
+      "label": "discover_samples()",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_discover_samples",
+      "community": 22,
+      "norm_label": "discover_samples()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "src_services_batch_discovery_discovery_py_path",
+      "community": 22,
+      "norm_label": "path"
+    },
+    {
+      "label": "Discover and classify .d folders in a .b batch folder.",
+      "file_type": "rationale",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_rationale_1",
+      "community": 22,
+      "norm_label": "discover and classify .d folders in a .b batch folder."
+    },
+    {
+      "label": "Result of classifying a .d folder.",
+      "file_type": "rationale",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_rationale_11",
+      "community": 22,
+      "norm_label": "result of classifying a .d folder."
+    },
+    {
+      "label": "Classify a .d folder by name using case-insensitive prefix matching and numeric",
+      "file_type": "rationale",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_rationale_17",
+      "community": 22,
+      "norm_label": "classify a .d folder by name using case-insensitive prefix matching and numeric"
+    },
+    {
+      "label": "Scan a .b batch folder, classify all .d subfolders, return only samples.      Re",
+      "file_type": "rationale",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "batch_discovery_discovery_rationale_51",
+      "community": 22,
+      "norm_label": "scan a .b batch folder, classify all .d subfolders, return only samples.      re"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_init",
+      "community": 5,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "RP parser service - extracts flagged compounds from Target.RP files.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_init_rationale_1",
+      "community": 5,
+      "norm_label": "rp parser service - extracts flagged compounds from target.rp files."
+    },
+    {
+      "label": "parser.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser",
+      "community": 5,
+      "norm_label": "parser.py"
+    },
+    {
+      "label": "FlaggedCompound",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "rp_parser_parser_flaggedcompound",
+      "community": 5,
+      "norm_label": "flaggedcompound"
+    },
+    {
+      "label": "parse_target_rp()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_target_rp",
+      "community": 5,
+      "norm_label": "parse_target_rp()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_services_rp_parser_parser_py_path",
+      "community": 5,
+      "norm_label": "path"
+    },
+    {
+      "label": "_extract_sample_id()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "rp_parser_parser_extract_sample_id",
+      "community": 5,
+      "norm_label": "_extract_sample_id()"
+    },
+    {
+      "label": "_parse_compound_row()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_compound_row",
+      "community": 5,
+      "norm_label": "_parse_compound_row()"
+    },
+    {
+      "label": "_is_known_code_or_anomaly()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_known_code_or_anomaly",
+      "community": 5,
+      "norm_label": "_is_known_code_or_anomaly()"
+    },
+    {
+      "label": "_is_numeric_token()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_numeric_token",
+      "community": 5,
+      "norm_label": "_is_numeric_token()"
+    },
+    {
+      "label": "Parse Target.RP fixed-width text files and extract flagged compounds.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_1",
+      "community": 5,
+      "norm_label": "parse target.rp fixed-width text files and extract flagged compounds."
+    },
+    {
+      "label": "A compound row from Target.RP with a flagged review code.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_11",
+      "community": 5,
+      "norm_label": "a compound row from target.rp with a flagged review code."
+    },
+    {
+      "label": "Parse a Target.RP file and extract flagged compounds.      Returns:         (fla",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_17",
+      "community": 5,
+      "norm_label": "parse a target.rp file and extract flagged compounds.      returns:         (fla"
+    },
+    {
+      "label": "Extract the Lab Smp Id from the file header.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_67",
+      "community": 5,
+      "norm_label": "extract the lab smp id from the file header."
+    },
+    {
+      "label": "Parse a single compound data row using fixed-width column positions.      Compou",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_74",
+      "community": 5,
+      "norm_label": "parse a single compound data row using fixed-width column positions.      compou"
+    },
+    {
+      "label": "Check if token is a flagged code or log-worthy anomaly.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_109",
+      "community": 5,
+      "norm_label": "check if token is a flagged code or log-worthy anomaly."
+    },
+    {
+      "label": "Check if a token is a number (possibly with scientific notation or parentheses).",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_119",
+      "community": 5,
+      "norm_label": "check if a token is a number (possibly with scientific notation or parentheses)."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "target_rp_finder_init",
+      "community": 31,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "Target RP Finder app.",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "target_rp_finder_init_rationale_1",
+      "community": 31,
+      "norm_label": "target rp finder app."
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "target_rp_finder_main",
+      "community": 29,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "root()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "target_rp_finder_main_root",
+      "community": 29,
+      "norm_label": "root()"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "target_rp_finder_main_health",
+      "community": 29,
+      "norm_label": "health()"
+    },
+    {
+      "label": "FastAPI entry point for Target RP Finder.",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "target_rp_finder_main_rationale_1",
+      "community": 29,
+      "norm_label": "fastapi entry point for target rp finder."
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude",
       "community": 14,
-      "norm_label": "claude.md"
+      "norm_label": "claude.md",
+      "id": "claude"
     },
     {
       "label": "Target RP Finder",
@@ -150,9 +520,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_target_rp_finder",
       "community": 14,
-      "norm_label": "target rp finder"
+      "norm_label": "target rp finder",
+      "id": "claude_target_rp_finder"
     },
     {
       "label": "What this is",
@@ -160,9 +530,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "claude_what_this_is",
       "community": 14,
-      "norm_label": "what this is"
+      "norm_label": "what this is",
+      "id": "claude_what_this_is"
     },
     {
       "label": "What it owns",
@@ -170,9 +540,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "claude_what_it_owns",
       "community": 14,
-      "norm_label": "what it owns"
+      "norm_label": "what it owns",
+      "id": "claude_what_it_owns"
     },
     {
       "label": "What the caller provides",
@@ -180,9 +550,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "claude_what_the_caller_provides",
       "community": 14,
-      "norm_label": "what the caller provides"
+      "norm_label": "what the caller provides",
+      "id": "claude_what_the_caller_provides"
     },
     {
       "label": "Architecture",
@@ -190,9 +560,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "claude_architecture",
       "community": 14,
-      "norm_label": "architecture"
+      "norm_label": "architecture",
+      "id": "claude_architecture"
     },
     {
       "label": "Deployment",
@@ -200,9 +570,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "claude_deployment",
       "community": 14,
-      "norm_label": "deployment"
+      "norm_label": "deployment",
+      "id": "claude_deployment"
     },
     {
       "label": "Persistence",
@@ -210,9 +580,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "claude_persistence",
       "community": 14,
-      "norm_label": "persistence"
+      "norm_label": "persistence",
+      "id": "claude_persistence"
     },
     {
       "label": "Never do this",
@@ -220,9 +590,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "claude_never_do_this",
       "community": 14,
-      "norm_label": "never do this"
+      "norm_label": "never do this",
+      "id": "claude_never_do_this"
     },
     {
       "label": "Commands",
@@ -230,9 +600,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "claude_commands",
       "community": 14,
-      "norm_label": "commands"
+      "norm_label": "commands",
+      "id": "claude_commands"
     },
     {
       "label": "ARCHITECTURE_SELECTION.md",
@@ -240,9 +610,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_architecture_selection",
       "community": 11,
-      "norm_label": "architecture_selection.md"
+      "norm_label": "architecture_selection.md",
+      "id": "docs_architecture_selection"
     },
     {
       "label": "ARCHITECTURE_SELECTION.md",
@@ -250,9 +620,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_architecture_selection_architecture_selection_md",
       "community": 11,
-      "norm_label": "architecture_selection.md"
+      "norm_label": "architecture_selection.md",
+      "id": "docs_architecture_selection_architecture_selection_md"
     },
     {
       "label": "Architecture laws applied",
@@ -260,9 +630,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "docs_architecture_selection_architecture_laws_applied",
       "community": 11,
-      "norm_label": "architecture laws applied"
+      "norm_label": "architecture laws applied",
+      "id": "docs_architecture_selection_architecture_laws_applied"
     },
     {
       "label": "Service folders (derived from confirmed scope)",
@@ -270,9 +640,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "docs_architecture_selection_service_folders_derived_from_confirmed_scope",
       "community": 11,
-      "norm_label": "service folders (derived from confirmed scope)"
+      "norm_label": "service folders (derived from confirmed scope)",
+      "id": "docs_architecture_selection_service_folders_derived_from_confirmed_scope"
     },
     {
       "label": "Layer boundaries",
@@ -280,9 +650,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "docs_architecture_selection_layer_boundaries",
       "community": 11,
-      "norm_label": "layer boundaries"
+      "norm_label": "layer boundaries",
+      "id": "docs_architecture_selection_layer_boundaries"
     },
     {
       "label": "Contract-doc references",
@@ -290,9 +660,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "docs_architecture_selection_contract_doc_references",
       "community": 11,
-      "norm_label": "contract-doc references"
+      "norm_label": "contract-doc references",
+      "id": "docs_architecture_selection_contract_doc_references"
     },
     {
       "label": "Why this shape",
@@ -300,9 +670,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "docs_architecture_selection_why_this_shape",
       "community": 11,
-      "norm_label": "why this shape"
+      "norm_label": "why this shape",
+      "id": "docs_architecture_selection_why_this_shape"
     },
     {
       "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
@@ -310,9 +680,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions",
-      "community": 1,
-      "norm_label": "assumptions_and_open_questions.md"
+      "community": 23,
+      "norm_label": "assumptions_and_open_questions.md",
+      "id": "docs_assumptions_and_open_questions"
     },
     {
       "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
@@ -320,9 +690,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "community": 1,
-      "norm_label": "assumptions_and_open_questions.md"
+      "community": 23,
+      "norm_label": "assumptions_and_open_questions.md",
+      "id": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
     },
     {
       "label": "Assumptions",
@@ -330,9 +700,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_assumptions",
-      "community": 1,
-      "norm_label": "assumptions"
+      "community": 23,
+      "norm_label": "assumptions",
+      "id": "docs_assumptions_and_open_questions_assumptions"
     },
     {
       "label": "Open questions",
@@ -340,9 +710,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_open_questions",
-      "community": 1,
-      "norm_label": "open questions"
+      "community": 23,
+      "norm_label": "open questions",
+      "id": "docs_assumptions_and_open_questions_open_questions"
     },
     {
       "label": "Deferred decisions",
@@ -350,9 +720,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_deferred_decisions",
-      "community": 1,
-      "norm_label": "deferred decisions"
+      "community": 23,
+      "norm_label": "deferred decisions",
+      "id": "docs_assumptions_and_open_questions_deferred_decisions"
     },
     {
       "label": "DATA_MODEL.md",
@@ -360,9 +730,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_data_model",
       "community": 1,
-      "norm_label": "data_model.md"
+      "norm_label": "data_model.md",
+      "id": "docs_data_model"
     },
     {
       "label": "DATA_MODEL.md",
@@ -370,9 +740,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_data_model_data_model_md",
       "community": 17,
-      "norm_label": "data_model.md"
+      "norm_label": "data_model.md",
+      "id": "docs_data_model_data_model_md"
     },
     {
       "label": "Persistence",
@@ -380,9 +750,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_data_model_persistence",
       "community": 17,
-      "norm_label": "persistence"
+      "norm_label": "persistence",
+      "id": "docs_data_model_persistence"
     },
     {
       "label": "Entities",
@@ -390,9 +760,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "docs_data_model_entities",
       "community": 17,
-      "norm_label": "entities"
+      "norm_label": "entities",
+      "id": "docs_data_model_entities"
     },
     {
       "label": "Batch",
@@ -400,9 +770,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "docs_data_model_batch",
       "community": 17,
-      "norm_label": "batch"
+      "norm_label": "batch",
+      "id": "docs_data_model_batch"
     },
     {
       "label": "Revision",
@@ -410,9 +780,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "docs_data_model_revision",
       "community": 17,
-      "norm_label": "revision"
+      "norm_label": "revision",
+      "id": "docs_data_model_revision"
     },
     {
       "label": "Sample",
@@ -420,9 +790,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "docs_data_model_sample",
       "community": 17,
-      "norm_label": "sample"
+      "norm_label": "sample",
+      "id": "docs_data_model_sample"
     },
     {
       "label": "Flagged Compound",
@@ -430,9 +800,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "docs_data_model_flagged_compound",
       "community": 17,
-      "norm_label": "flagged compound"
+      "norm_label": "flagged compound",
+      "id": "docs_data_model_flagged_compound"
     },
     {
       "label": "Derived values (computed, never stored)",
@@ -440,9 +810,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "docs_data_model_derived_values_computed_never_stored",
       "community": 17,
-      "norm_label": "derived values (computed, never stored)"
+      "norm_label": "derived values (computed, never stored)",
+      "id": "docs_data_model_derived_values_computed_never_stored"
     },
     {
       "label": "Entity relationship summary",
@@ -450,9 +820,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "docs_data_model_entity_relationship_summary",
       "community": 17,
-      "norm_label": "entity relationship summary"
+      "norm_label": "entity relationship summary",
+      "id": "docs_data_model_entity_relationship_summary"
     },
     {
       "label": "Forbidden state transitions",
@@ -460,9 +830,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "docs_data_model_forbidden_state_transitions",
       "community": 17,
-      "norm_label": "forbidden state transitions"
+      "norm_label": "forbidden state transitions",
+      "id": "docs_data_model_forbidden_state_transitions"
     },
     {
       "label": "PROJECT_BRIEF.md",
@@ -470,9 +840,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_project_brief",
       "community": 3,
-      "norm_label": "project_brief.md"
+      "norm_label": "project_brief.md",
+      "id": "docs_project_brief"
     },
     {
       "label": "PROJECT_BRIEF.md",
@@ -480,9 +850,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_project_brief_project_brief_md",
       "community": 3,
-      "norm_label": "project_brief.md"
+      "norm_label": "project_brief.md",
+      "id": "docs_project_brief_project_brief_md"
     },
     {
       "label": "Problem",
@@ -490,9 +860,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_project_brief_problem",
       "community": 3,
-      "norm_label": "problem"
+      "norm_label": "problem",
+      "id": "docs_project_brief_problem"
     },
     {
       "label": "Goals",
@@ -500,9 +870,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "docs_project_brief_goals",
       "community": 3,
-      "norm_label": "goals"
+      "norm_label": "goals",
+      "id": "docs_project_brief_goals"
     },
     {
       "label": "Constraints",
@@ -510,9 +880,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "docs_project_brief_constraints",
       "community": 3,
-      "norm_label": "constraints"
+      "norm_label": "constraints",
+      "id": "docs_project_brief_constraints"
     },
     {
       "label": "App-specific details (intake gaps)",
@@ -520,9 +890,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "docs_project_brief_app_specific_details_intake_gaps",
       "community": 3,
-      "norm_label": "app-specific details (intake gaps)"
+      "norm_label": "app-specific details (intake gaps)",
+      "id": "docs_project_brief_app_specific_details_intake_gaps"
     },
     {
       "label": "File format",
@@ -530,9 +900,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "docs_project_brief_file_format",
       "community": 3,
-      "norm_label": "file format"
+      "norm_label": "file format",
+      "id": "docs_project_brief_file_format"
     },
     {
       "label": "`.d` folder classification rules",
@@ -540,9 +910,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "docs_project_brief_d_folder_classification_rules",
       "community": 3,
-      "norm_label": "`.d` folder classification rules"
+      "norm_label": "`.d` folder classification rules",
+      "id": "docs_project_brief_d_folder_classification_rules"
     },
     {
       "label": "Hosting / deployment",
@@ -550,9 +920,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "docs_project_brief_hosting_deployment",
       "community": 3,
-      "norm_label": "hosting / deployment"
+      "norm_label": "hosting / deployment",
+      "id": "docs_project_brief_hosting_deployment"
     },
     {
       "label": "Auth",
@@ -560,9 +930,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "docs_project_brief_auth",
       "community": 3,
-      "norm_label": "auth"
+      "norm_label": "auth",
+      "id": "docs_project_brief_auth"
     },
     {
       "label": "Integrations",
@@ -570,9 +940,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "docs_project_brief_integrations",
       "community": 3,
-      "norm_label": "integrations"
+      "norm_label": "integrations",
+      "id": "docs_project_brief_integrations"
     },
     {
       "label": "Commands",
@@ -580,9 +950,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "docs_project_brief_commands",
       "community": 3,
-      "norm_label": "commands"
+      "norm_label": "commands",
+      "id": "docs_project_brief_commands"
     },
     {
       "label": "STATE_CLASSIFICATION.md",
@@ -590,9 +960,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_state_classification",
       "community": 19,
-      "norm_label": "state_classification.md"
+      "norm_label": "state_classification.md",
+      "id": "docs_state_classification"
     },
     {
       "label": "STATE_CLASSIFICATION.md",
@@ -600,9 +970,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_state_classification_state_classification_md",
       "community": 19,
-      "norm_label": "state_classification.md"
+      "norm_label": "state_classification.md",
+      "id": "docs_state_classification_state_classification_md"
     },
     {
       "label": "Classification table",
@@ -610,9 +980,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_state_classification_classification_table",
       "community": 19,
-      "norm_label": "classification table"
+      "norm_label": "classification table",
+      "id": "docs_state_classification_classification_table"
     },
     {
       "label": "Mutability rules",
@@ -620,9 +990,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "docs_state_classification_mutability_rules",
       "community": 19,
-      "norm_label": "mutability rules"
+      "norm_label": "mutability rules",
+      "id": "docs_state_classification_mutability_rules"
     },
     {
       "label": "Derived state rules",
@@ -630,9 +1000,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "docs_state_classification_derived_state_rules",
       "community": 19,
-      "norm_label": "derived state rules"
+      "norm_label": "derived state rules",
+      "id": "docs_state_classification_derived_state_rules"
     },
     {
       "label": "Versioning behavior",
@@ -640,9 +1010,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "docs_state_classification_versioning_behavior",
       "community": 19,
-      "norm_label": "versioning behavior"
+      "norm_label": "versioning behavior",
+      "id": "docs_state_classification_versioning_behavior"
     },
     {
       "label": "Forbidden state transitions",
@@ -650,9 +1020,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "docs_state_classification_forbidden_state_transitions",
       "community": 19,
-      "norm_label": "forbidden state transitions"
+      "norm_label": "forbidden state transitions",
+      "id": "docs_state_classification_forbidden_state_transitions"
     },
     {
       "label": "TEST_STRATEGY.md",
@@ -660,9 +1030,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_test_strategy",
       "community": 18,
-      "norm_label": "test_strategy.md"
+      "norm_label": "test_strategy.md",
+      "id": "docs_test_strategy"
     },
     {
       "label": "TEST_STRATEGY.md",
@@ -670,9 +1040,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_test_strategy_test_strategy_md",
       "community": 18,
-      "norm_label": "test_strategy.md"
+      "norm_label": "test_strategy.md",
+      "id": "docs_test_strategy_test_strategy_md"
     },
     {
       "label": "Test scope summary",
@@ -680,9 +1050,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_test_strategy_test_scope_summary",
       "community": 18,
-      "norm_label": "test scope summary"
+      "norm_label": "test scope summary",
+      "id": "docs_test_strategy_test_scope_summary"
     },
     {
       "label": "Unit test targets",
@@ -690,9 +1060,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "docs_test_strategy_unit_test_targets",
       "community": 18,
-      "norm_label": "unit test targets"
+      "norm_label": "unit test targets",
+      "id": "docs_test_strategy_unit_test_targets"
     },
     {
       "label": "Integration targets",
@@ -700,9 +1070,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "docs_test_strategy_integration_targets",
       "community": 18,
-      "norm_label": "integration targets"
+      "norm_label": "integration targets",
+      "id": "docs_test_strategy_integration_targets"
     },
     {
       "label": "Regression scenarios",
@@ -710,9 +1080,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "docs_test_strategy_regression_scenarios",
       "community": 18,
-      "norm_label": "regression scenarios"
+      "norm_label": "regression scenarios",
+      "id": "docs_test_strategy_regression_scenarios"
     },
     {
       "label": "Required fixtures",
@@ -720,9 +1090,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "docs_test_strategy_required_fixtures",
       "community": 18,
-      "norm_label": "required fixtures"
+      "norm_label": "required fixtures",
+      "id": "docs_test_strategy_required_fixtures"
     },
     {
       "label": "Correctness definition",
@@ -730,9 +1100,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "docs_test_strategy_correctness_definition",
       "community": 18,
-      "norm_label": "correctness definition"
+      "norm_label": "correctness definition",
+      "id": "docs_test_strategy_correctness_definition"
     },
     {
       "label": "Manual validation",
@@ -740,9 +1110,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "docs_test_strategy_manual_validation",
       "community": 18,
-      "norm_label": "manual validation"
+      "norm_label": "manual validation",
+      "id": "docs_test_strategy_manual_validation"
     },
     {
       "label": "WORKFLOW_TIMELINE.md",
@@ -750,9 +1120,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_workflow_timeline",
       "community": 20,
-      "norm_label": "workflow_timeline.md"
+      "norm_label": "workflow_timeline.md",
+      "id": "docs_workflow_timeline"
     },
     {
       "label": "WORKFLOW_TIMELINE.md",
@@ -760,9 +1130,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_workflow_timeline_workflow_timeline_md",
       "community": 20,
-      "norm_label": "workflow_timeline.md"
+      "norm_label": "workflow_timeline.md",
+      "id": "docs_workflow_timeline_workflow_timeline_md"
     },
     {
       "label": "Step-by-step",
@@ -770,9 +1140,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "docs_workflow_timeline_step_by_step",
       "community": 20,
-      "norm_label": "step-by-step"
+      "norm_label": "step-by-step",
+      "id": "docs_workflow_timeline_step_by_step"
     },
     {
       "label": "Review and approval points",
@@ -780,9 +1150,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "docs_workflow_timeline_review_and_approval_points",
       "community": 20,
-      "norm_label": "review and approval points"
+      "norm_label": "review and approval points",
+      "id": "docs_workflow_timeline_review_and_approval_points"
     },
     {
       "label": "Handoff points",
@@ -790,9 +1160,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "docs_workflow_timeline_handoff_points",
       "community": 20,
-      "norm_label": "handoff points"
+      "norm_label": "handoff points",
+      "id": "docs_workflow_timeline_handoff_points"
     },
     {
       "label": "Edge cases",
@@ -800,9 +1170,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "docs_workflow_timeline_edge_cases",
       "community": 20,
-      "norm_label": "edge cases"
+      "norm_label": "edge cases",
+      "id": "docs_workflow_timeline_edge_cases"
     },
     {
       "label": "__init__.py",
@@ -1000,7 +1370,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": ".initialize()",
       "id": "trinity_db_trinitydb_initialize"
     },
@@ -1010,7 +1380,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": ".load_metadata()",
       "id": "trinity_db_trinitydb_load_metadata"
     },
@@ -1020,7 +1390,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "any",
       "id": "trinity_trinity_db_py_any"
     },
@@ -1030,7 +1400,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": ".save_metadata()",
       "id": "trinity_db_trinitydb_save_metadata"
     },
@@ -1050,7 +1420,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "._connection()",
       "id": "trinity_db_trinitydb_connection"
     },
@@ -1060,7 +1430,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "connection",
       "id": "connection"
     },
@@ -1070,7 +1440,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "._enforce_schema_marker()",
       "id": "trinity_db_trinitydb_enforce_schema_marker"
     },
@@ -1080,7 +1450,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L106",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "._load_schema_sql()",
       "id": "trinity_db_trinitydb_load_schema_sql"
     },
@@ -1100,7 +1470,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L134",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "_utc_now_iso()",
       "id": "trinity_db_utc_now_iso"
     },
@@ -1150,7 +1520,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "create required tables/metadata if not present.",
       "id": "trinity_db_rationale_36"
     },
@@ -1160,7 +1530,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "load durable metadata (schema/app/storage versions, timestamps).",
       "id": "trinity_db_rationale_45"
     },
@@ -1170,7 +1540,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "persist durable metadata.",
       "id": "trinity_db_rationale_51"
     },
@@ -1640,7 +2010,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_lock_manager.py",
       "id": "tests_test_lock_manager"
     },
@@ -1650,7 +2020,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "lockhelderror",
       "id": "tests_test_lock_manager_lockhelderror"
     },
@@ -1660,7 +2030,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 0,
+      "community": 21,
       "norm_label": "runtimeerror",
       "id": "runtimeerror"
     },
@@ -1670,7 +2040,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "lockrecord",
       "id": "tests_test_lock_manager_lockrecord"
     },
@@ -1680,7 +2050,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "_seed_run_revision()",
       "id": "tests_test_lock_manager_seed_run_revision"
     },
@@ -1690,7 +2060,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "trinitydb",
       "id": "trinity_trinity_tests_test_lock_manager_py_trinitydb"
     },
@@ -1700,7 +2070,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "_parse_iso()",
       "id": "tests_test_lock_manager_parse_iso"
     },
@@ -1710,7 +2080,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "datetime",
       "id": "datetime"
     },
@@ -1720,7 +2090,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "acquire_lock()",
       "id": "tests_test_lock_manager_acquire_lock"
     },
@@ -1730,7 +2100,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "timedelta",
       "id": "trinity_trinity_tests_test_lock_manager_py_timedelta"
     },
@@ -1740,7 +2110,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "get_active_lock()",
       "id": "tests_test_lock_manager_get_active_lock"
     },
@@ -1750,7 +2120,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L136",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "release_lock()",
       "id": "tests_test_lock_manager_release_lock"
     },
@@ -1760,7 +2130,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_acquire_verify_release_lock()",
       "id": "tests_test_lock_manager_test_acquire_verify_release_lock"
     },
@@ -1770,7 +2140,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "path",
       "id": "trinity_trinity_tests_test_lock_manager_py_path"
     },
@@ -1780,7 +2150,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L168",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_acquire_raises_lock_held_error_for_fresh_competing_lock()",
       "id": "tests_test_lock_manager_test_acquire_raises_lock_held_error_for_fresh_competing_lock"
     },
@@ -1790,7 +2160,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L187",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_stale_lock_can_be_taken_over_after_expiry_threshold()",
       "id": "tests_test_lock_manager_test_stale_lock_can_be_taken_over_after_expiry_threshold"
     },
@@ -1800,7 +2170,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 5,
+      "community": 0,
       "norm_label": "raised when another actor still holds an active non-stale lock.",
       "id": "tests_test_lock_manager_rationale_13"
     },
@@ -2189,7 +2559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "_seed_run_revision (lock manager test)",
       "id": "test_lock_manager_seed_run_revision"
     },
@@ -2202,7 +2572,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "acquire_lock",
       "id": "test_lock_manager_acquire_lock"
     },
@@ -2215,7 +2585,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "get_active_lock",
       "id": "test_lock_manager_get_active_lock"
     },
@@ -2228,7 +2598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "release_lock",
       "id": "test_lock_manager_release_lock"
     },
@@ -2241,7 +2611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "test_acquire_verify_release_lock",
       "id": "test_lock_manager_test_acquire_verify_release_lock"
     },
@@ -2254,7 +2624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "test_acquire_raises_lock_held_error_for_fresh_competing_lock",
       "id": "test_lock_manager_test_acquire_raises_lock_held_error_for_fresh_competing_lock"
     },
@@ -2267,7 +2637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "test_stale_lock_can_be_taken_over_after_expiry_threshold",
       "id": "test_lock_manager_test_stale_lock_can_be_taken_over_after_expiry_threshold"
     },
@@ -2501,7 +2871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "failure-memory skill",
       "id": "failure_memory_failure_memory"
     },
@@ -2514,7 +2884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "failure catalog check before risky behavior",
       "id": "failure_memory_failure_catalog_check"
     },
@@ -2527,7 +2897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "failure catalog entry format",
       "id": "failure_memory_catalog_entry_format"
     },
@@ -2579,7 +2949,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 27,
       "norm_label": "intake summary (problem/goals/constraints/unknowns)",
       "id": "project_designer_intake_summary"
     },
@@ -2852,7 +3222,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "agents.md",
       "id": "agents_md"
     },
@@ -2865,7 +3235,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "docs-first rule",
       "id": "agents_docs_first_rule"
     },
@@ -2891,7 +3261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "persistence design rules",
       "id": "agents_persistence_design_rules"
     },
@@ -2904,7 +3274,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 28,
       "norm_label": "anti-failure rules",
       "id": "agents_anti_failure_rules"
     },
@@ -2917,7 +3287,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "failure documentation rule",
       "id": "agents_failure_documentation_rule"
     },
@@ -2930,7 +3300,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 23,
       "norm_label": "required document set",
       "id": "agents_required_document_set"
     },
@@ -2943,7 +3313,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "architecture rules (file size, split-first)",
       "id": "agents_architecture_rules"
     },
@@ -3047,7 +3417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "adr-0003: single-editor per run locking",
       "id": "adr_0003_concurrency_model_single_editor_lock"
     },
@@ -3060,7 +3430,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "lock record (concurrency control object)",
       "id": "adr_0003_lock_record_entity"
     },
@@ -3073,7 +3443,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "60s heartbeat / 20min stale timeout policy",
       "id": "adr_0003_heartbeat_timeout_policy"
     },
@@ -3086,7 +3456,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "reviewer independence rule (reviewer != primary_user)",
       "id": "adr_0003_reviewer_independence_rule"
     },
@@ -3099,7 +3469,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 28,
       "norm_label": "adr-0004: published revision re-entry policy",
       "id": "adr_0004_published_revision_reentry_policy"
     },
@@ -3112,7 +3482,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 28,
       "norm_label": "immutable published revision principle",
       "id": "adr_0004_immutable_published_revision"
     },
@@ -3125,7 +3495,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 28,
       "norm_label": "new working revision on re-entry",
       "id": "adr_0004_new_working_revision_on_reentry"
     },
@@ -3138,7 +3508,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "adr-0005: password-only admin challenges bootstrap",
       "id": "adr_0005_use_password_only_admin_challenges_as_a_near_term_protected_action_bootstrap"
     },
@@ -3151,7 +3521,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "bootstrap fallback credential",
       "id": "adr_0005_bootstrap_fallback_credential"
     },
@@ -3164,7 +3534,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "workstation identity as actor attribution",
       "id": "adr_0005_workstation_identity_attribution"
     },
@@ -3177,7 +3547,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 23,
       "norm_label": "adr-template.md",
       "id": "adr_template"
     },
@@ -3229,7 +3599,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 23,
       "norm_label": "lims id canonical identifier assumption",
       "id": "assumptions_lims_id_assumption"
     },
@@ -3242,7 +3612,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 23,
       "norm_label": "run status lifecycle (draft->...->published)",
       "id": "assumptions_run_status_lifecycle"
     },
@@ -3255,7 +3625,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 27,
       "norm_label": "bootstrap_questionnaire.md",
       "id": "bootstrap_questionnaire"
     },
@@ -3268,7 +3638,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 27,
       "norm_label": "planned sample set enters first",
       "id": "bootstrap_questionnaire_planned_sample_set_first"
     },
@@ -3281,7 +3651,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 27,
       "norm_label": "adr candidates list",
       "id": "bootstrap_questionnaire_adr_candidates"
     },
@@ -3320,7 +3690,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 27,
       "norm_label": "planned sample set line (entity)",
       "id": "data_model_planned_sample_set_line"
     },
@@ -3424,7 +3794,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 24,
       "norm_label": "lock record (entity)",
       "id": "data_model_lock_record"
     },
@@ -3931,7 +4301,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "readme.md (trinity module)",
       "id": "trinity_readme"
     },
@@ -4087,7 +4457,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "deployment.md",
       "id": "deployment"
     },
@@ -4100,7 +4470,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "trinity.md (target rp finder)",
       "id": "trinity_doc_target_rp"
     },
@@ -4113,7 +4483,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "two-stage vbs launcher",
       "id": "deployment_vbs_launcher"
     },
@@ -4126,7 +4496,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "trinity entry surface (open item)",
       "id": "trinity_entry_surface_open_item"
     },
@@ -4139,7 +4509,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "trinity backup mechanism (open item)",
       "id": "trinity_backup_open_item"
     },
@@ -4152,21 +4522,478 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 26,
       "norm_label": "adr-0004 published revision re-entry policy",
       "id": "adr_0004_published_reentry"
     }
   ],
   "links": [
     {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "services_init_rationale_1",
+      "target": "services_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "batch_discovery_init",
+      "target": "batch_discovery_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "batch_discovery_init",
+      "target": "batch_discovery_discovery_classify_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "batch_discovery_init",
+      "target": "batch_discovery_discovery_discover_samples",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "batch_discovery_init_rationale_1",
+      "target": "batch_discovery_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery",
+      "target": "batch_discovery_discovery_classifiedfolder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery",
+      "target": "batch_discovery_discovery_classify_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery",
+      "target": "batch_discovery_discovery_discover_samples",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_rationale_1",
+      "target": "batch_discovery_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_discover_samples",
+      "target": "batch_discovery_discovery_classifiedfolder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_rationale_11",
+      "target": "batch_discovery_discovery_classifiedfolder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_classify_folder",
+      "target": "foldertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_discover_samples",
+      "target": "batch_discovery_discovery_classify_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_rationale_17",
+      "target": "batch_discovery_discovery_classify_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_discover_samples",
+      "target": "src_services_batch_discovery_discovery_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "batch_discovery_discovery_rationale_51",
+      "target": "batch_discovery_discovery_discover_samples",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_parse_target_rp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "rp_parser_init_rationale_1",
+      "target": "rp_parser_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_extract_sample_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_known_code_or_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_numeric_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_compound_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_target_rp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_1",
+      "target": "rp_parser_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_11",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_extract_sample_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_parse_compound_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "src_services_rp_parser_parser_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_17",
+      "target": "rp_parser_parser_parse_target_rp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_67",
+      "target": "rp_parser_parser_extract_sample_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_is_known_code_or_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_74",
+      "target": "rp_parser_parser_parse_compound_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "rp_parser_parser_is_known_code_or_anomaly",
+      "target": "rp_parser_parser_is_numeric_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_109",
+      "target": "rp_parser_parser_is_known_code_or_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_119",
+      "target": "rp_parser_parser_is_numeric_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "target_rp_finder_init_rationale_1",
+      "target": "target_rp_finder_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "target_rp_finder_main",
+      "target": "target_rp_finder_main_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "target_rp_finder_main",
+      "target": "target_rp_finder_main_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "target_rp_finder_main_rationale_1",
+      "target": "target_rp_finder_main",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_target_rp_finder",
-      "confidence_score": 1.0
+      "target": "claude_target_rp_finder"
     },
     {
       "relation": "contains",
@@ -4174,9 +5001,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_architecture",
-      "confidence_score": 1.0
+      "target": "claude_architecture"
     },
     {
       "relation": "contains",
@@ -4184,9 +5011,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_commands",
-      "confidence_score": 1.0
+      "target": "claude_commands"
     },
     {
       "relation": "contains",
@@ -4194,9 +5021,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_deployment",
-      "confidence_score": 1.0
+      "target": "claude_deployment"
     },
     {
       "relation": "contains",
@@ -4204,9 +5031,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_never_do_this",
-      "confidence_score": 1.0
+      "target": "claude_never_do_this"
     },
     {
       "relation": "contains",
@@ -4214,9 +5041,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_persistence",
-      "confidence_score": 1.0
+      "target": "claude_persistence"
     },
     {
       "relation": "contains",
@@ -4224,9 +5051,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_what_it_owns",
-      "confidence_score": 1.0
+      "target": "claude_what_it_owns"
     },
     {
       "relation": "contains",
@@ -4234,9 +5061,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_what_the_caller_provides",
-      "confidence_score": 1.0
+      "target": "claude_what_the_caller_provides"
     },
     {
       "relation": "contains",
@@ -4244,9 +5071,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
-      "target": "claude_what_this_is",
-      "confidence_score": 1.0
+      "target": "claude_what_this_is"
     },
     {
       "relation": "contains",
@@ -4254,9 +5081,9 @@
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_selection",
-      "target": "docs_architecture_selection_architecture_selection_md",
-      "confidence_score": 1.0
+      "target": "docs_architecture_selection_architecture_selection_md"
     },
     {
       "relation": "cites",
@@ -4326,7 +5153,67 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
+      "target": "bootstrap_questionnaire"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "deployment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_architecture_laws_applied"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_contract_doc_references"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_layer_boundaries"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_service_folders_derived_from_confirmed_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_why_this_shape"
     },
     {
       "relation": "cites",
@@ -4336,7 +5223,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "bootstrap_questionnaire"
+      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
     },
     {
       "relation": "cites",
@@ -4356,67 +5243,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "deployment"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
       "target": "trinity_doc_target_rp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_architecture_laws_applied",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_contract_doc_references",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_layer_boundaries",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_service_folders_derived_from_confirmed_scope",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_why_this_shape",
-      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4444,9 +5271,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_assumptions_and_open_questions",
-      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "confidence_score": 1.0
+      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
     },
     {
       "relation": "references",
@@ -4456,6 +5283,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "agents_required_document_set",
+      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/BOOTSTRAP_QUESTIONNAIRE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bootstrap_questionnaire",
       "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
     },
     {
@@ -4489,24 +5326,14 @@
       "target": "assumptions_run_status_lifecycle"
     },
     {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/BOOTSTRAP_QUESTIONNAIRE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "bootstrap_questionnaire",
-      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "target": "docs_assumptions_and_open_questions_assumptions",
-      "confidence_score": 1.0
+      "target": "docs_assumptions_and_open_questions_assumptions"
     },
     {
       "relation": "contains",
@@ -4514,9 +5341,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "target": "docs_assumptions_and_open_questions_deferred_decisions",
-      "confidence_score": 1.0
+      "target": "docs_assumptions_and_open_questions_deferred_decisions"
     },
     {
       "relation": "contains",
@@ -4524,9 +5351,9 @@
       "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "target": "docs_assumptions_and_open_questions_open_questions",
-      "confidence_score": 1.0
+      "target": "docs_assumptions_and_open_questions_open_questions"
     },
     {
       "relation": "references",
@@ -4719,6 +5546,16 @@
       "target": "data_model_working_revision"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model",
+      "target": "docs_data_model_data_model_md"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
@@ -4727,16 +5564,6 @@
       "weight": 1.0,
       "source": "docs_data_model",
       "target": "state_classifier_state_classification_doc"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "docs_data_model_data_model_md",
-      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4754,9 +5581,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_derived_values_computed_never_stored",
-      "confidence_score": 1.0
+      "target": "docs_data_model_derived_values_computed_never_stored"
     },
     {
       "relation": "contains",
@@ -4764,9 +5591,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_entities",
-      "confidence_score": 1.0
+      "target": "docs_data_model_entities"
     },
     {
       "relation": "contains",
@@ -4774,9 +5601,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_entity_relationship_summary",
-      "confidence_score": 1.0
+      "target": "docs_data_model_entity_relationship_summary"
     },
     {
       "relation": "contains",
@@ -4784,9 +5611,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_forbidden_state_transitions",
-      "confidence_score": 1.0
+      "target": "docs_data_model_forbidden_state_transitions"
     },
     {
       "relation": "contains",
@@ -4794,9 +5621,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_persistence",
-      "confidence_score": 1.0
+      "target": "docs_data_model_persistence"
     },
     {
       "relation": "contains",
@@ -4804,9 +5631,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_entities",
-      "target": "docs_data_model_batch",
-      "confidence_score": 1.0
+      "target": "docs_data_model_batch"
     },
     {
       "relation": "contains",
@@ -4814,9 +5641,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_entities",
-      "target": "docs_data_model_flagged_compound",
-      "confidence_score": 1.0
+      "target": "docs_data_model_flagged_compound"
     },
     {
       "relation": "contains",
@@ -4824,9 +5651,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_entities",
-      "target": "docs_data_model_revision",
-      "confidence_score": 1.0
+      "target": "docs_data_model_revision"
     },
     {
       "relation": "contains",
@@ -4834,9 +5661,9 @@
       "source_file": "docs/DATA_MODEL.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_data_model_entities",
-      "target": "docs_data_model_sample",
-      "confidence_score": 1.0
+      "target": "docs_data_model_sample"
     },
     {
       "relation": "contains",
@@ -4844,9 +5671,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief",
-      "target": "docs_project_brief_project_brief_md",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_project_brief_md"
     },
     {
       "relation": "contains",
@@ -4854,9 +5681,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_project_brief_md",
-      "target": "docs_project_brief_app_specific_details_intake_gaps",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_app_specific_details_intake_gaps"
     },
     {
       "relation": "contains",
@@ -4864,9 +5691,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_project_brief_md",
-      "target": "docs_project_brief_commands",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_commands"
     },
     {
       "relation": "contains",
@@ -4874,9 +5701,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_project_brief_md",
-      "target": "docs_project_brief_constraints",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_constraints"
     },
     {
       "relation": "contains",
@@ -4884,9 +5711,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_project_brief_md",
-      "target": "docs_project_brief_goals",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_goals"
     },
     {
       "relation": "contains",
@@ -4894,9 +5721,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_project_brief_md",
-      "target": "docs_project_brief_problem",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_problem"
     },
     {
       "relation": "contains",
@@ -4904,9 +5731,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
-      "target": "docs_project_brief_auth",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_auth"
     },
     {
       "relation": "contains",
@@ -4914,9 +5741,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
-      "target": "docs_project_brief_d_folder_classification_rules",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_d_folder_classification_rules"
     },
     {
       "relation": "contains",
@@ -4924,9 +5751,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
-      "target": "docs_project_brief_file_format",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_file_format"
     },
     {
       "relation": "contains",
@@ -4934,9 +5761,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
-      "target": "docs_project_brief_hosting_deployment",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_hosting_deployment"
     },
     {
       "relation": "contains",
@@ -4944,9 +5771,9 @@
       "source_file": "docs/PROJECT_BRIEF.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
-      "target": "docs_project_brief_integrations",
-      "confidence_score": 1.0
+      "target": "docs_project_brief_integrations"
     },
     {
       "relation": "contains",
@@ -4954,9 +5781,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification",
-      "target": "docs_state_classification_state_classification_md",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_state_classification_md"
     },
     {
       "relation": "contains",
@@ -4964,9 +5791,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification_state_classification_md",
-      "target": "docs_state_classification_classification_table",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_classification_table"
     },
     {
       "relation": "contains",
@@ -4974,9 +5801,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification_state_classification_md",
-      "target": "docs_state_classification_derived_state_rules",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_derived_state_rules"
     },
     {
       "relation": "contains",
@@ -4984,9 +5811,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification_state_classification_md",
-      "target": "docs_state_classification_forbidden_state_transitions",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_forbidden_state_transitions"
     },
     {
       "relation": "contains",
@@ -4994,9 +5821,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification_state_classification_md",
-      "target": "docs_state_classification_mutability_rules",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_mutability_rules"
     },
     {
       "relation": "contains",
@@ -5004,9 +5831,9 @@
       "source_file": "docs/STATE_CLASSIFICATION.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_state_classification_state_classification_md",
-      "target": "docs_state_classification_versioning_behavior",
-      "confidence_score": 1.0
+      "target": "docs_state_classification_versioning_behavior"
     },
     {
       "relation": "contains",
@@ -5014,9 +5841,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy",
-      "target": "docs_test_strategy_test_strategy_md",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_test_strategy_md"
     },
     {
       "relation": "contains",
@@ -5024,9 +5851,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_correctness_definition",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_correctness_definition"
     },
     {
       "relation": "contains",
@@ -5034,9 +5861,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_integration_targets",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_integration_targets"
     },
     {
       "relation": "contains",
@@ -5044,9 +5871,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_manual_validation",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_manual_validation"
     },
     {
       "relation": "contains",
@@ -5054,9 +5881,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_regression_scenarios",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_regression_scenarios"
     },
     {
       "relation": "contains",
@@ -5064,9 +5891,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_required_fixtures",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_required_fixtures"
     },
     {
       "relation": "contains",
@@ -5074,9 +5901,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_test_scope_summary",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_test_scope_summary"
     },
     {
       "relation": "contains",
@@ -5084,9 +5911,9 @@
       "source_file": "docs/TEST_STRATEGY.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_unit_test_targets",
-      "confidence_score": 1.0
+      "target": "docs_test_strategy_unit_test_targets"
     },
     {
       "relation": "contains",
@@ -5094,9 +5921,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_workflow_timeline",
-      "target": "docs_workflow_timeline_workflow_timeline_md",
-      "confidence_score": 1.0
+      "target": "docs_workflow_timeline_workflow_timeline_md"
     },
     {
       "relation": "contains",
@@ -5104,9 +5931,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_edge_cases",
-      "confidence_score": 1.0
+      "target": "docs_workflow_timeline_edge_cases"
     },
     {
       "relation": "contains",
@@ -5114,9 +5941,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_handoff_points",
-      "confidence_score": 1.0
+      "target": "docs_workflow_timeline_handoff_points"
     },
     {
       "relation": "contains",
@@ -5124,9 +5951,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_review_and_approval_points",
-      "confidence_score": 1.0
+      "target": "docs_workflow_timeline_review_and_approval_points"
     },
     {
       "relation": "contains",
@@ -5134,9 +5961,9 @@
       "source_file": "docs/WORKFLOW_TIMELINE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_step_by_step",
-      "confidence_score": 1.0
+      "target": "docs_workflow_timeline_step_by_step"
     },
     {
       "relation": "rationale_for",
@@ -9905,5 +10732,6 @@
       "confidence_score": 1.0,
       "source_file": "docs/DATA_MODEL.md"
     }
-  ]
+  ],
+  "built_at_commit": "7f0a65c8763ad52e33375a1bf09d1d07350f1e17"
 }
