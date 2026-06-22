@@ -26,20 +26,31 @@ SQLite calls scattered through services.
 Trinity/ is mounted on PYTHONPATH alongside src/
 (`PYTHONPATH=src;Trinity` — must match DEPLOYMENT.md).
 
-## Entry surface — ⚠️ OPEN, agent fills on first contact
-How a service calls into Trinity is NOT yet defined. The agent
-must fill this section from the real code the first time it
-touches Trinity in a project, then confirm with the user.
+## Entry surface — FILLED
+**Module:** `trinity.target_rp_finder.TargetRPFinderPersistence`
 
-This blank is LOAD-BEARING. The entry surface IS the enforcement
-point for the single-persistence-path rule — until it is named,
-"all writes go through Trinity" cannot be verified, because there
-is no named thing to go through. When filling it, record:
-- The exact module/class/function a service imports to persist
-- Whether it is one client, per-entity repositories, or other
-- The one rule: services NEVER touch SQLite except through this
+**Pattern:** Single client class with methods per workflow action:
+- `create_batch(batch_path)` → run_id
+- `create_revision(run_id, based_on_revision_id)` → revision_id  
+- `store_samples_and_compounds(revision_id, samples_data)` — persists parsed results
+- `load_revision(revision_id)` — retrieves cached results
+- `publish_revision(revision_id)` — freezes revision as evidence
+- `get_batch_revisions(run_id)` — lists all revisions for a batch
 
-Decision trigger: before any service writes or reads data.
+**Rule:** `flag_review` service is the ONLY caller. It imports and uses
+TargetRPFinderPersistence; no service touches SQLite directly. All entity
+data (Batch → Revision → Sample → Flagged Compound) flows through these
+methods, serialized as JSON in the revisions.state_json column.
+
+**Lifecycle:**
+1. Create batch (run record) when user selects .b folder
+2. Create working revision for that run
+3. Parse all samples, aggregate results
+4. Store samples/compounds as JSON in revision state
+5. On Submit: publish revision (status → 'published')
+6. On re-entry: create new working revision (based_on_revision_id → prior published)
+
+This is the single enforcement point for the persistence rule.
 Mirror this open item in ASSUMPTIONS_AND_OPEN_QUESTIONS.md.
 
 ## Backup — ⚠️ OPEN, must settle before persistence work
