@@ -137,7 +137,7 @@ class TargetRPFinderPersistence:
         """
         cursor = self.conn.execute(
             """
-            SELECT r.run_id, ru.source_context
+            SELECT r.run_id, ru.source_context, r.created_at
             FROM revisions r
             JOIN runs ru ON r.run_id = ru.run_id
             WHERE r.revision_id = ?
@@ -146,8 +146,49 @@ class TargetRPFinderPersistence:
         )
         row = cursor.fetchone()
         if row:
-            return {"run_id": row[0], "batch_path": row[1]}
+            return {"run_id": row[0], "batch_path": row[1], "created_at": row[2]}
         return None
+
+    def list_recent_batches(self, limit: int = 50) -> list[dict]:
+        """List published revisions for the home-page history, newest first.
+
+        Sample and flagged-sample counts are derived from the stored revision
+        state at read time — never persisted as standalone fields.
+
+        Args:
+            limit: Maximum number of rows to return
+
+        Returns:
+            List of dicts: revision_id, batch_name, batch_path, created_at,
+            sample_count, flagged_count (samples carrying >=1 flagged compound)
+        """
+        cursor = self.conn.execute(
+            """
+            SELECT r.revision_id, r.created_at, r.state_json, ru.display_id, ru.source_context
+            FROM revisions r
+            JOIN runs ru ON r.run_id = ru.run_id
+            WHERE r.revision_status = 'published'
+            ORDER BY r.created_at DESC
+            LIMIT ?
+            """,
+            (limit,)
+        )
+        rows = []
+        for row in cursor.fetchall():
+            state = json.loads(row["state_json"] or "{}")
+            samples = state.get("samples", {})
+            flagged_samples = sum(
+                1 for s in samples.values() if s.get("flagged_compounds")
+            )
+            rows.append({
+                "revision_id": row["revision_id"],
+                "created_at": row["created_at"],
+                "batch_name": row["display_id"],
+                "batch_path": row["source_context"],
+                "sample_count": len(samples),
+                "flagged_count": flagged_samples,
+            })
+        return rows
 
     def publish_revision(self, revision_id: str) -> None:
         """Publish a revision, marking it as immutable evidence.

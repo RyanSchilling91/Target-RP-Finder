@@ -1,5 +1,6 @@
 """FastAPI entry point for Target RP Finder."""
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import sys
 from pathlib import Path
@@ -10,6 +11,11 @@ from services.flag_review import get_review_result, review_batch
 from target_rp_finder.ui import router as ui_router
 
 app = FastAPI(title="Target RP Finder")
+app.mount(
+    "/static",
+    StaticFiles(directory=str(Path(__file__).parent / "static")),
+    name="static",
+)
 app.include_router(ui_router)
 
 class BatchReviewRequest(BaseModel):

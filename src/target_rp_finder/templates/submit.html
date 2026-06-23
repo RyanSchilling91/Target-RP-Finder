@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Publish Revision — {{ result.revision_id }}{% endblock %}
+{% block content %}
+<div class="wrap-center">
+    <div class="confirm-card">
+        <div class="warn-icon">⚠</div>
+        <h2 class="confirm-title">Publish Revision</h2>
+        <p class="confirm-text">This will <strong>freeze the revision as immutable evidence</strong>. It cannot be edited after publishing. Corrections must be re-entered as a new linked revision.</p>
+
+        <div class="summary">
+            <table class="summary-tbl">
+                <tr>
+                    <td class="sum-label">Revision ID</td>
+                    <td class="sum-val mono">{{ result.revision_id }}</td>
+                </tr>
+                <tr>
+                    <td class="sum-label">Batch</td>
+                    <td class="sum-val batch">{{ result.batch_path or "—" }}</td>
+                </tr>
+                <tr>
+                    <td class="sum-label">Samples</td>
+                    <td class="sum-val samples">{{ stats.total }}</td>
+                </tr>
+                <tr>
+                    <td class="sum-label">Flagged Cpds.</td>
+                    <td class="sum-val flagged">{{ stats.flagged }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="confirm-actions">
+            <a href="/batch/{{ result.revision_id }}/view" class="btn-cancel">← Cancel</a>
+            <form method="post" action="/batch/{{ result.revision_id }}/submit">
+                <button type="submit" class="btn-confirm">✓ Confirm &amp; Publish</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

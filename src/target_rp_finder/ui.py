@@ -7,7 +7,13 @@ from fastapi import APIRouter, Form, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 
-from services.flag_review import get_review_result, review_batch, submit_review
+from services.flag_review import (
+    compute_view_stats,
+    get_review_result,
+    list_recent_batches,
+    review_batch,
+    submit_review,
+)
 from target_rp_finder.browse_service import _browse_lock, _browse_results, browse_folder_worker
 
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
@@ -16,7 +22,9 @@ router = APIRouter()
 
 @router.get("/")
 async def index(request: Request):
-    return templates.TemplateResponse(request, "index.html", {})
+    return templates.TemplateResponse(
+        request, "index.html", {"recent_batches": list_recent_batches()}
+    )
 
 @router.post("/browse/open")
 async def open_folder_picker():
@@ -49,40 +57,44 @@ async def scan_batch(request: Request, batch_path: str = Form(...)):
         )
     return RedirectResponse(url=f"/batch/{result.revision_id}/view", status_code=303)
 
-@router.post("/batch/{revision_id}/submit")
-async def publish_and_return_home(revision_id: str):
-    """Freeze the revision into evidence, then return to the home page."""
-    submit_review(revision_id)
-    return RedirectResponse(url="/", status_code=303)
-
-@router.get("/batch/{revision_id}/view")
-async def view_results(
-    request: Request,
-    revision_id: str,
-    status: str = "all",
-    flagged_only: bool = False,
-):
-    """Render flagged compounds for a revision, filtered at render time only."""
+@router.get("/batch/{revision_id}/submit")
+async def submit_confirmation(request: Request, revision_id: str):
+    """Render the publish-confirmation screen for a working revision."""
     result = get_review_result(revision_id)
     if result is None:
         raise HTTPException(status_code=404, detail="Revision not found")
+    return templates.TemplateResponse(
+        request,
+        "submit.html",
+        {"result": result, "stats": compute_view_stats(result)},
+    )
 
-    samples = result.samples
-    if status != "all":
-        samples = [s for s in samples if s.status == status]
-    if flagged_only:
-        samples = [s for s in samples if s.flagged_compounds]
+@router.post("/batch/{revision_id}/submit")
+async def publish_revision(request: Request, revision_id: str):
+    """Freeze the revision into evidence, then show the published screen."""
+    submit_review(revision_id)
+    return RedirectResponse(url=f"/batch/{revision_id}/published", status_code=303)
 
-    total_flagged = sum(len(s.flagged_compounds) for s in samples)
+@router.get("/batch/{revision_id}/published")
+async def published(request: Request, revision_id: str):
+    """Success screen shown after a revision is frozen into evidence."""
+    return templates.TemplateResponse(
+        request, "published.html", {"revision_id": revision_id}
+    )
+
+@router.get("/batch/{revision_id}/view")
+async def view_results(request: Request, revision_id: str):
+    """Render all samples for a revision; filtering happens client-side."""
+    result = get_review_result(revision_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Revision not found")
 
     return templates.TemplateResponse(
         request,
         "results.html",
         {
             "result": result,
-            "samples": samples,
-            "total_flagged": total_flagged,
-            "status_filter": status,
-            "flagged_only": flagged_only,
+            "samples": result.samples,
+            "stats": compute_view_stats(result),
         },
     )

@@ -1,43 +1,144 @@
 {% extends "base.html" %}
 {% block title %}Target RP Finder — Scan Batch{% endblock %}
 {% block content %}
-<p>Browse to a <code>.b</code> batch folder to scan for flagged compounds.</p>
-{% if error %}
-<p class="error">{{ error }}</p>
-{% endif %}
-<form method="post" action="/review" id="scan-form">
-    <input type="text" name="batch_path" id="batch_path" placeholder="C:\path\to\batch.b" style="width: 28rem;" required>
-    <button type="button" id="browse-btn">Browse...</button>
-    <button type="submit">Scan Batch</button>
-</form>
+<div class="wrap-home">
 
+    <!-- Open Batch card -->
+    <div class="card">
+        <div class="ob-head">
+            <div class="ob-icon">📂</div>
+            <div>
+                <h2 class="ob-title">Open Batch</h2>
+                <p class="ob-desc">Browse to a <code class="inline-b">.b</code> instrument batch folder to scan for flagged compounds — <em>Udel</em>, <em>Udelete</em>, and <em>dubious</em> review codes.</p>
+            </div>
+        </div>
+        <form method="post" action="/review" id="scan-form">
+            <div class="input-row">
+                <input type="text" name="batch_path" id="batch_path" class="path-input" placeholder="C:\Data\2024\RunName.b" required>
+                <button type="button" id="browse-btn" class="btn-browse">Browse…</button>
+                <button type="submit" class="btn-scan">Scan Batch →</button>
+            </div>
+        </form>
+        {% if error %}
+        <p class="error-msg">⚠ {{ error }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Recent Batches card -->
+    <div class="card">
+        <h2 class="rb-title">Recent Batches</h2>
+
+        <div class="filter-row">
+            <input type="text" id="name-filter" class="search-input" placeholder="Search batch name…">
+            <div class="date-group">
+                <label class="date-label" for="date-from">From</label>
+                <input type="date" id="date-from" class="date-input">
+            </div>
+            <div class="date-group">
+                <label class="date-label" for="date-to">To</label>
+                <input type="date" id="date-to" class="date-input">
+            </div>
+            <button type="button" id="clear-history" class="btn-clear">Clear</button>
+        </div>
+
+        <div class="hist-wrap">
+            <table class="hist">
+                <thead>
+                    <tr>
+                        <th class="l">Batch Name</th>
+                        <th class="l">Scan Date</th>
+                        <th class="c">Samples</th>
+                        <th class="c">Flagged</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="hist-body">
+                    {% for row in recent_batches %}
+                    <tr class="hist-row"
+                        data-name="{{ row.batch_name | lower }}"
+                        data-date="{{ row.scan_date_iso }}">
+                        <td class="hist-name">{{ row.batch_name }}</td>
+                        <td class="hist-date">{{ row.scan_date }}</td>
+                        <td class="hist-samples">{{ row.sample_count }}</td>
+                        <td class="hist-flagged">
+                            <span class="flag-badge {% if row.flagged_count == 0 %}zero{% endif %}">{{ row.flagged_count }}</span>
+                        </td>
+                        <td class="hist-action">
+                            <button type="button" class="btn-load" data-path="{{ row.batch_path }}">Load →</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="empty-state" id="hist-empty" style="display: none;">No batches match the current filters.</div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
 <script>
+// ── Native folder picker (existing browse_service.py flow) ──
 document.getElementById("browse-btn").addEventListener("click", async function () {
     const btn = this;
     btn.disabled = true;
-    btn.textContent = "Waiting for folder picker...";
+    btn.textContent = "Waiting for folder picker…";
     try {
         const openResp = await fetch("/browse/open", { method: "POST" });
         const { request_id } = await openResp.json();
-
         let result = null;
         while (true) {
             const pollResp = await fetch("/browse/" + request_id);
             const data = await pollResp.json();
-            if (data.status === "ready") {
-                result = data.path;
-                break;
-            }
+            if (data.status === "ready") { result = data.path; break; }
             await new Promise((r) => setTimeout(r, 500));
         }
-
-        if (result) {
-            document.getElementById("batch_path").value = result;
-        }
+        if (result) document.getElementById("batch_path").value = result;
     } finally {
         btn.disabled = false;
-        btn.textContent = "Browse...";
+        btn.textContent = "Browse…";
     }
+});
+
+// ── Recent Batches: client-side fuzzy name + date-range filter ──
+const nameFilter = document.getElementById("name-filter");
+const dateFrom = document.getElementById("date-from");
+const dateTo = document.getElementById("date-to");
+const histRows = Array.from(document.querySelectorAll(".hist-row"));
+const histEmpty = document.getElementById("hist-empty");
+
+function applyHistoryFilter() {
+    const q = nameFilter.value.trim().toLowerCase();
+    const from = dateFrom.value;
+    const to = dateTo.value;
+    let visible = 0;
+    histRows.forEach((row) => {
+        const name = row.dataset.name;
+        const date = row.dataset.date; // YYYY-MM-DD
+        let show = true;
+        if (q && !name.includes(q)) show = false;
+        if (from && date < from) show = false;
+        if (to && date > to) show = false;
+        row.style.display = show ? "" : "none";
+        if (show) visible++;
+    });
+    histEmpty.style.display = visible === 0 ? "" : "none";
+}
+
+[nameFilter, dateFrom, dateTo].forEach((el) => el.addEventListener("input", applyHistoryFilter));
+document.getElementById("clear-history").addEventListener("click", () => {
+    nameFilter.value = ""; dateFrom.value = ""; dateTo.value = "";
+    applyHistoryFilter();
+});
+applyHistoryFilter();
+
+// ── Load → re-scan an existing batch by its stored path ──
+document.querySelectorAll(".btn-load").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        document.getElementById("batch_path").value = btn.dataset.path;
+        document.getElementById("scan-form").submit();
+    });
 });
 </script>
 {% endblock %}
