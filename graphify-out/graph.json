@@ -135,226 +135,6 @@
   },
   "nodes": [
     {
-      "label": "target_rp_finder.py",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder",
-      "community": 22,
-      "norm_label": "target_rp_finder.py"
-    },
-    {
-      "label": "TargetRPFinderPersistence",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence",
-      "community": 22,
-      "norm_label": "targetrpfinderpersistence"
-    },
-    {
-      "label": ".__init__()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init",
-      "community": 22,
-      "norm_label": ".__init__()"
-    },
-    {
-      "label": ".create_batch()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
-      "community": 22,
-      "norm_label": ".create_batch()"
-    },
-    {
-      "label": ".create_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision",
-      "community": 22,
-      "norm_label": ".create_revision()"
-    },
-    {
-      "label": ".store_samples_and_compounds()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds",
-      "community": 22,
-      "norm_label": ".store_samples_and_compounds()"
-    },
-    {
-      "label": ".load_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision",
-      "community": 22,
-      "norm_label": ".load_revision()"
-    },
-    {
-      "label": ".get_revision_context()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L129",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "community": 22,
-      "norm_label": ".get_revision_context()"
-    },
-    {
-      "label": ".publish_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
-      "community": 22,
-      "norm_label": ".publish_revision()"
-    },
-    {
-      "label": ".get_batch_revisions()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L168",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
-      "community": 22,
-      "norm_label": ".get_batch_revisions()"
-    },
-    {
-      "label": ".close()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L191",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close",
-      "community": 22,
-      "norm_label": ".close()"
-    },
-    {
-      "label": "Trinity entry surface for Target RP Finder app.  Provides the single persistence",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_1",
-      "community": 22,
-      "norm_label": "trinity entry surface for target rp finder app.  provides the single persistence"
-    },
-    {
-      "label": "Entry point for Target RP Finder persistence through Trinity.",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_16",
-      "community": 22,
-      "norm_label": "entry point for target rp finder persistence through trinity."
-    },
-    {
-      "label": "Initialize persistence layer with optional custom DB path.",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_19",
-      "community": 22,
-      "norm_label": "initialize persistence layer with optional custom db path."
-    },
-    {
-      "label": "Create a new batch run and return run_id.          Args:             batch_path:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_39",
-      "community": 22,
-      "norm_label": "create a new batch run and return run_id.          args:             batch_path:"
-    },
-    {
-      "label": "Create a new working revision for a batch.          Args:             run_id: Pa",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_61",
-      "community": 22,
-      "norm_label": "create a new working revision for a batch.          args:             run_id: pa"
-    },
-    {
-      "label": "Store parsed samples and flagged compounds in revision state.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_98",
-      "community": 22,
-      "norm_label": "store parsed samples and flagged compounds in revision state.          args:"
-    },
-    {
-      "label": "Load a revision's samples and compounds data.          Args:             revisio",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_112",
-      "community": 22,
-      "norm_label": "load a revision's samples and compounds data.          args:             revisio"
-    },
-    {
-      "label": "Get the parent run_id and source batch path for a revision.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L130",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_130",
-      "community": 22,
-      "norm_label": "get the parent run_id and source batch path for a revision.          args:"
-    },
-    {
-      "label": "Publish a revision, marking it as immutable evidence.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L153",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_153",
-      "community": 22,
-      "norm_label": "publish a revision, marking it as immutable evidence.          args:"
-    },
-    {
-      "label": "Get all revisions for a batch.          Args:             run_id: Batch run_id",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L169",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_169",
-      "community": 22,
-      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_id"
-    },
-    {
-      "label": "Close the database connection.",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L192",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_192",
-      "community": 22,
-      "norm_label": "close the database connection."
-    },
-    {
       "label": "ARCHITECTURE_SELECTION.md",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
@@ -418,7 +198,7 @@
       "label": "Contract-doc references",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "docs_architecture_selection_contract_doc_references",
       "community": 11,
@@ -428,210 +208,120 @@
       "label": "Why this shape",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "docs_architecture_selection_why_this_shape",
       "community": 11,
       "norm_label": "why this shape"
     },
     {
-      "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "label": "DEPLOYMENT.md",
       "file_type": "document",
-      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_file": "docs/DEPLOYMENT.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions",
-      "community": 23,
-      "norm_label": "assumptions_and_open_questions.md"
+      "id": "docs_deployment",
+      "community": 33,
+      "norm_label": "deployment.md"
     },
     {
-      "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "label": "DEPLOYMENT.md",
       "file_type": "document",
-      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_file": "docs/DEPLOYMENT.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md",
-      "community": 23,
-      "norm_label": "assumptions_and_open_questions.md"
+      "id": "docs_deployment_deployment_md",
+      "community": 33,
+      "norm_label": "deployment.md"
     },
     {
-      "label": "Assumptions",
+      "label": "Launcher \u2014 two-stage VBS",
       "file_type": "document",
-      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
-      "source_location": "L3",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L12",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_assumptions",
-      "community": 23,
-      "norm_label": "assumptions"
+      "id": "docs_deployment_launcher_two_stage_vbs",
+      "community": 33,
+      "norm_label": "launcher \u2014 two-stage vbs"
     },
     {
-      "label": "Open questions",
+      "label": "venv location \u2014 off-project, on-machine",
       "file_type": "document",
-      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
-      "source_location": "L23",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L22",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_open_questions",
-      "community": 23,
-      "norm_label": "open questions"
+      "id": "docs_deployment_venv_location_off_project_on_machine",
+      "community": 33,
+      "norm_label": "venv location \u2014 off-project, on-machine"
     },
     {
-      "label": "Deferred decisions",
+      "label": "Python discovery (RunSetup.vbs)",
       "file_type": "document",
-      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
-      "source_location": "L30",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "docs_assumptions_and_open_questions_deferred_decisions",
-      "community": 23,
-      "norm_label": "deferred decisions"
+      "id": "docs_deployment_python_discovery_runsetup_vbs",
+      "community": 33,
+      "norm_label": "python discovery (runsetup.vbs)"
     },
     {
-      "label": "STATE_CLASSIFICATION.md",
+      "label": "Dependency pinning (requirements.txt)",
       "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L1",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L51",
       "_origin": "ast",
-      "id": "docs_state_classification",
-      "community": 19,
-      "norm_label": "state_classification.md"
+      "id": "docs_deployment_dependency_pinning_requirements_txt",
+      "community": 33,
+      "norm_label": "dependency pinning (requirements.txt)"
     },
     {
-      "label": "STATE_CLASSIFICATION.md",
+      "label": "Entry point (RunApp.vbs)",
       "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L1",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L63",
       "_origin": "ast",
-      "id": "docs_state_classification_state_classification_md",
-      "community": 19,
-      "norm_label": "state_classification.md"
+      "id": "docs_deployment_entry_point_runapp_vbs",
+      "community": 33,
+      "norm_label": "entry point (runapp.vbs)"
     },
     {
-      "label": "Classification table",
+      "label": "Logs \u2014 ONE shared file",
       "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L3",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L72",
       "_origin": "ast",
-      "id": "docs_state_classification_classification_table",
-      "community": 19,
-      "norm_label": "classification table"
+      "id": "docs_deployment_logs_one_shared_file",
+      "community": 33,
+      "norm_label": "logs \u2014 one shared file"
     },
     {
-      "label": "Mutability rules",
+      "label": "Diagnostic routing",
       "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L18",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L89",
       "_origin": "ast",
-      "id": "docs_state_classification_mutability_rules",
-      "community": 19,
-      "norm_label": "mutability rules"
-    },
-    {
-      "label": "Derived state rules",
-      "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "docs_state_classification_derived_state_rules",
-      "community": 19,
-      "norm_label": "derived state rules"
-    },
-    {
-      "label": "Versioning behavior",
-      "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "docs_state_classification_versioning_behavior",
-      "community": 19,
-      "norm_label": "versioning behavior"
-    },
-    {
-      "label": "Forbidden state transitions",
-      "file_type": "document",
-      "source_file": "docs/STATE_CLASSIFICATION.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "docs_state_classification_forbidden_state_transitions",
-      "community": 19,
-      "norm_label": "forbidden state transitions"
-    },
-    {
-      "label": "TRINITY.md",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_trinity",
-      "community": 34,
-      "norm_label": "trinity.md"
-    },
-    {
-      "label": "TRINITY.md",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_trinity_trinity_md",
-      "community": 34,
-      "norm_label": "trinity.md"
-    },
-    {
-      "label": "What Trinity is",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "docs_trinity_what_trinity_is",
-      "community": 34,
-      "norm_label": "what trinity is"
-    },
-    {
-      "label": "Folder contract \u2014 what lives in Trinity/",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "docs_trinity_folder_contract_what_lives_in_trinity",
-      "community": 34,
-      "norm_label": "folder contract \u2014 what lives in trinity/"
-    },
-    {
-      "label": "Entry surface \u2014 FILLED",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "docs_trinity_entry_surface_filled",
-      "community": 34,
-      "norm_label": "entry surface \u2014 filled"
-    },
-    {
-      "label": "Backup \u2014 \u26a0\ufe0f OPEN, must settle before persistence work",
-      "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L57",
-      "_origin": "ast",
-      "id": "docs_trinity_backup_open_must_settle_before_persistence_work",
-      "community": 34,
-      "norm_label": "backup \u2014 \u26a0\ufe0f open, must settle before persistence work"
+      "id": "docs_deployment_diagnostic_routing",
+      "community": 33,
+      "norm_label": "diagnostic routing"
     },
     {
       "label": "Must never happen",
       "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L70",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L98",
       "_origin": "ast",
-      "id": "docs_trinity_must_never_happen",
-      "community": 34,
+      "id": "docs_deployment_must_never_happen",
+      "community": 33,
       "norm_label": "must never happen"
     },
     {
       "label": "Verification criteria",
       "file_type": "document",
-      "source_file": "docs/TRINITY.md",
-      "source_location": "L77",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L111",
       "_origin": "ast",
-      "id": "docs_trinity_verification_criteria",
-      "community": 34,
+      "id": "docs_deployment_verification_criteria",
+      "community": 33,
       "norm_label": "verification criteria"
     },
     {
@@ -695,244 +385,34 @@
       "norm_label": "edge cases"
     },
     {
-      "label": "__init__.py",
+      "label": "browse_service.py",
       "file_type": "code",
-      "source_file": "src/services/flag_review/__init__.py",
+      "source_file": "src/target_rp_finder/browse_service.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "flag_review_init",
-      "community": 22,
-      "norm_label": "__init__.py"
+      "id": "target_rp_finder_browse_service",
+      "community": 28,
+      "norm_label": "browse_service.py"
     },
     {
-      "label": "Flag review service - aggregates parsed compounds and persists through Trinity.",
+      "label": "browse_folder_worker()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/browse_service.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "target_rp_finder_browse_service_browse_folder_worker",
+      "community": 28,
+      "norm_label": "browse_folder_worker()"
+    },
+    {
+      "label": "Run a native folder picker and store the selected path by request id.",
       "file_type": "rationale",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L1",
+      "source_file": "src/target_rp_finder/browse_service.py",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "flag_review_init_rationale_1",
-      "community": 22,
-      "norm_label": "flag review service - aggregates parsed compounds and persists through trinity."
-    },
-    {
-      "label": "review.py",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "flag_review_review",
-      "community": 22,
-      "norm_label": "review.py"
-    },
-    {
-      "label": "SampleReview",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "flag_review_review_samplereview",
-      "community": 22,
-      "norm_label": "samplereview"
-    },
-    {
-      "label": "ReviewResult",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "flag_review_review_reviewresult",
-      "community": 22,
-      "norm_label": "reviewresult"
-    },
-    {
-      "label": "review_batch()",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "flag_review_review_review_batch",
-      "community": 22,
-      "norm_label": "review_batch()"
-    },
-    {
-      "label": "get_review_result()",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L120",
-      "_origin": "ast",
-      "id": "flag_review_review_get_review_result",
-      "community": 22,
-      "norm_label": "get_review_result()"
-    },
-    {
-      "label": "submit_review()",
-      "file_type": "code",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L159",
-      "_origin": "ast",
-      "id": "flag_review_review_submit_review",
-      "community": 22,
-      "norm_label": "submit_review()"
-    },
-    {
-      "label": "Aggregate flagged compounds and manage persistence through Trinity.",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_1",
-      "community": 22,
-      "norm_label": "aggregate flagged compounds and manage persistence through trinity."
-    },
-    {
-      "label": "Review result for a single sample.",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_15",
-      "community": 22,
-      "norm_label": "review result for a single sample."
-    },
-    {
-      "label": "Overall review result for a batch.",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_23",
-      "community": 22,
-      "norm_label": "overall review result for a batch."
-    },
-    {
-      "label": "Scan and review a batch folder for flagged compounds.      Workflow:     1. Disc",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_31",
-      "community": 22,
-      "norm_label": "scan and review a batch folder for flagged compounds.      workflow:     1. disc"
-    },
-    {
-      "label": "Load a previously persisted review result by revision_id.      Args:         rev",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L121",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_121",
-      "community": 22,
-      "norm_label": "load a previously persisted review result by revision_id.      args:         rev"
-    },
-    {
-      "label": "Publish a working revision, freezing it into immutable evidence.      Args:",
-      "file_type": "rationale",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L160",
-      "_origin": "ast",
-      "id": "flag_review_review_rationale_160",
-      "community": 22,
-      "norm_label": "publish a working revision, freezing it into immutable evidence.      args:"
-    },
-    {
-      "label": "main.py",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "target_rp_finder_main",
-      "community": 22,
-      "norm_label": "main.py"
-    },
-    {
-      "label": "BatchReviewRequest",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_batchreviewrequest",
-      "community": 22,
-      "norm_label": "batchreviewrequest"
-    },
-    {
-      "label": "BaseModel",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "basemodel",
-      "community": 22,
-      "norm_label": "basemodel"
-    },
-    {
-      "label": "BatchReviewResponse",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_batchreviewresponse",
-      "community": 22,
-      "norm_label": "batchreviewresponse"
-    },
-    {
-      "label": "health()",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_health",
-      "community": 22,
-      "norm_label": "health()"
-    },
-    {
-      "label": "submit_batch_review()",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_submit_batch_review",
-      "community": 22,
-      "norm_label": "submit_batch_review()"
-    },
-    {
-      "label": "get_batch_results()",
-      "file_type": "code",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L54",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_get_batch_results",
-      "community": 22,
-      "norm_label": "get_batch_results()"
-    },
-    {
-      "label": "FastAPI entry point for Target RP Finder.",
-      "file_type": "rationale",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_rationale_1",
-      "community": 22,
-      "norm_label": "fastapi entry point for target rp finder."
-    },
-    {
-      "label": "Scan and review a batch folder for flagged compounds.      Args:         batch_p",
-      "file_type": "rationale",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_rationale_31",
-      "community": 22,
-      "norm_label": "scan and review a batch folder for flagged compounds.      args:         batch_p"
-    },
-    {
-      "label": "Get the full results for a batch review.      Args:         revision_id: The rev",
-      "file_type": "rationale",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "target_rp_finder_main_rationale_55",
-      "community": 22,
-      "norm_label": "get the full results for a batch review.      args:         revision_id: the rev"
+      "id": "target_rp_finder_browse_service_rationale_9",
+      "community": 28,
+      "norm_label": "run a native folder picker and store the selected path by request id."
     },
     {
       "label": "ui.py",
@@ -941,57 +421,77 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "target_rp_finder_ui",
-      "community": 22,
+      "community": 28,
       "norm_label": "ui.py"
     },
     {
       "label": "index()",
       "file_type": "code",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "target_rp_finder_ui_index",
-      "community": 22,
+      "community": 28,
       "norm_label": "index()"
     },
     {
       "label": "Request",
       "file_type": "code",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "request",
-      "community": 22,
+      "community": 28,
       "norm_label": "request"
+    },
+    {
+      "label": "open_folder_picker()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "target_rp_finder_ui_open_folder_picker",
+      "community": 28,
+      "norm_label": "open_folder_picker()"
+    },
+    {
+      "label": "poll_folder_picker()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "target_rp_finder_ui_poll_folder_picker",
+      "community": 28,
+      "norm_label": "poll_folder_picker()"
     },
     {
       "label": "scan_batch()",
       "file_type": "code",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L19",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "target_rp_finder_ui_scan_batch",
-      "community": 22,
+      "community": 28,
       "norm_label": "scan_batch()"
     },
     {
       "label": "publish_and_return_home()",
       "file_type": "code",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L30",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "target_rp_finder_ui_publish_and_return_home",
-      "community": 22,
+      "community": 28,
       "norm_label": "publish_and_return_home()"
     },
     {
       "label": "view_results()",
       "file_type": "code",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L36",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "target_rp_finder_ui_view_results",
-      "community": 22,
+      "community": 28,
       "norm_label": "view_results()"
     },
     {
@@ -1001,38 +501,708 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "target_rp_finder_ui_rationale_1",
-      "community": 22,
+      "community": 28,
       "norm_label": "server-rendered html routes for target rp finder. presentation only \u2014 no busines"
+    },
+    {
+      "label": "Spawn a native folder picker off the request thread, return a request id to poll",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "target_rp_finder_ui_rationale_23",
+      "community": 28,
+      "norm_label": "spawn a native folder picker off the request thread, return a request id to poll"
     },
     {
       "label": "Scan a batch folder and redirect to its results page.",
       "file_type": "rationale",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L20",
+      "source_location": "L43",
       "_origin": "ast",
-      "id": "target_rp_finder_ui_rationale_20",
-      "community": 22,
+      "id": "target_rp_finder_ui_rationale_43",
+      "community": 28,
       "norm_label": "scan a batch folder and redirect to its results page."
     },
     {
       "label": "Freeze the revision into evidence, then return to the home page.",
       "file_type": "rationale",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L31",
+      "source_location": "L54",
       "_origin": "ast",
-      "id": "target_rp_finder_ui_rationale_31",
-      "community": 22,
+      "id": "target_rp_finder_ui_rationale_54",
+      "community": 28,
       "norm_label": "freeze the revision into evidence, then return to the home page."
     },
     {
       "label": "Render flagged compounds for a revision, filtered at render time only.",
       "file_type": "rationale",
       "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L42",
+      "source_location": "L65",
       "_origin": "ast",
-      "id": "target_rp_finder_ui_rationale_42",
-      "community": 22,
+      "id": "target_rp_finder_ui_rationale_65",
+      "community": 28,
       "norm_label": "render flagged compounds for a revision, filtered at render time only."
+    },
+    {
+      "label": "target_rp_finder.py",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "target_rp_finder.py",
+      "id": "trinity_target_rp_finder"
+    },
+    {
+      "label": "TargetRPFinderPersistence",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "targetrpfinderpersistence",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".__init__()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init"
+    },
+    {
+      "label": ".create_batch()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".create_batch()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch"
+    },
+    {
+      "label": ".create_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".create_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision"
+    },
+    {
+      "label": ".store_samples_and_compounds()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L97",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".store_samples_and_compounds()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds"
+    },
+    {
+      "label": ".load_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".load_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision"
+    },
+    {
+      "label": ".get_revision_context()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".get_revision_context()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
+    },
+    {
+      "label": ".publish_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L152",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".publish_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
+    },
+    {
+      "label": ".get_batch_revisions()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L168",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".get_batch_revisions()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
+    },
+    {
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L191",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".close()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close"
+    },
+    {
+      "label": "Trinity entry surface for Target RP Finder app.  Provides the single persistence",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "trinity entry surface for target rp finder app.  provides the single persistence",
+      "id": "trinity_target_rp_finder_rationale_1"
+    },
+    {
+      "label": "Entry point for Target RP Finder persistence through Trinity.",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "entry point for target rp finder persistence through trinity.",
+      "id": "trinity_target_rp_finder_rationale_16"
+    },
+    {
+      "label": "Initialize persistence layer with optional custom DB path.",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "initialize persistence layer with optional custom db path.",
+      "id": "trinity_target_rp_finder_rationale_19"
+    },
+    {
+      "label": "Create a new batch run and return run_id.          Args:             batch_path:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "create a new batch run and return run_id.          args:             batch_path:",
+      "id": "trinity_target_rp_finder_rationale_39"
+    },
+    {
+      "label": "Create a new working revision for a batch.          Args:             run_id: Pa",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "create a new working revision for a batch.          args:             run_id: pa",
+      "id": "trinity_target_rp_finder_rationale_61"
+    },
+    {
+      "label": "Store parsed samples and flagged compounds in revision state.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "store parsed samples and flagged compounds in revision state.          args:",
+      "id": "trinity_target_rp_finder_rationale_98"
+    },
+    {
+      "label": "Load a revision's samples and compounds data.          Args:             revisio",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L112",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "load a revision's samples and compounds data.          args:             revisio",
+      "id": "trinity_target_rp_finder_rationale_112"
+    },
+    {
+      "label": "Get the parent run_id and source batch path for a revision.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "get the parent run_id and source batch path for a revision.          args:",
+      "id": "trinity_target_rp_finder_rationale_130"
+    },
+    {
+      "label": "Publish a revision, marking it as immutable evidence.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L153",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "publish a revision, marking it as immutable evidence.          args:",
+      "id": "trinity_target_rp_finder_rationale_153"
+    },
+    {
+      "label": "Get all revisions for a batch.          Args:             run_id: Batch run_id",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L169",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_id",
+      "id": "trinity_target_rp_finder_rationale_169"
+    },
+    {
+      "label": "Close the database connection.",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L192",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "close the database connection.",
+      "id": "trinity_target_rp_finder_rationale_192"
+    },
+    {
+      "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "file_type": "document",
+      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "assumptions_and_open_questions.md",
+      "id": "docs_assumptions_and_open_questions"
+    },
+    {
+      "label": "ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "file_type": "document",
+      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "assumptions_and_open_questions.md",
+      "id": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
+    },
+    {
+      "label": "Assumptions",
+      "file_type": "document",
+      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "assumptions",
+      "id": "docs_assumptions_and_open_questions_assumptions"
+    },
+    {
+      "label": "Open questions",
+      "file_type": "document",
+      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "open questions",
+      "id": "docs_assumptions_and_open_questions_open_questions"
+    },
+    {
+      "label": "Deferred decisions",
+      "file_type": "document",
+      "source_file": "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "deferred decisions",
+      "id": "docs_assumptions_and_open_questions_deferred_decisions"
+    },
+    {
+      "label": "STATE_CLASSIFICATION.md",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "state_classification.md",
+      "id": "docs_state_classification"
+    },
+    {
+      "label": "STATE_CLASSIFICATION.md",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "state_classification.md",
+      "id": "docs_state_classification_state_classification_md"
+    },
+    {
+      "label": "Classification table",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "classification table",
+      "id": "docs_state_classification_classification_table"
+    },
+    {
+      "label": "Mutability rules",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "mutability rules",
+      "id": "docs_state_classification_mutability_rules"
+    },
+    {
+      "label": "Derived state rules",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "derived state rules",
+      "id": "docs_state_classification_derived_state_rules"
+    },
+    {
+      "label": "Versioning behavior",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "versioning behavior",
+      "id": "docs_state_classification_versioning_behavior"
+    },
+    {
+      "label": "Forbidden state transitions",
+      "file_type": "document",
+      "source_file": "docs/STATE_CLASSIFICATION.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "forbidden state transitions",
+      "id": "docs_state_classification_forbidden_state_transitions"
+    },
+    {
+      "label": "TRINITY.md",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "trinity.md",
+      "id": "docs_trinity"
+    },
+    {
+      "label": "TRINITY.md",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "trinity.md",
+      "id": "docs_trinity_trinity_md"
+    },
+    {
+      "label": "What Trinity is",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "what trinity is",
+      "id": "docs_trinity_what_trinity_is"
+    },
+    {
+      "label": "Folder contract \u2014 what lives in Trinity/",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "folder contract \u2014 what lives in trinity/",
+      "id": "docs_trinity_folder_contract_what_lives_in_trinity"
+    },
+    {
+      "label": "Entry surface \u2014 FILLED",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "entry surface \u2014 filled",
+      "id": "docs_trinity_entry_surface_filled"
+    },
+    {
+      "label": "Backup \u2014 \u26a0\ufe0f OPEN, must settle before persistence work",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "backup \u2014 \u26a0\ufe0f open, must settle before persistence work",
+      "id": "docs_trinity_backup_open_must_settle_before_persistence_work"
+    },
+    {
+      "label": "Must never happen",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "must never happen",
+      "id": "docs_trinity_must_never_happen"
+    },
+    {
+      "label": "Verification criteria",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "verification criteria",
+      "id": "docs_trinity_verification_criteria"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "__init__.py",
+      "id": "flag_review_init"
+    },
+    {
+      "label": "Flag review service - aggregates parsed compounds and persists through Trinity.",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "flag review service - aggregates parsed compounds and persists through trinity.",
+      "id": "flag_review_init_rationale_1"
+    },
+    {
+      "label": "review.py",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "review.py",
+      "id": "flag_review_review"
+    },
+    {
+      "label": "SampleReview",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "samplereview",
+      "id": "flag_review_review_samplereview"
+    },
+    {
+      "label": "ReviewResult",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "reviewresult",
+      "id": "flag_review_review_reviewresult"
+    },
+    {
+      "label": "review_batch()",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "review_batch()",
+      "id": "flag_review_review_review_batch"
+    },
+    {
+      "label": "get_review_result()",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L120",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "get_review_result()",
+      "id": "flag_review_review_get_review_result"
+    },
+    {
+      "label": "submit_review()",
+      "file_type": "code",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L159",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "submit_review()",
+      "id": "flag_review_review_submit_review"
+    },
+    {
+      "label": "Aggregate flagged compounds and manage persistence through Trinity.",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "aggregate flagged compounds and manage persistence through trinity.",
+      "id": "flag_review_review_rationale_1"
+    },
+    {
+      "label": "Review result for a single sample.",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "review result for a single sample.",
+      "id": "flag_review_review_rationale_15"
+    },
+    {
+      "label": "Overall review result for a batch.",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "overall review result for a batch.",
+      "id": "flag_review_review_rationale_23"
+    },
+    {
+      "label": "Scan and review a batch folder for flagged compounds.      Workflow:     1. Disc",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "scan and review a batch folder for flagged compounds.      workflow:     1. disc",
+      "id": "flag_review_review_rationale_31"
+    },
+    {
+      "label": "Load a previously persisted review result by revision_id.      Args:         rev",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "load a previously persisted review result by revision_id.      args:         rev",
+      "id": "flag_review_review_rationale_121"
+    },
+    {
+      "label": "Publish a working revision, freezing it into immutable evidence.      Args:",
+      "file_type": "rationale",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L160",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "publish a working revision, freezing it into immutable evidence.      args:",
+      "id": "flag_review_review_rationale_160"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "main.py",
+      "id": "target_rp_finder_main"
+    },
+    {
+      "label": "BatchReviewRequest",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "batchreviewrequest",
+      "id": "target_rp_finder_main_batchreviewrequest"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "basemodel",
+      "id": "basemodel"
+    },
+    {
+      "label": "BatchReviewResponse",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "batchreviewresponse",
+      "id": "target_rp_finder_main_batchreviewresponse"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "health()",
+      "id": "target_rp_finder_main_health"
+    },
+    {
+      "label": "submit_batch_review()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "submit_batch_review()",
+      "id": "target_rp_finder_main_submit_batch_review"
+    },
+    {
+      "label": "get_batch_results()",
+      "file_type": "code",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "get_batch_results()",
+      "id": "target_rp_finder_main_get_batch_results"
+    },
+    {
+      "label": "FastAPI entry point for Target RP Finder.",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "fastapi entry point for target rp finder.",
+      "id": "target_rp_finder_main_rationale_1"
+    },
+    {
+      "label": "Scan and review a batch folder for flagged compounds.      Args:         batch_p",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "scan and review a batch folder for flagged compounds.      args:         batch_p",
+      "id": "target_rp_finder_main_rationale_31"
+    },
+    {
+      "label": "Get the full results for a batch review.      Args:         revision_id: The rev",
+      "file_type": "rationale",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L55",
+      "_origin": "ast",
+      "community": 28,
+      "norm_label": "get the full results for a batch review.      args:         revision_id: the rev",
+      "id": "target_rp_finder_main_rationale_55"
     },
     {
       "label": "ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
@@ -3920,7 +4090,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 4,
       "norm_label": "project-continue skill",
       "id": "project_continue_project_continue"
     },
@@ -3933,7 +4103,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 4,
       "norm_label": "doc-router (loads docs in project-continue)",
       "id": "project_continue_doc_router"
     },
@@ -3946,7 +4116,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "project-designer skill",
       "id": "project_designer_project_designer"
     },
@@ -3959,7 +4129,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "intake summary (problem/goals/constraints/unknowns)",
       "id": "project_designer_intake_summary"
     },
@@ -3972,7 +4142,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "project-executor skill",
       "id": "project_executor_project_executor"
     },
@@ -3985,7 +4155,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "phased execution plan",
       "id": "project_executor_phase_plan"
     },
@@ -3998,7 +4168,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 4,
       "norm_label": "project-init skill",
       "id": "project_init_project_init"
     },
@@ -4024,7 +4194,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 4,
       "norm_label": "generated claude.md",
       "id": "project_init_claude_md"
     },
@@ -4128,7 +4298,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "step-by-step-teacher skill",
       "id": "step_by_step_teacher_step_by_step_teacher"
     },
@@ -4193,7 +4363,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 4,
       "norm_label": "visualize-workflow skill",
       "id": "visualize_workflow_visualize_workflow"
     },
@@ -4258,7 +4428,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 11,
       "norm_label": "thin ui layer rule",
       "id": "agents_thin_ui_layer_rule"
     },
@@ -4284,7 +4454,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 38,
       "norm_label": "anti-failure rules",
       "id": "agents_anti_failure_rules"
     },
@@ -4336,7 +4506,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 37,
       "norm_label": "adr-0002: version-aware rehydration, working state vs published evidence",
       "id": "adr_0002_persist_mutable_working_state_with_version_aware_rehydration_and_keep_published_evidence_separate"
     },
@@ -4349,7 +4519,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 37,
       "norm_label": "run (entity referenced in adr-0002)",
       "id": "adr_0002_run_entity"
     },
@@ -4362,7 +4532,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 37,
       "norm_label": "working revision (entity referenced in adr-0002)",
       "id": "adr_0002_working_revision_entity"
     },
@@ -4375,7 +4545,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 37,
       "norm_label": "version-aware rehydration",
       "id": "adr_0002_version_aware_rehydration"
     },
@@ -4440,7 +4610,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 38,
       "norm_label": "adr-0004: published revision re-entry policy",
       "id": "adr_0004_published_revision_reentry_policy"
     },
@@ -4453,7 +4623,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 38,
       "norm_label": "immutable published revision principle",
       "id": "adr_0004_immutable_published_revision"
     },
@@ -4466,7 +4636,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 38,
       "norm_label": "new working revision on re-entry",
       "id": "adr_0004_new_working_revision_on_reentry"
     },
@@ -4531,7 +4701,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 11,
       "norm_label": "workflow-governed python application core",
       "id": "architecture_selection_workflow_governed_core"
     },
@@ -4596,7 +4766,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 23,
       "norm_label": "bootstrap_questionnaire.md",
       "id": "bootstrap_questionnaire"
     },
@@ -4609,7 +4779,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 23,
       "norm_label": "planned sample set enters first",
       "id": "bootstrap_questionnaire_planned_sample_set_first"
     },
@@ -4622,7 +4792,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 23,
       "norm_label": "adr candidates list",
       "id": "bootstrap_questionnaire_adr_candidates"
     },
@@ -5418,35 +5588,547 @@
       "community": 12,
       "norm_label": "trinity_metadata table",
       "id": "trinity_table_metadata"
-    },
-    {
-      "label": "DEPLOYMENT.md",
-      "file_type": "document",
-      "source_file": "docs/DEPLOYMENT.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "deployment.md",
-      "id": "deployment"
-    },
-    {
-      "label": "Two-stage VBS launcher",
-      "file_type": "concept",
-      "source_file": "docs/DEPLOYMENT.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "two-stage vbs launcher",
-      "id": "deployment_vbs_launcher"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection",
+      "target": "docs_architecture_selection_architecture_selection_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_required_document_set",
+      "target": "docs_architecture_selection_architecture_selection_md"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "adr_0003_concurrency_model_single_editor_lock"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "architecture_selection_canonical_boundaries"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "architecture_selection_run_revision_artifact_layout"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "architecture_selection_workflow_governed_core"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "bootstrap_questionnaire"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_architecture_laws_applied"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_contract_doc_references"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_layer_boundaries"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_presentation_layer_per_trinity_adr_0006"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_service_folders_derived_from_confirmed_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE_SELECTION.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_architecture_selection_why_this_shape"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_data_model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/.claude/skills/project-continue/SKILL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "project_continue_project_continue",
+      "target": "docs_architecture_selection_architecture_selection_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/.claude/skills/project-init/SKILL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "project_init_claude_md",
+      "target": "docs_architecture_selection_architecture_selection_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_deployment",
+      "target": "docs_deployment_deployment_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_dependency_pinning_requirements_txt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_entry_point_runapp_vbs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_launcher_two_stage_vbs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_logs_one_shared_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_must_never_happen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_python_discovery_runsetup_vbs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_venv_location_off_project_on_machine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "docs_deployment_deployment_md",
+      "target": "docs_deployment_verification_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOYMENT.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "docs_deployment_logs_one_shared_file",
+      "target": "docs_deployment_diagnostic_routing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/WORKFLOW_TIMELINE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_workflow_timeline",
+      "target": "docs_workflow_timeline_workflow_timeline_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/WORKFLOW_TIMELINE.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_workflow_timeline_workflow_timeline_md",
+      "target": "docs_workflow_timeline_edge_cases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/WORKFLOW_TIMELINE.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_workflow_timeline_workflow_timeline_md",
+      "target": "docs_workflow_timeline_handoff_points"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/WORKFLOW_TIMELINE.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_workflow_timeline_workflow_timeline_md",
+      "target": "docs_workflow_timeline_review_and_approval_points"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/WORKFLOW_TIMELINE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_workflow_timeline_workflow_timeline_md",
+      "target": "docs_workflow_timeline_step_by_step"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/browse_service.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "target_rp_finder_browse_service",
+      "target": "target_rp_finder_browse_service_browse_folder_worker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_browse_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/browse_service.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "target_rp_finder_browse_service_rationale_9",
+      "target": "target_rp_finder_browse_service_browse_folder_worker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_main",
+      "target": "target_rp_finder_ui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_open_folder_picker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_poll_folder_picker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_publish_and_return_home"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_scan_batch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui",
+      "target": "target_rp_finder_ui_view_results"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui_rationale_1",
+      "target": "target_rp_finder_ui"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui_index",
+      "target": "request"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui_scan_batch",
+      "target": "request"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "target_rp_finder_ui_view_results",
+      "target": "request"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_rationale_23",
+      "target": "target_rp_finder_ui_open_folder_picker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_rationale_43",
+      "target": "target_rp_finder_ui_scan_batch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_scan_batch",
+      "target": "flag_review_review_review_batch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_publish_and_return_home",
+      "target": "flag_review_review_submit_review"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_rationale_54",
+      "target": "target_rp_finder_ui_publish_and_return_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_rationale_65",
+      "target": "target_rp_finder_ui_view_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_view_results",
+      "target": "flag_review_review_get_review_result"
+    },
     {
       "relation": "imports_from",
       "context": "import",
@@ -5598,9 +6280,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_targetrpfinderpersistence",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
     },
     {
       "relation": "method",
@@ -5720,9 +6402,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_130",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
     },
     {
       "relation": "rationale_for",
@@ -5740,9 +6422,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_153",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
     },
     {
       "relation": "rationale_for",
@@ -5750,9 +6432,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_169",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
     },
     {
       "relation": "rationale_for",
@@ -5770,189 +6452,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_192",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection",
-      "target": "docs_architecture_selection_architecture_selection_md"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/AGENTS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "agents_required_document_set",
-      "target": "docs_architecture_selection_architecture_selection_md"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "adr_0003_concurrency_model_single_editor_lock"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "architecture_selection_canonical_boundaries"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "architecture_selection_run_revision_artifact_layout"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "architecture_selection_workflow_governed_core"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "bootstrap_questionnaire"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "deployment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_architecture_laws_applied"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_contract_doc_references"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_layer_boundaries"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_presentation_layer_per_trinity_adr_0006",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_service_folders_derived_from_confirmed_scope"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ARCHITECTURE_SELECTION.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_architecture_selection_why_this_shape"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_data_model"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/.claude/skills/project-continue/SKILL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "project_continue_project_continue",
-      "target": "docs_architecture_selection_architecture_selection_md"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/.claude/skills/project-init/SKILL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "project_init_claude_md",
-      "target": "docs_architecture_selection_architecture_selection_md"
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close"
     },
     {
       "relation": "contains",
@@ -6175,56 +6677,6 @@
       "target": "docs_trinity_what_trinity_is"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/WORKFLOW_TIMELINE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_workflow_timeline",
-      "target": "docs_workflow_timeline_workflow_timeline_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/WORKFLOW_TIMELINE.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_edge_cases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/WORKFLOW_TIMELINE.md",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_handoff_points"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/WORKFLOW_TIMELINE.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_review_and_approval_points"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/WORKFLOW_TIMELINE.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_workflow_timeline_workflow_timeline_md",
-      "target": "docs_workflow_timeline_step_by_step"
-    },
-    {
       "relation": "re_exports",
       "context": "export",
       "confidence": "EXTRACTED",
@@ -6242,9 +6694,9 @@
       "source_file": "src/services/flag_review/__init__.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_init",
-      "target": "flag_review_review_get_review_result",
-      "confidence_score": 1.0
+      "target": "flag_review_review_get_review_result"
     },
     {
       "relation": "imports",
@@ -6275,9 +6727,9 @@
       "source_file": "src/services/flag_review/__init__.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_init",
-      "target": "flag_review_review_submit_review",
-      "confidence_score": 1.0
+      "target": "flag_review_review_submit_review"
     },
     {
       "relation": "rationale_for",
@@ -6295,9 +6747,9 @@
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review",
-      "target": "flag_review_review_get_review_result",
-      "confidence_score": 1.0
+      "target": "flag_review_review_get_review_result"
     },
     {
       "relation": "contains",
@@ -6335,9 +6787,9 @@
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review",
-      "target": "flag_review_review_submit_review",
-      "confidence_score": 1.0
+      "target": "flag_review_review_submit_review"
     },
     {
       "relation": "rationale_for",
@@ -6356,9 +6808,9 @@
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review_get_review_result",
-      "target": "flag_review_review_samplereview",
-      "confidence_score": 1.0
+      "target": "flag_review_review_samplereview"
     },
     {
       "relation": "rationale_for",
@@ -6388,9 +6840,9 @@
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review_get_review_result",
-      "target": "flag_review_review_reviewresult",
-      "confidence_score": 1.0
+      "target": "flag_review_review_reviewresult"
     },
     {
       "relation": "rationale_for",
@@ -6457,25 +6909,14 @@
       "target": "flag_review_review_review_batch"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_scan_batch",
-      "target": "flag_review_review_review_batch"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review_rationale_121",
-      "target": "flag_review_review_get_review_result",
-      "confidence_score": 1.0
+      "target": "flag_review_review_get_review_result"
     },
     {
       "relation": "calls",
@@ -6489,35 +6930,13 @@
       "target": "flag_review_review_get_review_result"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_view_results",
-      "target": "flag_review_review_get_review_result"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/services/flag_review/review.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "flag_review_review_rationale_160",
-      "target": "flag_review_review_submit_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_publish_and_return_home",
       "target": "flag_review_review_submit_review"
     },
     {
@@ -6569,17 +6988,6 @@
       "confidence_score": 1.0,
       "source": "target_rp_finder_main",
       "target": "target_rp_finder_main_submit_batch_review"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "target_rp_finder_main",
-      "target": "target_rp_finder_ui",
-      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -6639,9 +7047,9 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "target_rp_finder_main_rationale_31",
-      "target": "target_rp_finder_main_submit_batch_review",
-      "confidence_score": 1.0
+      "target": "target_rp_finder_main_submit_batch_review"
     },
     {
       "relation": "rationale_for",
@@ -6649,122 +7057,9 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "target_rp_finder_main_rationale_55",
-      "target": "target_rp_finder_main_get_batch_results",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui",
-      "target": "target_rp_finder_ui_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui",
-      "target": "target_rp_finder_ui_publish_and_return_home",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui",
-      "target": "target_rp_finder_ui_scan_batch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui",
-      "target": "target_rp_finder_ui_view_results",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_rationale_1",
-      "target": "target_rp_finder_ui",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_index",
-      "target": "request",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_scan_batch",
-      "target": "request",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_view_results",
-      "target": "request",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_rationale_20",
-      "target": "target_rp_finder_ui_scan_batch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_rationale_31",
-      "target": "target_rp_finder_ui_publish_and_return_home",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_rationale_42",
-      "target": "target_rp_finder_ui_view_results",
-      "confidence_score": 1.0
+      "target": "target_rp_finder_main_get_batch_results"
     },
     {
       "relation": "contains",
@@ -12679,16 +12974,6 @@
       "weight": 1.0,
       "source": "trinity_table_locks",
       "target": "trinity_table_revisions"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/DEPLOYMENT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "deployment",
-      "target": "deployment_vbs_launcher"
     }
   ],
   "hyperedges": [
@@ -12820,5 +13105,6 @@
       "confidence_score": 1.0,
       "source_file": "docs/DATA_MODEL.md"
     }
-  ]
+  ],
+  "built_at_commit": "21d6e97c51fd23faca471d0d9a75f1884ac58374"
 }

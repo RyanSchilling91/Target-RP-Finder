@@ -1,13 +1,18 @@
 # Graph Report - Target RP finder  (2026-06-23)
 
 ## Corpus Check
-- 83 files · ~50,865 words
+- 84 files · ~51,492 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 484 nodes · 709 edges · 36 communities (30 shown, 6 thin omitted)
+- 499 nodes · 723 edges · 39 communities (33 shown, 6 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 72 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `21d6e97c`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Trinity DB Engine|Trinity DB Engine]]
@@ -43,8 +48,11 @@
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
 - [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `TrinityDB` - 39 edges
@@ -65,10 +73,10 @@
   src/services/flag_review/review.py → Trinity/trinity/target_rp_finder.py
 - `LockRecord` --semantically_similar_to--> `LockToken`  [INFERRED] [semantically similar]
   Trinity/trinity/tests/test_lock_manager.py → Trinity/trinity/lock_manager.py
-- `New Working Revision on Re-entry` --conceptually_related_to--> `Working Revision (entity)`  [INFERRED]
-  Trinity/docs/ADR-0004-published-revision-reentry-policy.md → Trinity/docs/DATA_MODEL.md
-- `get_review_result()` --calls--> `TargetRPFinderPersistence`  [EXTRACTED]
-  src/services/flag_review/review.py → Trinity/trinity/target_rp_finder.py
+- `Run (entity referenced in ADR-0002)` --references--> `Run (entity)`  [INFERRED]
+  Trinity/docs/ADR-0002 - Persist Mutable Working State with Version-Aware Rehydration and Keep Published Evidence Separate.md → Trinity/docs/DATA_MODEL.md
+- `Working Revision (entity referenced in ADR-0002)` --references--> `Working Revision (entity)`  [INFERRED]
+  Trinity/docs/ADR-0002 - Persist Mutable Working State with Version-Aware Rehydration and Keep Published Evidence Separate.md → Trinity/docs/DATA_MODEL.md
 
 ## Import Cycles
 - 1-file cycle: `Trinity/trinity/tests/test_lock_manager.py -> Trinity/trinity/tests/test_lock_manager.py`
@@ -85,15 +93,15 @@
 - **Trinity working-to-evidence lifecycle (run/revision/lock/audit)** — trinity_table_runs, trinity_table_revisions, trinity_table_locks, trinity_table_audit_events [EXTRACTED 1.00]
 - **Target RP finder entity chain (Batch -> Revision -> Sample -> Flagged Compound)** — entity_batch, entity_revision, entity_sample, entity_flagged_compound [EXTRACTED 1.00]
 
-## Communities (36 total, 6 thin omitted)
+## Communities (39 total, 6 thin omitted)
 
 ### Community 0 - "Trinity DB Engine"
 Cohesion: 0.06
 Nodes (46): Connection, _extract_sql_blocks, SCHEMA.md schema source, _utc_now_iso, RuntimeError, append_event, list_for_run, _seed_run_revision (audit log test) (+38 more)
 
 ### Community 1 - "ADR Concurrency & Evidence Rules"
-Cohesion: 0.19
-Nodes (18): ADR-0002: Version-Aware Rehydration, Working State vs Published Evidence, Run (entity referenced in ADR-0002), Version-Aware Rehydration, Working Revision (entity referenced in ADR-0002), Run Status Lifecycle (Draft->...->Published), Audit Event (entity), Criteria Configuration (entity), Derived Result Set (entity) (+10 more)
+Cohesion: 0.26
+Nodes (14): Run Status Lifecycle (Draft->...->Published), Audit Event (entity), Criteria Configuration (entity), Derived Result Set (entity), Match Mapping (entity), Planned Sample Set Line (entity), Published Evidence Package (entity), Raw Instrument Row (entity) (+6 more)
 
 ### Community 2 - "Failure Catalog"
 Cohesion: 0.12
@@ -104,8 +112,8 @@ Cohesion: 0.17
 Nodes (10): App-specific details (intake gaps), Auth, Commands, Constraints, `.d` folder classification rules, File format, Goals, Hosting / deployment (+2 more)
 
 ### Community 4 - "Project Skill Conductors"
-Cohesion: 0.17
-Nodes (15): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), Project Init Worker Skill Chain, repo-trim skill, 800-word Doc Cap Rule, Derived State Classification, Evidence State Classification, STATE_CLASSIFICATION.md, state-classifier skill (+7 more)
+Cohesion: 0.10
+Nodes (25): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), doc-router (loads docs in project-continue), project-continue skill, Intake Summary (Problem/Goals/Constraints/Unknowns), project-designer skill, Phased Execution Plan, project-executor skill, Generated CLAUDE.md (+17 more)
 
 ### Community 5 - "Lock Manager Tests"
 Cohesion: 0.18
@@ -132,8 +140,8 @@ Cohesion: 0.20
 Nodes (11): Any, Working-state contracts for Trinity run revisions., Identity for mutable workflow truth., Result metadata for an explicit save boundary., Contract for loading/saving canonical mutable working state., Return canonical working-state payload for a run revision., Persist canonical working-state payload for a run revision., Delete mutable working-state payload for a run revision. (+3 more)
 
 ### Community 11 - "Architecture ADRs & House Rules"
-Cohesion: 0.14
-Nodes (12): Run/Revision Artifact Folder Layout, Two-stage VBS launcher, Architecture laws applied, Contract-doc references, Layer boundaries, Presentation layer (per Trinity ADR-0006), Service folders (derived from confirmed scope), Why this shape (+4 more)
+Cohesion: 0.18
+Nodes (9): Thin UI Layer Rule, Run/Revision Artifact Folder Layout, Workflow-Governed Python Application Core, Architecture laws applied, Contract-doc references, Layer boundaries, Presentation layer (per Trinity ADR-0006), Service folders (derived from confirmed scope) (+1 more)
 
 ### Community 12 - "Trinity Schema & Modules"
 Cohesion: 0.24
@@ -164,28 +172,28 @@ Cohesion: 0.22
 Nodes (22): datetime, acquire_lock, get_active_lock, release_lock, _seed_run_revision (lock manager test), test_acquire_raises_lock_held_error_for_fresh_competing_lock, test_acquire_verify_release_lock, test_stale_lock_can_be_taken_over_after_expiry_threshold (+14 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.05
-Nodes (42): BaseModel, Flag review service - aggregates parsed compounds and persists through Trinity., get_review_result(), Aggregate flagged compounds and manage persistence through Trinity., Load a previously persisted review result by revision_id.      Args:         rev, Review result for a single sample., Publish a working revision, freezing it into immutable evidence.      Args:, Overall review result for a batch. (+34 more)
+Cohesion: 0.08
+Nodes (25): Flag review service - aggregates parsed compounds and persists through Trinity., get_review_result(), Aggregate flagged compounds and manage persistence through Trinity., Load a previously persisted review result by revision_id.      Args:         rev, Review result for a single sample., Publish a working revision, freezing it into immutable evidence.      Args:, Overall review result for a batch., Scan and review a batch folder for flagged compounds.      Workflow:     1. Disc (+17 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.20
-Nodes (8): Immutable Published Revision Principle, New Working Revision on Re-entry, ADR-0004: Published Revision Re-entry Policy, Anti-Failure Rules, LIMS ID Canonical Identifier Assumption, Assumptions, Deferred decisions, Open questions
+Cohesion: 0.22
+Nodes (6): LIMS ID Canonical Identifier Assumption, ADR Candidates List, Planned Sample Set Enters First, Assumptions, Deferred decisions, Open questions
 
 ### Community 24 - "Community 24"
 Cohesion: 0.25
 Nodes (8): ADR-0003: Single-Editor Per Run Locking, 60s Heartbeat / 20min Stale Timeout Policy, Lock Record (concurrency control object), Reviewer Independence Rule (reviewer != primary_user), Bootstrap Fallback Credential, ADR-0005: Password-Only Admin Challenges Bootstrap, Workstation Identity as Actor Attribution, Lock Record (entity)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.17
-Nodes (10): Architecture Rules (file size, split-first), Docs-First Rule, Failure Documentation Rule, Persistence Design Rules, Required Document Set, Thin UI Layer Rule, Workflow-Governed Python Application Core, Failure Catalog Entry Format (+2 more)
+Cohesion: 0.20
+Nodes (8): Architecture Rules (file size, split-first), Docs-First Rule, Failure Documentation Rule, Persistence Design Rules, Required Document Set, Failure Catalog Entry Format, Failure Catalog Check Before Risky Behavior, failure-memory skill
 
 ### Community 27 - "Community 27"
 Cohesion: 0.10
 Nodes (5): Tests for batch_discovery service., Test sample discovery in batch folders., Test folder classification by name., TestClassifyFolder, TestDiscoverSamples
 
 ### Community 28 - "Community 28"
-Cohesion: 0.22
-Nodes (8): ADR Candidates List, Planned Sample Set Enters First, Intake Summary (Problem/Goals/Constraints/Unknowns), project-designer skill, Phased Execution Plan, project-executor skill, step-by-step-teacher skill, visualize-workflow skill
+Cohesion: 0.09
+Nodes (21): BaseModel, Request, browse_folder_worker(), Run a native folder picker and store the selected path by request id., BatchReviewRequest, BatchReviewResponse, get_batch_results(), FastAPI entry point for Target RP Finder. (+13 more)
 
 ### Community 29 - "Community 29"
 Cohesion: 0.25
@@ -195,6 +203,10 @@ Nodes (9): ClassifiedFolder, classify_folder(), discover_samples(), Discover and
 Cohesion: 0.20
 Nodes (3): Tests for rp_parser service., Test Target.RP file parsing., TestParseTargetRP
 
+### Community 33 - "Community 33"
+Cohesion: 0.18
+Nodes (9): Dependency pinning (requirements.txt), Diagnostic routing, Entry point (RunApp.vbs), Launcher — two-stage VBS, Logs — ONE shared file, Must never happen, Python discovery (RunSetup.vbs), venv location — off-project, on-machine (+1 more)
+
 ### Community 34 - "Community 34"
 Cohesion: 0.25
 Nodes (6): Backup — ⚠️ OPEN, must settle before persistence work, Entry surface — FILLED, Folder contract — what lives in Trinity/, Must never happen, Verification criteria, What Trinity is
@@ -203,8 +215,16 @@ Nodes (6): Backup — ⚠️ OPEN, must settle before persistence work, Entry su
 Cohesion: 0.22
 Nodes (8): ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer, Alternatives considered, Consequences, Context, Decision, Review trigger, Status, Why chosen
 
+### Community 37 - "Community 37"
+Cohesion: 0.50
+Nodes (4): ADR-0002: Version-Aware Rehydration, Working State vs Published Evidence, Run (entity referenced in ADR-0002), Version-Aware Rehydration, Working Revision (entity referenced in ADR-0002)
+
+### Community 38 - "Community 38"
+Cohesion: 0.50
+Nodes (4): Immutable Published Revision Principle, New Working Revision on Re-entry, ADR-0004: Published Revision Re-entry Policy, Anti-Failure Rules
+
 ## Knowledge Gaps
-- **96 isolated node(s):** `Architecture laws applied`, `Service folders (derived from confirmed scope)`, `Layer boundaries`, `Presentation layer (per Trinity ADR-0006)`, `Contract-doc references` (+91 more)
+- **103 isolated node(s):** `Architecture laws applied`, `Service folders (derived from confirmed scope)`, `Layer boundaries`, `Presentation layer (per Trinity ADR-0006)`, `Contract-doc references` (+98 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -212,9 +232,9 @@ Nodes (8): ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `datetime` connect `Community 21` to `Trinity DB Engine`, `Lock Manager Module`, `Data Model & Audit Log`, `Session Contracts`, `Working State Contracts`, `Community 22`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+  _High betweenness centrality (0.121) - this node is a cross-community bridge._
 - **Why does `TrinityDB` connect `Trinity DB Engine` to `Community 21`?**
-  _High betweenness centrality (0.062) - this node is a cross-community bridge._
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `TrinityDB` (e.g. with `datetime` and `LockHeldError`) actually correct?**
   _`TrinityDB` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 11 inferred relationships involving `DBConfig` (e.g. with `datetime` and `LockHeldError`) actually correct?**
@@ -223,5 +243,5 @@ _Questions this graph is uniquely positioned to answer:_
   _`TargetRPFinderPersistence` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `datetime` (e.g. with `DBConfig` and `TrinityDB`) actually correct?**
   _`datetime` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Trinity entry surface for Target RP Finder app.  Provides the single persistence`, `Entry point for Target RP Finder persistence through Trinity.`, `Initialize persistence layer with optional custom DB path.` to the rest of the system?**
-  _197 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Architecture laws applied`, `Service folders (derived from confirmed scope)`, `Layer boundaries` to the rest of the system?**
+  _206 weakly-connected nodes found - possible documentation gaps or missing edges._

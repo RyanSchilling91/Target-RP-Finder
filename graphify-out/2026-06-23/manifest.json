@@ -1,7 +1,7 @@
 {
   ".claude/settings.json": {
-    "mtime": 1782162528.2948716,
-    "ast_hash": "c88865c7c5afa77b637238841e69f517",
+    "mtime": 1782239820.1947975,
+    "ast_hash": "ce6f6d55dbeb48bc51c6dab0c913b69c",
     "semantic_hash": ""
   },
   "Trinity/trinity/__init__.py": {
@@ -295,14 +295,14 @@
     "semantic_hash": "abf1eb760c6ffb9f8038470836d8c63e"
   },
   "docs/ARCHITECTURE_SELECTION.md": {
-    "mtime": 1782149145.8826907,
-    "ast_hash": "b8f5aa264d8bf09fcfa1c869dade1c1c",
-    "semantic_hash": "b8f5aa264d8bf09fcfa1c869dade1c1c"
+    "mtime": 1782240536.9293377,
+    "ast_hash": "b9e137f3694153ffccc57f021a362395",
+    "semantic_hash": ""
   },
   "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md": {
-    "mtime": 1782151617.5714445,
-    "ast_hash": "4207cd0978328e7ae5dc7dd771f77cf3",
-    "semantic_hash": "4207cd0978328e7ae5dc7dd771f77cf3"
+    "mtime": 1782240565.6807966,
+    "ast_hash": "ea7066833882c30dfd3cd947e1da4756",
+    "semantic_hash": ""
   },
   "docs/DATA_MODEL.md": {
     "mtime": 1782151738.6629264,
@@ -320,9 +320,9 @@
     "semantic_hash": "91b3e97227dea5221d0ccfdac40ee78d"
   },
   "docs/STATE_CLASSIFICATION.md": {
-    "mtime": 1782151378.1780262,
-    "ast_hash": "f69029f3185cf44cb5664144ec7bfc85",
-    "semantic_hash": "f69029f3185cf44cb5664144ec7bfc85"
+    "mtime": 1782240521.57103,
+    "ast_hash": "03164417335e0b108da37cf4c684911a",
+    "semantic_hash": ""
   },
   "docs/TEST_STRATEGY.md": {
     "mtime": 1782151563.8265896,
@@ -330,14 +330,14 @@
     "semantic_hash": "8d0747615cb7507c09a90fce01baf044"
   },
   "docs/TRINITY.md": {
-    "mtime": 1782162517.2826264,
-    "ast_hash": "5071d492f5feaa1a0168962d817c9058",
+    "mtime": 1782240543.436834,
+    "ast_hash": "9fa6cc62632a2fcca8cb38f903f1c7ad",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_TIMELINE.md": {
-    "mtime": 1782150752.139225,
-    "ast_hash": "496abc627d66466668c0ff97eb4b9460",
-    "semantic_hash": "496abc627d66466668c0ff97eb4b9460"
+    "mtime": 1782240515.0495796,
+    "ast_hash": "cb1944139f9220862c2293450517d70f",
+    "semantic_hash": ""
   },
   "src/services/__init__.py": {
     "mtime": 1782160693.454012,
@@ -370,13 +370,13 @@
     "semantic_hash": ""
   },
   "src/target_rp_finder/main.py": {
-    "mtime": 1782162351.262671,
-    "ast_hash": "b1ec3755f9205b3d43ddb9d379e2288b",
+    "mtime": 1782239197.0709827,
+    "ast_hash": "c9aba5dec5cc67c337220fc3a7dd2a05",
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1782162147.021078,
-    "ast_hash": "3afb45f690587ca1a541871a84fc2e42",
+    "mtime": 1782239202.4313245,
+    "ast_hash": "ea469969dba214485a0da6f0e9a3b4db",
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
@@ -395,23 +395,43 @@
     "semantic_hash": ""
   },
   "Trinity/trinity/target_rp_finder.py": {
-    "mtime": 1782162436.108041,
-    "ast_hash": "559ba415c92a4ed4231ede6ccc1fb9e3",
+    "mtime": 1782240359.1263475,
+    "ast_hash": "af5fbe0674f0d298cb1d97438f4201d7",
     "semantic_hash": ""
   },
   "src/services/flag_review/__init__.py": {
-    "mtime": 1782162338.0081003,
-    "ast_hash": "5625f80971481b4c2e43b29ca4ed8742",
+    "mtime": 1782240371.2717702,
+    "ast_hash": "ba604d76d5182444f3ba72541144e8f5",
     "semantic_hash": ""
   },
   "src/services/flag_review/review.py": {
-    "mtime": 1782162403.8068705,
-    "ast_hash": "2ad5f9cdd48432d8b3cebf17f4c34276",
+    "mtime": 1782240366.117187,
+    "ast_hash": "748a6dd5e72ef5fcd28f39c8c666791b",
     "semantic_hash": ""
   },
   "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md": {
     "mtime": 1782237772.1922467,
     "ast_hash": "b4785148c352c5b5e5a1935d14f6deb5",
+    "semantic_hash": ""
+  },
+  "src/target_rp_finder/ui.py": {
+    "mtime": 1782240386.0546246,
+    "ast_hash": "06e5d26724d7d1aa5caff4e9453b5f5d",
+    "semantic_hash": ""
+  },
+  "src/target_rp_finder/templates/base.html": {
+    "mtime": 1782239090.8367708,
+    "ast_hash": "eabc2a60a7747019dcf2f3ef1f7c3af8",
+    "semantic_hash": ""
+  },
+  "src/target_rp_finder/templates/index.html": {
+    "mtime": 1782239098.559441,
+    "ast_hash": "8af895c4c30618fdab7ff439151d70bf",
+    "semantic_hash": ""
+  },
+  "src/target_rp_finder/templates/results.html": {
+    "mtime": 1782240393.094612,
+    "ast_hash": "53a7c0be5c489aa98b8e10e40b64412f",
     "semantic_hash": ""
   }
 }
