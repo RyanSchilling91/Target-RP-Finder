@@ -23,7 +23,8 @@
 
 ## Presentation layer (per Trinity ADR-0006)
 - FastAPI + server-rendered HTML (Jinja2), not Streamlit — see [Trinity ADR-0006](../Trinity/docs/ADR-0006%20-%20Replace%20Streamlit%20with%20FastAPI%20and%20Server-Rendered%20HTML%20as%20the%20Thin%20Presentation%20Layer.md), superseding ADR-0001 for this app.
-- `src/target_rp_finder/ui.py` — route handlers only: `GET /`, `POST /review`, `GET /batch/{revision_id}/view`, `POST /batch/{revision_id}/submit`. No business logic; filters are recomputed server-side from `flag_review` data on every request, never stored.
+- `src/target_rp_finder/ui.py` — route handlers only: `GET /`, `POST /review`, `GET /batch/{revision_id}/view`, `POST /batch/{revision_id}/submit`, `POST /browse/open`, `GET /browse/{request_id}`. No business logic; filters are recomputed server-side from `flag_review` data on every request, never stored.
+- `src/target_rp_finder/browse_service.py` — native OS folder picker (tkinter), run off the request thread so FastAPI's event loop isn't blocked. The one UI-adjacent module that isn't a `flag_review` call: it's an OS dialog wrapper, not business logic, and never touches Trinity or parses files.
 - `src/target_rp_finder/templates/` — Jinja2 templates (`base.html`, `index.html`, `results.html`); render-only, no workflow decisions.
 - `src/target_rp_finder/main.py` — JSON API (`/batch/review`, `/batch/{revision_id}`, `/health`) mounted alongside the UI router; both call into `flag_review` only.
 

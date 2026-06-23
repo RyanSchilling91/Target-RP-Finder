@@ -23,7 +23,16 @@
       "Bash(cat /tmp_uvicorn_log.txt)",
       "Bash(PYTHONPATH=\"src;Trinity\" nohup python -m uvicorn target_rp_finder.main:app --host 127.0.0.1 --port 8000)",
       "Bash(disown)",
-      "Bash(PYTHONPATH=\"src;Trinity\" python -m pytest src/services -q)"
+      "Bash(PYTHONPATH=\"src;Trinity\" python -m pytest src/services -q)",
+      "Bash(cscript //nologo RunSetup.vbs)",
+      "Read(//c/Users/rschilling/.claude/skills/project-init/**)",
+      "Read(//c/Users/rschilling/OneDrive - DOI/Desktop/Python Tools/VOC data Scraper and parser V2/src/voc_scraper/api/**)",
+      "Read(//c/Users/rschilling/OneDrive - DOI/Desktop/Python Tools/VOC data Scraper and parser V2/src/voc_scraper/**)",
+      "Read(//c/Users/rschilling/.claude/skills/**)",
+      "Edit(~/.claude/skills/project-init/**)",
+      "Bash(netstat -ano)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -r -I{} taskkill //F //PID {})"
     ]
   }
 }

@@ -4,7 +4,7 @@
 
 | # | Actor | Action | Data touched | System response | State impact |
 |---|---|---|---|---|---|
-| 1 | User | Opens app home page, enters a `.b` folder path, clicks Scan Batch | `.b` folder path | FastAPI UI (`POST /review`) calls `flag_review.review_batch`, which calls `batch_discovery` | none yet (working) |
+| 1 | User | Opens app home page, clicks Browse, picks a `.b` folder in the native OS dialog, clicks Scan Batch | `.b` folder path | `POST /browse/open` spawns a native folder picker (tkinter, off-thread); UI polls `GET /browse/{request_id}` and fills the path field, then `POST /review` calls `flag_review.review_batch`, which calls `batch_discovery` | none yet (working) |
 | 2 | System (`batch_discovery`) | Lists top-level `.d` subfolders, classifies each by name (cal/ccv/tpc/idl/blank/prep blank/surrogate/sample) | `.d` folder names | Filters to samples only, hands list to `rp_parser` | working |
 | 3 | System (`rp_parser`) | Parses each sample's `Target.RP`, extracts rows with REVIEW CODE `Udel`/`Udelete`/`dubious` | `Target.RP` file contents | Missing file → skip + flag sample. Malformed file → skip + flag sample (user must investigate). Otherwise hands parsed rows to `flag_review` | derived |
 | 4 | System (`flag_review`) | Aggregates flagged compounds by sample/batch, computes totals, writes the **working** revision to Trinity | Parsed compound rows | Redirects (303) to `GET /batch/{revision_id}/view`, which calls `flag_review.get_review_result` to render the table | derived, persisted as `working` |

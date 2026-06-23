@@ -1,12 +1,43 @@
 {% extends "base.html" %}
 {% block title %}Target RP Finder — Scan Batch{% endblock %}
 {% block content %}
-<p>Enter the path to a <code>.b</code> batch folder to scan for flagged compounds.</p>
+<p>Browse to a <code>.b</code> batch folder to scan for flagged compounds.</p>
 {% if error %}
 <p class="error">{{ error }}</p>
 {% endif %}
-<form method="post" action="/review">
-    <input type="text" name="batch_path" placeholder="C:\path\to\batch.b" style="width: 28rem;" required>
+<form method="post" action="/review" id="scan-form">
+    <input type="text" name="batch_path" id="batch_path" placeholder="C:\path\to\batch.b" style="width: 28rem;" required>
+    <button type="button" id="browse-btn">Browse...</button>
     <button type="submit">Scan Batch</button>
 </form>
+
+<script>
+document.getElementById("browse-btn").addEventListener("click", async function () {
+    const btn = this;
+    btn.disabled = true;
+    btn.textContent = "Waiting for folder picker...";
+    try {
+        const openResp = await fetch("/browse/open", { method: "POST" });
+        const { request_id } = await openResp.json();
+
+        let result = null;
+        while (true) {
+            const pollResp = await fetch("/browse/" + request_id);
+            const data = await pollResp.json();
+            if (data.status === "ready") {
+                result = data.path;
+                break;
+            }
+            await new Promise((r) => setTimeout(r, 500));
+        }
+
+        if (result) {
+            document.getElementById("batch_path").value = result;
+        }
+    } finally {
+        btn.disabled = false;
+        btn.textContent = "Browse...";
+    }
+});
+</script>
 {% endblock %}
