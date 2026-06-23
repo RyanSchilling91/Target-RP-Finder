@@ -4,7 +4,7 @@
 
 \## Status
 
-\- Accepted
+\- Superseded by [ADR-0006](<ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md>) — Streamlit replaced with FastAPI + server-rendered HTML; the thin-presentation-layer principle itself is unchanged.
 
 
 

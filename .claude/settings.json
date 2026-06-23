@@ -6,7 +6,8 @@
       "Bash(pwd)",
       "Bash(/c/Users/rschilling/AppData/Local/Programs/Python/Python313/python -c 'from pathlib import Path; print\\(str\\(Path\\('\\\\''.'\\\\''\\).resolve\\(\\)\\)\\)')",
       "Bash(split -d -l 23 graphify-out/.graphify_uncached.txt graphify-out/.graphify_filelist_)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'docs: document Trinity entry surface for target_rp_finder *)"
     ]
   }
 }
