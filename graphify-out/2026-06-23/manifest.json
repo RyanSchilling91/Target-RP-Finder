@@ -1,7 +1,7 @@
 {
   ".claude/settings.json": {
-    "mtime": 1782239820.1947975,
-    "ast_hash": "ce6f6d55dbeb48bc51c6dab0c913b69c",
+    "mtime": 1782244027.144969,
+    "ast_hash": "e886a3b19b0b2e97f4a35a4a358a2422",
     "semantic_hash": ""
   },
   "Trinity/trinity/__init__.py": {
@@ -295,8 +295,8 @@
     "semantic_hash": "abf1eb760c6ffb9f8038470836d8c63e"
   },
   "docs/ARCHITECTURE_SELECTION.md": {
-    "mtime": 1782240536.9293377,
-    "ast_hash": "b9e137f3694153ffccc57f021a362395",
+    "mtime": 1782244413.7858357,
+    "ast_hash": "25a5eb909b89c853da726f12a0d16e94",
     "semantic_hash": ""
   },
   "docs/ASSUMPTIONS_AND_OPEN_QUESTIONS.md": {
@@ -310,9 +310,9 @@
     "semantic_hash": "b55b1d4387f90b08e7f1ec6446682334"
   },
   "docs/DEPLOYMENT.md": {
-    "mtime": 1781714383.5442126,
-    "ast_hash": "c09812f1c477a127c098de24b896ec12",
-    "semantic_hash": "c09812f1c477a127c098de24b896ec12"
+    "mtime": 1782243757.3633113,
+    "ast_hash": "706d7453b170db24fe99f1af95353d96",
+    "semantic_hash": ""
   },
   "docs/PROJECT_BRIEF.md": {
     "mtime": 1782149878.0185847,
@@ -335,8 +335,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_TIMELINE.md": {
-    "mtime": 1782240515.0495796,
-    "ast_hash": "cb1944139f9220862c2293450517d70f",
+    "mtime": 1782244405.8898697,
+    "ast_hash": "a4474e5ebdc54a871519de0018b5966a",
     "semantic_hash": ""
   },
   "src/services/__init__.py": {
@@ -375,8 +375,8 @@
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1782239202.4313245,
-    "ast_hash": "ea469969dba214485a0da6f0e9a3b4db",
+    "mtime": 1782242945.5950506,
+    "ast_hash": "f1da7da117cc821b346fbe97718bc04f",
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
@@ -415,8 +415,8 @@
     "semantic_hash": ""
   },
   "src/target_rp_finder/ui.py": {
-    "mtime": 1782240386.0546246,
-    "ast_hash": "06e5d26724d7d1aa5caff4e9453b5f5d",
+    "mtime": 1782243874.7267995,
+    "ast_hash": "ba56b92ddf59ddfd74f1f482c65b759b",
     "semantic_hash": ""
   },
   "src/target_rp_finder/templates/base.html": {
@@ -425,13 +425,18 @@
     "semantic_hash": ""
   },
   "src/target_rp_finder/templates/index.html": {
-    "mtime": 1782239098.559441,
-    "ast_hash": "8af895c4c30618fdab7ff439151d70bf",
+    "mtime": 1782243891.4100442,
+    "ast_hash": "c71b73dbf83df38d18278e2462c4aaf6",
     "semantic_hash": ""
   },
   "src/target_rp_finder/templates/results.html": {
     "mtime": 1782240393.094612,
     "ast_hash": "53a7c0be5c489aa98b8e10e40b64412f",
+    "semantic_hash": ""
+  },
+  "src/target_rp_finder/browse_service.py": {
+    "mtime": 1782243860.7478108,
+    "ast_hash": "e01d92b0b5d3d42e5c235fb5aad03c26",
     "semantic_hash": ""
   }
 }

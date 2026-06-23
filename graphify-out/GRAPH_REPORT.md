@@ -1,18 +1,13 @@
 # Graph Report - Target RP finder  (2026-06-23)
 
 ## Corpus Check
-- 84 files · ~51,492 words
+- 84 files · ~53,023 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 499 nodes · 723 edges · 39 communities (33 shown, 6 thin omitted)
+- 509 nodes · 735 edges · 39 communities (33 shown, 6 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 72 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `21d6e97c`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Trinity DB Engine|Trinity DB Engine]]
@@ -57,14 +52,14 @@
 ## God Nodes (most connected - your core abstractions)
 1. `TrinityDB` - 39 edges
 2. `DBConfig` - 26 edges
-3. `TargetRPFinderPersistence` - 16 edges
+3. `TargetRPFinderPersistence` - 18 edges
 4. `TestClassifyFolder` - 11 edges
 5. `review_batch()` - 10 edges
 6. `acquire_lock()` - 10 edges
 7. `test_acquire_verify_release_lock()` - 10 edges
 8. `Working Revision (entity)` - 10 edges
-9. `Target RP Finder` - 9 edges
-10. `LockManager` - 9 edges
+9. `get_review_result()` - 9 edges
+10. `Target RP Finder` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ReviewResult` --uses--> `TargetRPFinderPersistence`  [INFERRED]
@@ -96,8 +91,8 @@
 ## Communities (39 total, 6 thin omitted)
 
 ### Community 0 - "Trinity DB Engine"
-Cohesion: 0.06
-Nodes (46): Connection, _extract_sql_blocks, SCHEMA.md schema source, _utc_now_iso, RuntimeError, append_event, list_for_run, _seed_run_revision (audit log test) (+38 more)
+Cohesion: 0.07
+Nodes (44): Connection, _extract_sql_blocks, SCHEMA.md schema source, _utc_now_iso, RuntimeError, append_event, list_for_run, _seed_run_revision (audit log test) (+36 more)
 
 ### Community 1 - "ADR Concurrency & Evidence Rules"
 Cohesion: 0.26
@@ -112,8 +107,8 @@ Cohesion: 0.17
 Nodes (10): App-specific details (intake gaps), Auth, Commands, Constraints, `.d` folder classification rules, File format, Goals, Hosting / deployment (+2 more)
 
 ### Community 4 - "Project Skill Conductors"
-Cohesion: 0.10
-Nodes (25): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), doc-router (loads docs in project-continue), project-continue skill, Intake Summary (Problem/Goals/Constraints/Unknowns), project-designer skill, Phased Execution Plan, project-executor skill, Generated CLAUDE.md (+17 more)
+Cohesion: 0.11
+Nodes (24): Canonical Architectural Boundaries (workflow truth/derived/evidence/UI), doc-router (loads docs in project-continue), project-continue skill, project-designer skill, Phased Execution Plan, project-executor skill, Generated CLAUDE.md, project-init skill (+16 more)
 
 ### Community 5 - "Lock Manager Tests"
 Cohesion: 0.18
@@ -132,8 +127,8 @@ Cohesion: 0.23
 Nodes (8): AuditEvent, AuditLog, Audit logging contracts for governed workflow actions., Append-only event record., Contract for writing and querying durable audit events., Append an immutable event., List audit events for a run in chronological order., List audit events for a specific revision in chronological order.
 
 ### Community 9 - "Session Contracts"
-Cohesion: 0.17
-Nodes (9): test_session_contract_types_exist, Session contracts for user/workstation context and guarded transitions., Identity and launch context for a client session., Contract for creating and resolving active user sessions., Create a new session context., Look up a session context by ID., Terminate an active session context., SessionContext (+1 more)
+Cohesion: 0.14
+Nodes (11): test_session_contract_types_exist, _seed_run_revision (working state test), test_working_state_dict_json_round_trip, Session contracts for user/workstation context and guarded transitions., Identity and launch context for a client session., Contract for creating and resolving active user sessions., Create a new session context., Look up a session context by ID. (+3 more)
 
 ### Community 10 - "Working State Contracts"
 Cohesion: 0.20
@@ -172,12 +167,12 @@ Cohesion: 0.22
 Nodes (22): datetime, acquire_lock, get_active_lock, release_lock, _seed_run_revision (lock manager test), test_acquire_raises_lock_held_error_for_fresh_competing_lock, test_acquire_verify_release_lock, test_stale_lock_can_be_taken_over_after_expiry_threshold (+14 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.08
-Nodes (25): Flag review service - aggregates parsed compounds and persists through Trinity., get_review_result(), Aggregate flagged compounds and manage persistence through Trinity., Load a previously persisted review result by revision_id.      Args:         rev, Review result for a single sample., Publish a working revision, freezing it into immutable evidence.      Args:, Overall review result for a batch., Scan and review a batch folder for flagged compounds.      Workflow:     1. Disc (+17 more)
+Cohesion: 0.06
+Nodes (34): Flag review service - aggregates parsed compounds and persists through Trinity., _code_class(), compute_view_stats(), _format_scan_date(), get_review_result(), list_recent_batches(), Aggregate flagged compounds and manage persistence through Trinity., Review result for a single sample. (+26 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.22
-Nodes (6): LIMS ID Canonical Identifier Assumption, ADR Candidates List, Planned Sample Set Enters First, Assumptions, Deferred decisions, Open questions
+Cohesion: 0.20
+Nodes (7): LIMS ID Canonical Identifier Assumption, ADR Candidates List, Planned Sample Set Enters First, Assumptions, Deferred decisions, Open questions, Intake Summary (Problem/Goals/Constraints/Unknowns)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.25
@@ -232,9 +227,9 @@ Nodes (4): Immutable Published Revision Principle, New Working Revision on Re-en
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `datetime` connect `Community 21` to `Trinity DB Engine`, `Lock Manager Module`, `Data Model & Audit Log`, `Session Contracts`, `Working State Contracts`, `Community 22`?**
-  _High betweenness centrality (0.121) - this node is a cross-community bridge._
-- **Why does `TrinityDB` connect `Trinity DB Engine` to `Community 21`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+  _High betweenness centrality (0.127) - this node is a cross-community bridge._
+- **Why does `TrinityDB` connect `Trinity DB Engine` to `Session Contracts`, `Community 21`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `TrinityDB` (e.g. with `datetime` and `LockHeldError`) actually correct?**
   _`TrinityDB` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 11 inferred relationships involving `DBConfig` (e.g. with `datetime` and `LockHeldError`) actually correct?**
@@ -243,5 +238,5 @@ _Questions this graph is uniquely positioned to answer:_
   _`TargetRPFinderPersistence` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `datetime` (e.g. with `DBConfig` and `TrinityDB`) actually correct?**
   _`datetime` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Architecture laws applied`, `Service folders (derived from confirmed scope)`, `Layer boundaries` to the rest of the system?**
-  _206 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Trinity entry surface for Target RP Finder app.  Provides the single persisten`, `Entry point for Target RP Finder persistence through Trinity.`, `Initialize persistence layer with optional custom DB path.` to the rest of the system?**
+  _213 weakly-connected nodes found - possible documentation gaps or missing edges._
