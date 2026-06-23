@@ -1,48 +1,218 @@
 {% extends "base.html" %}
 {% block title %}Batch Review — {{ result.revision_id }}{% endblock %}
+
+{%- macro code_class(code) -%}
+{%- set c = (code or '') | lower -%}
+{%- if c == 'dubious' -%}code-dubious
+{%- elif c in ['udel', 'udelete'] -%}code-udel
+{%- else -%}code-other
+{%- endif -%}
+{%- endmacro -%}
+
+{%- set status_labels = {'parsed': 'Parsed', 'missing': 'Missing RP', 'malformed': 'Malformed'} -%}
+{%- set status_msgs = {
+    'missing': 'Target.RP file not found — sample was skipped.',
+    'malformed': 'Target.RP file is malformed and could not be parsed.'
+} -%}
+
 {% block content %}
-<div class="summary">
-    <strong>Batch:</strong> {{ result.batch_path or "—" }}<br>
-    <strong>Revision:</strong> {{ result.revision_id }}<br>
-    <strong>Flagged compounds (current filter):</strong> {{ total_flagged }}
-</div>
+<div class="wrap-results">
 
-<form class="filters" method="get">
-    <label>Status:
-        <select name="status">
-            <option value="all" {% if status_filter == "all" %}selected{% endif %}>All</option>
-            <option value="parsed" {% if status_filter == "parsed" %}selected{% endif %}>Parsed</option>
-            <option value="missing" {% if status_filter == "missing" %}selected{% endif %}>Missing Target.RP</option>
-            <option value="malformed" {% if status_filter == "malformed" %}selected{% endif %}>Malformed</option>
-        </select>
-    </label>
-    <label>
-        <input type="checkbox" name="flagged_only" value="true" {% if flagged_only %}checked{% endif %}>
-        Only samples with flagged compounds
-    </label>
-    <button type="submit">Apply</button>
-</form>
+    <!-- Header -->
+    <div class="res-header">
+        <div>
+            <a href="/" class="back-link">← Back to Home</a>
+            <h1 class="res-h1">Batch Review</h1>
+            <p class="res-path">{{ result.batch_path or "—" }}</p>
+            <p class="res-rev">Revision <strong>{{ result.revision_id }}</strong>{% if result.scanned_at %} · Scanned {{ result.scanned_at }}{% endif %}</p>
+        </div>
+        <a href="/batch/{{ result.revision_id }}/submit" class="btn-submit-top">Submit &amp; Publish →</a>
+    </div>
 
-{% for sample in samples %}
-<h3>{{ sample.sample_id }} <span class="badge status-{{ sample.status }}">{{ sample.status }}</span></h3>
-    {% if sample.unknown_tokens %}
-    <p class="error">Unknown review codes encountered: {{ sample.unknown_tokens | join(", ") }}</p>
+    <!-- Stats row -->
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="stat-label">Total</div>
+            <div class="stat-value v-total">{{ stats.total }}</div>
+            <div class="stat-unit">samples</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Parsed</div>
+            <div class="stat-value v-parsed">{{ stats.parsed }}</div>
+            <div class="stat-unit">ok</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Missing RP</div>
+            <div class="stat-value v-missing">{{ stats.missing }}</div>
+            <div class="stat-unit">skipped</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Malformed</div>
+            <div class="stat-value v-malformed">{{ stats.malformed }}</div>
+            <div class="stat-unit">skipped</div>
+        </div>
+        <div class="stat-card flagged">
+            <div class="stat-label">Flagged Cpds</div>
+            <div class="stat-value v-flagged">{{ stats.flagged }}</div>
+            <div class="stat-unit">compounds</div>
+        </div>
+    </div>
+
+    <!-- Review-code filter tiles -->
+    {% if stats.code_tiles %}
+    <div class="tiles-card">
+        <div class="tiles-head">
+            <h3 class="tiles-label">Filter by Review Code</h3>
+            <button type="button" id="clear-codes" class="btn-clear-codes" style="display: none;">Clear filters</button>
+        </div>
+        <div class="tiles-row">
+            {% for tile in stats.code_tiles %}
+            <button type="button" class="tile {{ tile.css_class }}" data-code="{{ tile.code }}">
+                <div class="tile-code">{{ tile.code }}</div>
+                <div class="tile-count">{{ tile.count }}</div>
+            </button>
+            {% endfor %}
+        </div>
+    </div>
     {% endif %}
-    {% if sample.flagged_compounds %}
-    <table>
-        <tr><th>Compound</th><th>Review Code</th></tr>
-        {% for c in sample.flagged_compounds %}
-        <tr><td>{{ c.name }}</td><td>{{ c.review_code }}</td></tr>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+        <div class="fb-group">
+            <label class="fb-label" for="status-filter">Status</label>
+            <select id="status-filter" class="fb-select">
+                <option value="all">All</option>
+                <option value="parsed">Parsed</option>
+                <option value="missing">Missing Target.RP</option>
+                <option value="malformed">Malformed</option>
+            </select>
+        </div>
+        <label class="fb-check">
+            <input type="checkbox" id="flagged-only">
+            Flagged compounds only
+        </label>
+        <input type="text" id="sample-search" class="fb-search" placeholder="Search sample ID…">
+    </div>
+
+    <!-- Sample accordion -->
+    <div class="accordion">
+        {% for sample in samples %}
+        {%- set codes = sample.flagged_compounds | map(attribute='review_code') | list -%}
+        <div class="sample"
+             data-status="{{ sample.status }}"
+             data-flagged="{{ sample.flagged_compounds | length }}"
+             data-sample-id="{{ sample.sample_id | lower }}"
+             data-codes="{{ codes | join(',') }}">
+            <button type="button" class="sample-header">
+                <span class="chevron">▸</span>
+                <span class="sample-id">{{ sample.sample_id }}</span>
+                <span class="status-badge status-{{ sample.status if sample.status in status_labels else 'unknown' }}">{{ status_labels.get(sample.status, sample.status) }}</span>
+                {% if sample.flagged_compounds %}
+                <span class="flagged-count-badge">{{ sample.flagged_compounds | length }} flagged</span>
+                {% endif %}
+            </button>
+            <div class="sample-detail">
+                {% if sample.unknown_tokens %}
+                <div class="unknown-warn">⚠ Unknown review codes: <strong>{{ sample.unknown_tokens | join(", ") }}</strong></div>
+                {% endif %}
+                {% if sample.flagged_compounds %}
+                <table class="compounds">
+                    <thead>
+                        <tr>
+                            <th>Compound</th>
+                            <th class="code-col">Review Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for c in sample.flagged_compounds %}
+                        <tr>
+                            <td class="cpd-name">{{ c.name }}</td>
+                            <td class="cpd-code"><span class="code-badge {{ code_class(c.review_code) }}">{{ c.review_code }}</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p class="no-compounds">{{ status_msgs.get(sample.status, 'No flagged compounds found in this sample.') }}</p>
+                {% endif %}
+            </div>
+        </div>
         {% endfor %}
-    </table>
-    {% else %}
-    <p>No flagged compounds.</p>
-    {% endif %}
-{% else %}
-<p>No samples match the current filter.</p>
-{% endfor %}
+        <div class="empty-state" id="samples-empty" style="display: none;">No samples match the current filters.</div>
+    </div>
 
-<form method="post" action="/batch/{{ result.revision_id }}/submit">
-    <button type="submit">Submit &amp; Start New Batch</button>
-</form>
+    <!-- Bottom actions -->
+    <div class="bottom-actions">
+        <a href="/" class="btn-discard">← Discard &amp; Go Home</a>
+        <a href="/batch/{{ result.revision_id }}/submit" class="btn-submit-bottom">Submit &amp; Publish Revision →</a>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const statusFilter = document.getElementById("status-filter");
+const flaggedOnly = document.getElementById("flagged-only");
+const sampleSearch = document.getElementById("sample-search");
+const clearCodesBtn = document.getElementById("clear-codes");
+const sampleEls = Array.from(document.querySelectorAll(".sample"));
+const tileEls = Array.from(document.querySelectorAll(".tile"));
+const samplesEmpty = document.getElementById("samples-empty");
+const activeCodes = new Set();
+
+function applyFilters() {
+    const status = statusFilter.value;
+    const onlyFlagged = flaggedOnly.checked;
+    const q = sampleSearch.value.trim().toLowerCase();
+    const hasActiveCodes = activeCodes.size > 0;
+    let visible = 0;
+
+    sampleEls.forEach((el) => {
+        const rowCodes = (el.dataset.codes ? el.dataset.codes.split(",") : []);
+        const flagged = parseInt(el.dataset.flagged, 10) || 0;
+        let show = true;
+        if (status !== "all" && el.dataset.status !== status) show = false;
+        if (onlyFlagged && flagged === 0) show = false;
+        if (q && !el.dataset.sampleId.includes(q)) show = false;
+        if (hasActiveCodes && !rowCodes.some((c) => activeCodes.has(c))) show = false;
+        el.style.display = show ? "" : "none";
+        if (show) visible++;
+    });
+
+    samplesEmpty.style.display = visible === 0 ? "" : "none";
+    if (clearCodesBtn) clearCodesBtn.style.display = hasActiveCodes ? "" : "none";
+}
+
+statusFilter.addEventListener("change", applyFilters);
+flaggedOnly.addEventListener("change", applyFilters);
+sampleSearch.addEventListener("input", applyFilters);
+
+// ── Code tile toggle (OR logic) ──
+tileEls.forEach((tile) => {
+    tile.addEventListener("click", () => {
+        const code = tile.dataset.code;
+        if (activeCodes.has(code)) { activeCodes.delete(code); tile.classList.remove("active"); }
+        else { activeCodes.add(code); tile.classList.add("active"); }
+        applyFilters();
+    });
+});
+if (clearCodesBtn) {
+    clearCodesBtn.addEventListener("click", () => {
+        activeCodes.clear();
+        tileEls.forEach((t) => t.classList.remove("active"));
+        applyFilters();
+    });
+}
+
+// ── Accordion expand / collapse ──
+sampleEls.forEach((el) => {
+    const header = el.querySelector(".sample-header");
+    const chevron = el.querySelector(".chevron");
+    header.addEventListener("click", () => {
+        const expanded = el.classList.toggle("expanded");
+        chevron.textContent = expanded ? "▾" : "▸";
+    });
+});
+</script>
 {% endblock %}

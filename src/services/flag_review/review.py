@@ -26,6 +26,71 @@ class ReviewResult:
     batch_path: str
     samples: list[SampleReview] = field(default_factory=list)
     total_flagged: int = 0
+    scanned_at: str = ""
+
+
+def _code_class(code: str) -> str:
+    """Map a review code to its presentation CSS class (matches design tokens)."""
+    c = (code or "").lower()
+    if c == "dubious":
+        return "code-dubious"
+    if c in ("udel", "udelete"):
+        return "code-udel"
+    return "code-other"
+
+
+def _format_scan_date(raw: str) -> str:
+    """Trim an ISO timestamp to 'YYYY-MM-DD HH:MM' for display."""
+    if not raw:
+        return ""
+    text = raw.replace("T", " ")
+    # Keep date + HH:MM only (drop seconds/microseconds).
+    if len(text) >= 16:
+        return text[:16]
+    return text
+
+
+def compute_view_stats(result: "ReviewResult") -> dict:
+    """Compute derived display stats for the results screen.
+
+    All counts are derived from the in-memory result at display time and are
+    never persisted (see STATE_CLASSIFICATION.md).
+    """
+    samples = result.samples
+    code_counts: dict[str, int] = {}
+    for s in samples:
+        for c in s.flagged_compounds:
+            code = c.get("review_code", "") if isinstance(c, dict) else getattr(c, "review_code", "")
+            code_counts[code] = code_counts.get(code, 0) + 1
+
+    code_tiles = [
+        {"code": code, "count": count, "css_class": _code_class(code)}
+        for code, count in sorted(code_counts.items(), key=lambda kv: -kv[1])
+    ]
+
+    return {
+        "total": len(samples),
+        "parsed": sum(1 for s in samples if s.status == "parsed"),
+        "missing": sum(1 for s in samples if s.status == "missing"),
+        "malformed": sum(1 for s in samples if s.status == "malformed"),
+        "flagged": sum(len(s.flagged_compounds) for s in samples),
+        "code_tiles": code_tiles,
+    }
+
+
+def list_recent_batches(db_path: Optional[str] = None, limit: int = 50) -> list[dict]:
+    """Return published-revision history for the home page, newest first.
+
+    The only caller path into Trinity for the home-page history. Counts are
+    derived at read time by the persistence layer, never stored.
+    """
+    persistence = TargetRPFinderPersistence(db_path=db_path)
+    rows = persistence.list_recent_batches(limit=limit)
+    persistence.close()
+    for row in rows:
+        row["scan_date"] = _format_scan_date(row.get("created_at", ""))
+        row["scan_date_iso"] = (row.get("created_at", "") or "")[:10]
+    return rows
 
 def review_batch(batch_path: str, db_path: Optional[str] = None) -> ReviewResult:
     """Scan and review a batch folder for flagged compounds.
@@ -153,7 +218,8 @@ def get_review_result(revision_id: str, db_path: Optional[str] = None) -> Option
         revision_id=revision_id,
         batch_path=context.get("batch_path", ""),
         samples=review_samples,
-        total_flagged=total_flagged
+        total_flagged=total_flagged,
+        scanned_at=_format_scan_date(context.get("created_at", ""))
     )
 
 def submit_review(revision_id: str, db_path: Optional[str] = None) -> None:
