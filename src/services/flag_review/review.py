@@ -85,8 +85,10 @@ def list_recent_batches(db_path: Optional[str] = None, limit: int = 50) -> list[
     derived at read time by the persistence layer, never stored.
     """
     persistence = TargetRPFinderPersistence(db_path=db_path)
-    rows = persistence.list_recent_batches(limit=limit)
-    persistence.close()
+    try:
+        rows = persistence.list_recent_batches(limit=limit)
+    finally:
+        persistence.close()
     for row in rows:
         row["scan_date"] = _format_scan_date(row.get("created_at", ""))
         row["scan_date_iso"] = (row.get("created_at", "") or "")[:10]
@@ -115,64 +117,66 @@ def review_batch(batch_path: str, db_path: Optional[str] = None) -> ReviewResult
 
     persistence = TargetRPFinderPersistence(db_path=db_path)
 
-    run_id = persistence.create_batch(str(batch_path))
-    revision_id = persistence.create_revision(run_id)
+    try:
+        run_id = persistence.create_batch(str(batch_path))
+        revision_id = persistence.create_revision(run_id)
 
-    samples = discover_samples(batch_path)
-    review_samples = []
-    total_flagged = 0
-    unknown_tokens_all = set()
+        samples = discover_samples(batch_path)
+        review_samples = []
+        total_flagged = 0
+        unknown_tokens_all = set()
 
-    for sample in samples:
-        target_rp_path = sample.path / "Target.RP"
+        for sample in samples:
+            target_rp_path = sample.path / "Target.RP"
 
-        if not target_rp_path.exists():
-            review_samples.append(SampleReview(
-                sample_id=sample.name,
-                status="missing",
-                flagged_compounds=[],
-                unknown_tokens=[]
-            ))
-            continue
+            if not target_rp_path.exists():
+                review_samples.append(SampleReview(
+                    sample_id=sample.name,
+                    status="missing",
+                    flagged_compounds=[],
+                    unknown_tokens=[]
+                ))
+                continue
 
-        try:
-            flagged, unknown = parse_target_rp(target_rp_path)
-            unknown_tokens_all.update(unknown)
+            try:
+                flagged, unknown = parse_target_rp(target_rp_path)
+                unknown_tokens_all.update(unknown)
 
-            review_samples.append(SampleReview(
-                sample_id=sample.name,
-                status="parsed",
-                flagged_compounds=[
-                    {
-                        "name": c.name,
-                        "review_code": c.review_code,
-                        "sample_id": c.sample_id
-                    }
-                    for c in flagged
-                ],
-                unknown_tokens=list(unknown)
-            ))
-            total_flagged += len(flagged)
+                review_samples.append(SampleReview(
+                    sample_id=sample.name,
+                    status="parsed",
+                    flagged_compounds=[
+                        {
+                            "name": c.name,
+                            "review_code": c.review_code,
+                            "sample_id": c.sample_id
+                        }
+                        for c in flagged
+                    ],
+                    unknown_tokens=list(unknown)
+                ))
+                total_flagged += len(flagged)
 
-        except Exception as e:
-            review_samples.append(SampleReview(
-                sample_id=sample.name,
-                status="malformed",
-                flagged_compounds=[],
-                unknown_tokens=[]
-            ))
+            except Exception as e:
+                review_samples.append(SampleReview(
+                    sample_id=sample.name,
+                    status="malformed",
+                    flagged_compounds=[],
+                    unknown_tokens=[]
+                ))
 
-    samples_data = {
-        sample.sample_id: {
-            "status": sample.status,
-            "flagged_compounds": sample.flagged_compounds,
-            "unknown_tokens": sample.unknown_tokens
+        samples_data = {
+            sample.sample_id: {
+                "status": sample.status,
+                "flagged_compounds": sample.flagged_compounds,
+                "unknown_tokens": sample.unknown_tokens
+            }
+            for sample in review_samples
         }
-        for sample in review_samples
-    }
 
-    persistence.store_samples_and_compounds(revision_id, samples_data)
-    persistence.close()
+        persistence.store_samples_and_compounds(revision_id, samples_data)
+    finally:
+        persistence.close()
 
     return ReviewResult(
         run_id=run_id,
@@ -193,13 +197,13 @@ def get_review_result(revision_id: str, db_path: Optional[str] = None) -> Option
         ReviewResult rebuilt from Trinity state, or None if not found
     """
     persistence = TargetRPFinderPersistence(db_path=db_path)
-    state = persistence.load_revision(revision_id)
-    if state is None:
+    try:
+        state = persistence.load_revision(revision_id)
+        if state is None:
+            return None
+        context = persistence.get_revision_context(revision_id) or {}
+    finally:
         persistence.close()
-        return None
-
-    context = persistence.get_revision_context(revision_id) or {}
-    persistence.close()
 
     samples_data = state.get("samples", {})
     review_samples = [
@@ -230,5 +234,7 @@ def submit_review(revision_id: str, db_path: Optional[str] = None) -> None:
         db_path: Optional custom Trinity database path
     """
     persistence = TargetRPFinderPersistence(db_path=db_path)
-    persistence.publish_revision(revision_id)
-    persistence.close()
+    try:
+        persistence.publish_revision(revision_id)
+    finally:
+        persistence.close()

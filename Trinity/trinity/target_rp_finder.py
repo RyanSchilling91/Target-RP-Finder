@@ -45,14 +45,16 @@ class TargetRPFinderPersistence:
             run_id: System-generated unique identifier
         """
         run_id = str(uuid.uuid4())
-        batch_name = Path(batch_path).name
+        # display_id has a UNIQUE constraint; re-scanning the same .b folder
+        # (a normal re-entry workflow) must not collide on the bare folder name.
+        display_id = f"{Path(batch_path).name}_{run_id[:8]}"
 
         self.conn.execute(
             """
             INSERT INTO runs (run_id, display_id, created_at, created_by, run_status, run_year, source_context)
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
-            (run_id, batch_name, datetime.utcnow().isoformat(), "system", "active", datetime.utcnow().year, batch_path)
+            (run_id, display_id, datetime.utcnow().isoformat(), "system", "active", datetime.utcnow().year, batch_path)
         )
         self.conn.commit()
         return run_id
@@ -183,7 +185,7 @@ class TargetRPFinderPersistence:
             rows.append({
                 "revision_id": row["revision_id"],
                 "created_at": row["created_at"],
-                "batch_name": row["display_id"],
+                "batch_name": Path(row["source_context"]).name if row["source_context"] else row["display_id"],
                 "batch_path": row["source_context"],
                 "sample_count": len(samples),
                 "flagged_count": flagged_samples,
@@ -230,6 +232,7 @@ class TargetRPFinderPersistence:
         ]
 
     def close(self) -> None:
-        """Close the database connection."""
+        """Close both database connections (the app-level one and Trinity's own)."""
         if self.conn:
             self.conn.close()
+        self.trinity.close()
