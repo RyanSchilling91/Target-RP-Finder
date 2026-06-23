@@ -16,14 +16,19 @@
 - `services/flag_review/` — aggregates parsed flagged compounds by sample and by batch, computes totals, applies filters, and is the only caller into Trinity for caching parsed results.
 
 ## Layer boundaries
-- UI → calls service layer only (batch_discovery for folder browse/classify, flag_review for table data). UI never touches Trinity or parses files directly.
+- UI → calls service layer only (`flag_review.review_batch`, `get_review_result`, `submit_review`). UI never touches Trinity or parses files directly.
 - batch_discovery → rp_parser: hands off the filtered list of sample `.d` folders.
 - rp_parser → flag_review: hands off parsed flagged-compound records per sample.
 - flag_review → Trinity: the only service with a persistence dependency. batch_discovery and rp_parser are stateless/pure and do not touch Trinity.
 
+## Presentation layer (per Trinity ADR-0006)
+- FastAPI + server-rendered HTML (Jinja2), not Streamlit — see [Trinity ADR-0006](../Trinity/docs/ADR-0006%20-%20Replace%20Streamlit%20with%20FastAPI%20and%20Server-Rendered%20HTML%20as%20the%20Thin%20Presentation%20Layer.md), superseding ADR-0001 for this app.
+- `src/target_rp_finder/ui.py` — route handlers only: `GET /`, `POST /review`, `GET /batch/{revision_id}/view`, `POST /batch/{revision_id}/submit`. No business logic; filters are recomputed server-side from `flag_review` data on every request, never stored.
+- `src/target_rp_finder/templates/` — Jinja2 templates (`base.html`, `index.html`, `results.html`); render-only, no workflow decisions.
+- `src/target_rp_finder/main.py` — JSON API (`/batch/review`, `/batch/{revision_id}`, `/health`) mounted alongside the UI router; both call into `flag_review` only.
+
 ## Contract-doc references
-- **Trinity** ([TRINITY.md](TRINITY.md)) — single persistence path for all parsed results.
-  - ⚠ OPEN: entry surface (the exact module/function services import to read/write) — must be filled on first real contact with Trinity from `flag_review`.
+- **Trinity** ([TRINITY.md](TRINITY.md)) — single persistence path for all parsed results. Entry surface filled: `flag_review` is the only caller into `TargetRPFinderPersistence`.
   - ⚠ OPEN: backup mechanism for the `.db` file — must be settled before any real `.b` folder data is stored.
 - **Deployment** ([DEPLOYMENT.md](DEPLOYMENT.md)) — two-stage VBS launcher, no overrides. `PYTHONPATH=src;Trinity` required.
 

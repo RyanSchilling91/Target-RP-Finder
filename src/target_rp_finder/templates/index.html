@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Target RP Finder — Scan Batch{% endblock %}
+{% block content %}
+<p>Enter the path to a <code>.b</code> batch folder to scan for flagged compounds.</p>
+{% if error %}
+<p class="error">{{ error }}</p>
+{% endif %}
+<form method="post" action="/review">
+    <input type="text" name="batch_path" placeholder="C:\path\to\batch.b" style="width: 28rem;" required>
+    <button type="submit">Scan Batch</button>
+</form>
+{% endblock %}

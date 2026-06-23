@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Target RP Finder{% endblock %}</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 2rem; color: #1a1a1a; }
+        h1 a { text-decoration: none; color: inherit; }
+        h1 { font-size: 1.4rem; }
+        table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+        th, td { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; font-size: 0.9rem; }
+        th { background: #f0f0f0; }
+        .status-parsed { color: #1a7a1a; }
+        .status-missing { color: #b8860b; }
+        .status-malformed { color: #c0392b; }
+        .error { color: #c0392b; margin-top: 1rem; }
+        .summary { margin: 1rem 0; }
+        form.filters { margin: 1rem 0; }
+        .badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 3px; background: #eee; font-size: 0.85rem; }
+        input[type=text] { padding: 0.3rem; }
+        button { padding: 0.3rem 0.8rem; }
+    </style>
+</head>
+<body>
+    <h1><a href="/">Target RP Finder</a></h1>
+    {% block content %}{% endblock %}
+</body>
+</html>

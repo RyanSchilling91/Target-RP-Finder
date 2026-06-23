@@ -7,7 +7,23 @@
       "Bash(/c/Users/rschilling/AppData/Local/Programs/Python/Python313/python -c 'from pathlib import Path; print\\(str\\(Path\\('\\\\''.'\\\\''\\).resolve\\(\\)\\)\\)')",
       "Bash(split -d -l 23 graphify-out/.graphify_uncached.txt graphify-out/.graphify_filelist_)",
       "Bash(git commit -m ' *)",
-      "Bash(git commit -m 'docs: document Trinity entry surface for target_rp_finder *)"
+      "Bash(git commit -m 'docs: document Trinity entry surface for target_rp_finder *)",
+      "Bash(python -c \"import starlette; print\\(starlette.__version__\\)\")",
+      "Bash(pip show *)",
+      "Bash(where python *)",
+      "Bash(python -m pip install -q -r requirements.txt)",
+      "Bash(python -c \"import jinja2; print\\(jinja2.__version__\\)\")",
+      "Bash(pip list *)",
+      "Bash(pip config *)",
+      "Bash(pip install *)",
+      "Bash(python -c \"import fastapi, uvicorn, multipart; print\\('ok'\\)\")",
+      "Bash(PYTHONPATH=\"src;Trinity\" python -m uvicorn target_rp_finder.main:app --host 127.0.0.1 --port 8000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8000/health)",
+      "Bash(curl -s http://127.0.0.1:8000/health)",
+      "Bash(cat /tmp_uvicorn_log.txt)",
+      "Bash(PYTHONPATH=\"src;Trinity\" nohup python -m uvicorn target_rp_finder.main:app --host 127.0.0.1 --port 8000)",
+      "Bash(disown)",
+      "Bash(PYTHONPATH=\"src;Trinity\" python -m pytest src/services -q)"
     ]
   }
 }

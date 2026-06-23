@@ -12,7 +12,7 @@
 | Per-sample flagged-compound count | Derived | computed from Flagged Compound rows, never stored |
 | Per-batch/revision total count | Derived | computed from Sample/Flagged Compound rows, never stored |
 | "Has comments" table filter | Derived | computed at display time, never stored as a negative record |
-| Table filters (UI-side: by compound, by comment type) | Working (UI-local) | discarded on navigation away, never persisted |
+| Table filters (status, "has flagged compounds") | Working (request-local) | recomputed server-side on every `GET /batch/{revision_id}/view` request from query params; never stored |
 | Revision lineage (`prior_revision_id`) | Evidence | set once at re-entry, never changes after |
 
 ## Mutability rules

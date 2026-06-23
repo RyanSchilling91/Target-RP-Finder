@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Batch Review — {{ result.revision_id }}{% endblock %}
+{% block content %}
+<div class="summary">
+    <strong>Batch:</strong> {{ result.batch_path or "—" }}<br>
+    <strong>Revision:</strong> {{ result.revision_id }}<br>
+    <strong>Flagged compounds (current filter):</strong> {{ total_flagged }}
+</div>
+
+<form class="filters" method="get">
+    <label>Status:
+        <select name="status">
+            <option value="all" {% if status_filter == "all" %}selected{% endif %}>All</option>
+            <option value="parsed" {% if status_filter == "parsed" %}selected{% endif %}>Parsed</option>
+            <option value="missing" {% if status_filter == "missing" %}selected{% endif %}>Missing Target.RP</option>
+            <option value="malformed" {% if status_filter == "malformed" %}selected{% endif %}>Malformed</option>
+        </select>
+    </label>
+    <label>
+        <input type="checkbox" name="flagged_only" value="true" {% if flagged_only %}checked{% endif %}>
+        Only samples with flagged compounds
+    </label>
+    <button type="submit">Apply</button>
+</form>
+
+{% for sample in samples %}
+<h3>{{ sample.sample_id }} <span class="badge status-{{ sample.status }}">{{ sample.status }}</span></h3>
+    {% if sample.unknown_tokens %}
+    <p class="error">Unknown review codes encountered: {{ sample.unknown_tokens | join(", ") }}</p>
+    {% endif %}
+    {% if sample.flagged_compounds %}
+    <table>
+        <tr><th>Compound</th><th>Review Code</th></tr>
+        {% for c in sample.flagged_compounds %}
+        <tr><td>{{ c.name }}</td><td>{{ c.review_code }}</td></tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No flagged compounds.</p>
+    {% endif %}
+{% else %}
+<p>No samples match the current filter.</p>
+{% endfor %}
+
+<form method="post" action="/batch/{{ result.revision_id }}/submit">
+    <button type="submit">Submit &amp; Start New Batch</button>
+</form>
+{% endblock %}

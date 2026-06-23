@@ -6,9 +6,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from services.flag_review import review_batch
+from services.flag_review import get_review_result, review_batch
+from target_rp_finder.ui import router as ui_router
 
 app = FastAPI(title="Target RP Finder")
+app.include_router(ui_router)
 
 class BatchReviewRequest(BaseModel):
     batch_path: str
@@ -19,10 +21,6 @@ class BatchReviewResponse(BaseModel):
     batch_path: str
     total_flagged: int
     samples_count: int
-
-@app.get("/")
-async def root():
-    return {"message": "Target RP Finder API", "version": "1.0"}
 
 @app.get("/health")
 async def health():
@@ -62,4 +60,21 @@ async def get_batch_results(revision_id: str):
     Returns:
         Full results with all samples and flagged compounds
     """
-    raise HTTPException(status_code=501, detail="Not yet implemented")
+    result = get_review_result(revision_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Revision not found")
+    return {
+        "run_id": result.run_id,
+        "revision_id": result.revision_id,
+        "batch_path": result.batch_path,
+        "total_flagged": result.total_flagged,
+        "samples": [
+            {
+                "sample_id": s.sample_id,
+                "status": s.status,
+                "flagged_compounds": s.flagged_compounds,
+                "unknown_tokens": s.unknown_tokens,
+            }
+            for s in result.samples
+        ],
+    }

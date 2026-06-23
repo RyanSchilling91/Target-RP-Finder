@@ -4,12 +4,12 @@
 
 | # | Actor | Action | Data touched | System response | State impact |
 |---|---|---|---|---|---|
-| 1 | User | Opens app, clicks Browse, selects a `.b` folder | `.b` folder path | UI passes path to `batch_discovery` | none yet (working) |
+| 1 | User | Opens app home page, enters a `.b` folder path, clicks Scan Batch | `.b` folder path | FastAPI UI (`POST /review`) calls `flag_review.review_batch`, which calls `batch_discovery` | none yet (working) |
 | 2 | System (`batch_discovery`) | Lists top-level `.d` subfolders, classifies each by name (cal/ccv/tpc/idl/blank/prep blank/surrogate/sample) | `.d` folder names | Filters to samples only, hands list to `rp_parser` | working |
 | 3 | System (`rp_parser`) | Parses each sample's `Target.RP`, extracts rows with REVIEW CODE `Udel`/`Udelete`/`dubious` | `Target.RP` file contents | Missing file → skip + flag sample. Malformed file → skip + flag sample (user must investigate). Otherwise hands parsed rows to `flag_review` | derived |
-| 4 | System (`flag_review`) | Aggregates flagged compounds by sample/batch, computes totals | Parsed compound rows | Renders results table directly — no pause before this point | derived (not yet persisted) |
-| 5 | User | Reviews table, optionally filters | Displayed table | UI filters client-side; underlying data unchanged | derived (still editable) |
-| 6 | User | Hits Submit | Reviewed table | `flag_review` writes to Trinity as a published working revision; archive entry becomes available on the home page | **freezes → evidence** |
+| 4 | System (`flag_review`) | Aggregates flagged compounds by sample/batch, computes totals, writes the **working** revision to Trinity | Parsed compound rows | Redirects (303) to `GET /batch/{revision_id}/view`, which calls `flag_review.get_review_result` to render the table | derived, persisted as `working` |
+| 5 | User | Reviews table, optionally filters by status / "has flagged compounds" | Displayed table | UI re-requests `GET /batch/{revision_id}/view` with query params; `flag_review` recomputes the filtered view server-side on each request, nothing written | derived (still editable) |
+| 6 | User | Hits Submit & Start New Batch | Reviewed table | `POST /batch/{revision_id}/submit` calls `flag_review.submit_review`, which calls `publish_revision`; redirects to home page | **freezes → evidence** |
 | 7 | User | Returns later, browses archive on home page | Archive entries | `flag_review` reads from Trinity, no re-parse | evidence (read-only) |
 | 8 | User | Fixes a missing/malformed `Target.RP` in the same `.b` folder, re-selects it | Same `.b` folder path | System re-parses **only** the previously skipped/flagged samples (step 3 logic, scoped) | working (new revision) |
 | 9 | System | Re-entry into Trinity | New parsed rows + reference to prior published entry | Per Trinity ADR-0004: creates a **new working revision** derived from the published one; original published archive entry is never edited in place | evidence (old) stays frozen; new working revision created |
@@ -23,6 +23,7 @@
 - `batch_discovery` → `rp_parser`: filtered list of sample `.d` folders.
 - `rp_parser` → `flag_review`: parsed flagged-compound rows per sample (or skip+flag signal).
 - `flag_review` → Trinity: the only service with a persistence dependency; reads/writes the cached/archived results.
+- UI (`src/target_rp_finder/ui.py`) → `flag_review`: the UI never touches Trinity or parses files; it only calls `review_batch`, `get_review_result`, and `submit_review`.
 
 ## Edge cases
 - `Target.RP` missing from a sample `.d` folder → skip that sample, flag it in the results table, continue the run (does not stop the batch).

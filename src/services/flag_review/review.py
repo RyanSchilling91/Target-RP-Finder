@@ -116,3 +116,53 @@ def review_batch(batch_path: str, db_path: Optional[str] = None) -> ReviewResult
         samples=review_samples,
         total_flagged=total_flagged
     )
+
+def get_review_result(revision_id: str, db_path: Optional[str] = None) -> Optional[ReviewResult]:
+    """Load a previously persisted review result by revision_id.
+
+    Args:
+        revision_id: Revision to load
+        db_path: Optional custom Trinity database path
+
+    Returns:
+        ReviewResult rebuilt from Trinity state, or None if not found
+    """
+    persistence = TargetRPFinderPersistence(db_path=db_path)
+    state = persistence.load_revision(revision_id)
+    if state is None:
+        persistence.close()
+        return None
+
+    context = persistence.get_revision_context(revision_id) or {}
+    persistence.close()
+
+    samples_data = state.get("samples", {})
+    review_samples = [
+        SampleReview(
+            sample_id=sample_id,
+            status=info.get("status", "unknown"),
+            flagged_compounds=info.get("flagged_compounds", []),
+            unknown_tokens=info.get("unknown_tokens", [])
+        )
+        for sample_id, info in samples_data.items()
+    ]
+    total_flagged = sum(len(s.flagged_compounds) for s in review_samples)
+
+    return ReviewResult(
+        run_id=context.get("run_id", ""),
+        revision_id=revision_id,
+        batch_path=context.get("batch_path", ""),
+        samples=review_samples,
+        total_flagged=total_flagged
+    )
+
+def submit_review(revision_id: str, db_path: Optional[str] = None) -> None:
+    """Publish a working revision, freezing it into immutable evidence.
+
+    Args:
+        revision_id: Revision to publish
+        db_path: Optional custom Trinity database path
+    """
+    persistence = TargetRPFinderPersistence(db_path=db_path)
+    persistence.publish_revision(revision_id)
+    persistence.close()

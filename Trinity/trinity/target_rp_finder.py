@@ -126,6 +126,29 @@ class TargetRPFinderPersistence:
             return json.loads(row[0])
         return None
 
+    def get_revision_context(self, revision_id: str) -> Optional[dict]:
+        """Get the parent run_id and source batch path for a revision.
+
+        Args:
+            revision_id: Revision to look up
+
+        Returns:
+            Dict with run_id and batch_path, or None if not found
+        """
+        cursor = self.conn.execute(
+            """
+            SELECT r.run_id, ru.source_context
+            FROM revisions r
+            JOIN runs ru ON r.run_id = ru.run_id
+            WHERE r.revision_id = ?
+            """,
+            (revision_id,)
+        )
+        row = cursor.fetchone()
+        if row:
+            return {"run_id": row[0], "batch_path": row[1]}
+        return None
+
     def publish_revision(self, revision_id: str) -> None:
         """Publish a revision, marking it as immutable evidence.
 

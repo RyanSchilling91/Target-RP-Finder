@@ -22,11 +22,6 @@
 
 ## Open questions
 
-- **Question**: What is Trinity's entry surface — the exact module/function `flag_review` calls to read/write?
-  - Why it matters: it's the single enforcement point for "all persistence goes through Trinity."
-  - Risk of deferring: services could end up touching SQLite directly if this isn't named before `flag_review` is built.
-  - Decision trigger: before any service writes or reads data (per TRINITY.md).
-
 - **Question**: What is the backup mechanism for the Trinity `.db` file?
   - Why it matters: the live `.db` lives inside the project folder and can be clobbered by a redeploy or repo reset.
   - Risk of deferring: a redeploy could destroy all archived batch evidence with no recovery path.

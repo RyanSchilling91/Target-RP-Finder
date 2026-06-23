@@ -34,6 +34,7 @@ Trinity/ is mounted on PYTHONPATH alongside src/
 - `create_revision(run_id, based_on_revision_id)` → revision_id  
 - `store_samples_and_compounds(revision_id, samples_data)` — persists parsed results
 - `load_revision(revision_id)` — retrieves cached results
+- `get_revision_context(revision_id)` — looks up the parent run_id and source batch path for a revision
 - `publish_revision(revision_id)` — freezes revision as evidence
 - `get_batch_revisions(run_id)` — lists all revisions for a batch
 
