@@ -135,14 +135,104 @@
   },
   "nodes": [
     {
-      "label": "TRINITY.md",
+      "label": "ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
       "file_type": "document",
-      "source_file": "docs/TRINITY.md",
+      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_trinity",
-      "community": 34,
-      "norm_label": "trinity.md"
+      "id": "docs_adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline",
+      "community": 36,
+      "norm_label": "adr-0001 - use a thin presentation layer with shared-storage deployment as the near-term baseline.md"
+    },
+    {
+      "label": "ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "community": 35,
+      "norm_label": "adr-0006 - replace streamlit with fastapi and server-rendered html as the thin presentation layer.md"
+    },
+    {
+      "label": "ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "community": 35,
+      "norm_label": "adr-0006 - replace streamlit with fastapi and server-rendered html as the thin presentation layer"
+    },
+    {
+      "label": "Status",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_status",
+      "community": 35,
+      "norm_label": "status"
+    },
+    {
+      "label": "Decision",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_decision",
+      "community": 35,
+      "norm_label": "decision"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_context",
+      "community": 35,
+      "norm_label": "context"
+    },
+    {
+      "label": "Alternatives considered",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_alternatives_considered",
+      "community": 35,
+      "norm_label": "alternatives considered"
+    },
+    {
+      "label": "Why chosen",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_why_chosen",
+      "community": 35,
+      "norm_label": "why chosen"
+    },
+    {
+      "label": "Consequences",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_consequences",
+      "community": 35,
+      "norm_label": "consequences"
+    },
+    {
+      "label": "Review trigger",
+      "file_type": "document",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_review_trigger",
+      "community": 35,
+      "norm_label": "review trigger"
     },
     {
       "label": "TRINITY.md",
@@ -150,9 +240,19 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "docs_trinity_trinity_md",
       "community": 34,
-      "norm_label": "trinity.md"
+      "norm_label": "trinity.md",
+      "id": "docs_trinity"
+    },
+    {
+      "label": "TRINITY.md",
+      "file_type": "document",
+      "source_file": "docs/TRINITY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 34,
+      "norm_label": "trinity.md",
+      "id": "docs_trinity_trinity_md"
     },
     {
       "label": "What Trinity is",
@@ -160,9 +260,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "docs_trinity_what_trinity_is",
       "community": 34,
-      "norm_label": "what trinity is"
+      "norm_label": "what trinity is",
+      "id": "docs_trinity_what_trinity_is"
     },
     {
       "label": "Folder contract \u2014 what lives in Trinity/",
@@ -170,9 +270,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "docs_trinity_folder_contract_what_lives_in_trinity",
       "community": 34,
-      "norm_label": "folder contract \u2014 what lives in trinity/"
+      "norm_label": "folder contract \u2014 what lives in trinity/",
+      "id": "docs_trinity_folder_contract_what_lives_in_trinity"
     },
     {
       "label": "Entry surface \u2014 FILLED",
@@ -180,9 +280,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "docs_trinity_entry_surface_filled",
       "community": 34,
-      "norm_label": "entry surface \u2014 filled"
+      "norm_label": "entry surface \u2014 filled",
+      "id": "docs_trinity_entry_surface_filled"
     },
     {
       "label": "Backup \u2014 \u26a0\ufe0f OPEN, must settle before persistence work",
@@ -190,9 +290,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L56",
       "_origin": "ast",
-      "id": "docs_trinity_backup_open_must_settle_before_persistence_work",
       "community": 34,
-      "norm_label": "backup \u2014 \u26a0\ufe0f open, must settle before persistence work"
+      "norm_label": "backup \u2014 \u26a0\ufe0f open, must settle before persistence work",
+      "id": "docs_trinity_backup_open_must_settle_before_persistence_work"
     },
     {
       "label": "Must never happen",
@@ -200,9 +300,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "docs_trinity_must_never_happen",
       "community": 34,
-      "norm_label": "must never happen"
+      "norm_label": "must never happen",
+      "id": "docs_trinity_must_never_happen"
     },
     {
       "label": "Verification criteria",
@@ -210,9 +310,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "docs_trinity_verification_criteria",
       "community": 34,
-      "norm_label": "verification criteria"
+      "norm_label": "verification criteria",
+      "id": "docs_trinity_verification_criteria"
     },
     {
       "label": "target_rp_finder.py",
@@ -420,7 +520,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "discovery.py",
       "id": "batch_discovery_discovery"
     },
@@ -430,7 +530,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "classifiedfolder",
       "id": "batch_discovery_discovery_classifiedfolder"
     },
@@ -440,7 +540,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "classify_folder()",
       "id": "batch_discovery_discovery_classify_folder"
     },
@@ -450,7 +550,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "foldertype",
       "id": "foldertype"
     },
@@ -460,7 +560,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "discover_samples()",
       "id": "batch_discovery_discovery_discover_samples"
     },
@@ -480,7 +580,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "discover and classify .d folders in a .b batch folder.",
       "id": "batch_discovery_discovery_rationale_1"
     },
@@ -490,7 +590,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "result of classifying a .d folder.",
       "id": "batch_discovery_discovery_rationale_11"
     },
@@ -500,7 +600,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "classify a .d folder by name using case-insensitive prefix matching and numeric",
       "id": "batch_discovery_discovery_rationale_17"
     },
@@ -510,7 +610,7 @@
       "source_file": "src/services/batch_discovery/discovery.py",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "scan a .b batch folder, classify all .d subfolders, return only samples.      re",
       "id": "batch_discovery_discovery_rationale_52"
     },
@@ -620,7 +720,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "main.py",
       "id": "target_rp_finder_main"
     },
@@ -630,7 +730,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "batchreviewrequest",
       "id": "target_rp_finder_main_batchreviewrequest"
     },
@@ -640,7 +740,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "basemodel",
       "id": "basemodel"
     },
@@ -650,7 +750,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "batchreviewresponse",
       "id": "target_rp_finder_main_batchreviewresponse"
     },
@@ -660,7 +760,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "root()",
       "id": "target_rp_finder_main_root"
     },
@@ -670,7 +770,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "health()",
       "id": "target_rp_finder_main_health"
     },
@@ -680,7 +780,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "submit_batch_review()",
       "id": "target_rp_finder_main_submit_batch_review"
     },
@@ -690,7 +790,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "get_batch_results()",
       "id": "target_rp_finder_main_get_batch_results"
     },
@@ -700,7 +800,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "fastapi entry point for target rp finder.",
       "id": "target_rp_finder_main_rationale_1"
     },
@@ -710,7 +810,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "scan and review a batch folder for flagged compounds.      args:         batch_p",
       "id": "target_rp_finder_main_rationale_33"
     },
@@ -720,7 +820,7 @@
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 29,
+      "community": 22,
       "norm_label": "get the full results for a batch review.      args:         revision_id: the rev",
       "id": "target_rp_finder_main_rationale_57"
     },
@@ -1050,7 +1150,7 @@
       "source_file": "src/services/batch_discovery/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "__init__.py",
       "id": "batch_discovery_init"
     },
@@ -1060,7 +1160,7 @@
       "source_file": "src/services/batch_discovery/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 29,
       "norm_label": "batch discovery service - scans .b folders and classifies .d subfolders.",
       "id": "batch_discovery_init_rationale_1"
     },
@@ -2210,7 +2310,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L114",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "_extract_sql_blocks()",
       "id": "trinity_db_extract_sql_blocks"
     },
@@ -2310,7 +2410,7 @@
       "source_file": "Trinity/trinity/db.py",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "extract fenced ```sql blocks in declaration order.",
       "id": "trinity_db_rationale_115"
     },
@@ -2620,7 +2720,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "test_audit_log.py",
       "id": "tests_test_audit_log"
     },
@@ -2630,7 +2730,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "_seed_run_revision()",
       "id": "tests_test_audit_log_seed_run_revision"
     },
@@ -2640,7 +2740,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "trinitydb",
       "id": "trinity_trinity_tests_test_audit_log_py_trinitydb"
     },
@@ -2650,7 +2750,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "append_event()",
       "id": "tests_test_audit_log_append_event"
     },
@@ -2660,7 +2760,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "list_for_run()",
       "id": "tests_test_audit_log_list_for_run"
     },
@@ -2670,7 +2770,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "test_audit_append_and_ordered_retrieval()",
       "id": "tests_test_audit_log_test_audit_append_and_ordered_retrieval"
     },
@@ -2680,7 +2780,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 35,
+      "community": 0,
       "norm_label": "path",
       "id": "trinity_trinity_tests_test_audit_log_py_path"
     },
@@ -2750,7 +2850,7 @@
       "source_file": "Trinity/trinity/tests/test_db.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "test_extract_sql_blocks_returns_only_sql_fences()",
       "id": "tests_test_db_test_extract_sql_blocks_returns_only_sql_fences"
     },
@@ -3998,7 +4098,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "thin ui layer rule",
       "id": "agents_thin_ui_layer_rule"
     },
@@ -4066,45 +4166,6 @@
       "community": 25,
       "norm_label": "architecture rules (file size, split-first)",
       "id": "agents_architecture_rules"
-    },
-    {
-      "label": "ADR-0001: Thin Presentation Layer with Shared-Storage Deployment",
-      "file_type": "document",
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "adr-0001: thin presentation layer with shared-storage deployment",
-      "id": "adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline"
-    },
-    {
-      "label": "Streamlit as Renderer, Not Architecture Owner",
-      "file_type": "rationale",
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "streamlit as renderer, not architecture owner",
-      "id": "adr_0001_streamlit_renderer_choice"
-    },
-    {
-      "label": "Shared-Storage Deployment Model",
-      "file_type": "concept",
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "shared-storage deployment model",
-      "id": "adr_0001_shared_storage_model"
     },
     {
       "label": "ADR-0002: Version-Aware Rehydration, Working State vs Published Evidence",
@@ -4310,7 +4371,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 25,
       "norm_label": "workflow-governed python application core",
       "id": "architecture_selection_workflow_governed_core"
     },
@@ -5229,12 +5290,92 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_alternatives_considered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_consequences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_decision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_review_trigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer",
+      "target": "docs_adr_0006_replace_streamlit_with_fastapi_and_server_rendered_html_as_the_thin_presentation_layer_why_chosen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/TRINITY.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity",
-      "target": "docs_trinity_trinity_md",
-      "confidence_score": 1.0
+      "target": "docs_trinity_trinity_md"
     },
     {
       "relation": "contains",
@@ -5242,9 +5383,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_backup_open_must_settle_before_persistence_work",
-      "confidence_score": 1.0
+      "target": "docs_trinity_backup_open_must_settle_before_persistence_work"
     },
     {
       "relation": "contains",
@@ -5252,9 +5393,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_entry_surface_filled",
-      "confidence_score": 1.0
+      "target": "docs_trinity_entry_surface_filled"
     },
     {
       "relation": "contains",
@@ -5262,9 +5403,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_folder_contract_what_lives_in_trinity",
-      "confidence_score": 1.0
+      "target": "docs_trinity_folder_contract_what_lives_in_trinity"
     },
     {
       "relation": "contains",
@@ -5272,9 +5413,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_must_never_happen",
-      "confidence_score": 1.0
+      "target": "docs_trinity_must_never_happen"
     },
     {
       "relation": "contains",
@@ -5282,9 +5423,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_verification_criteria",
-      "confidence_score": 1.0
+      "target": "docs_trinity_verification_criteria"
     },
     {
       "relation": "contains",
@@ -5292,9 +5433,9 @@
       "source_file": "docs/TRINITY.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_trinity_trinity_md",
-      "target": "docs_trinity_what_trinity_is",
-      "confidence_score": 1.0
+      "target": "docs_trinity_what_trinity_is"
     },
     {
       "relation": "imports_from",
@@ -6666,16 +6807,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_architecture_selection",
-      "target": "docs_architecture_selection_architecture_selection_md"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline",
       "target": "docs_architecture_selection_architecture_selection_md"
     },
     {
@@ -10909,16 +11040,6 @@
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline",
-      "target": "agents_thin_ui_layer_rule"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
       "source_file": "Trinity/AGENTS.md",
       "source_location": null,
       "weight": 1.0,
@@ -10944,26 +11065,6 @@
       "weight": 1.0,
       "source": "agents_required_document_set",
       "target": "adr_template"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline",
-      "target": "adr_0001_shared_storage_model"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "adr_0001_use_a_thin_presentation_layer_with_shared_storage_deployment_as_the_near_term_baseline",
-      "target": "adr_0001_streamlit_renderer_choice"
     },
     {
       "relation": "references",
@@ -12245,6 +12346,5 @@
       "confidence_score": 1.0,
       "source_file": "docs/DATA_MODEL.md"
     }
-  ],
-  "built_at_commit": "2a5fcc89609c3b5911b9cea76306db3ead0acd78"
+  ]
 }

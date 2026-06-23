@@ -180,9 +180,9 @@
     "semantic_hash": "5be94873259c35133cf05db0c0104523"
   },
   "Trinity/docs/ADR-0001 - Use a Thin Presentation Layer with Shared-Storage Deployment as the Near-Term Baseline.md": {
-    "mtime": 1774382964.0086472,
-    "ast_hash": "00493841ae234aba88d6d0feeb6fd58b",
-    "semantic_hash": "00493841ae234aba88d6d0feeb6fd58b"
+    "mtime": 1782237779.2355485,
+    "ast_hash": "9b77ceb0e8892226d5f1167d63d3cb8b",
+    "semantic_hash": ""
   },
   "Trinity/docs/ADR-0002 - Persist Mutable Working State with Version-Aware Rehydration and Keep Published Evidence Separate.md": {
     "mtime": 1774383027.2680564,
@@ -407,6 +407,11 @@
   "src/services/flag_review/review.py": {
     "mtime": 1782162403.8068705,
     "ast_hash": "2ad5f9cdd48432d8b3cebf17f4c34276",
+    "semantic_hash": ""
+  },
+  "Trinity/docs/ADR-0006 - Replace Streamlit with FastAPI and Server-Rendered HTML as the Thin Presentation Layer.md": {
+    "mtime": 1782237772.1922467,
+    "ast_hash": "b4785148c352c5b5e5a1935d14f6deb5",
     "semantic_hash": ""
   }
 }
