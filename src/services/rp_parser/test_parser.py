@@ -66,5 +66,18 @@ class TestParseTargetRP:
             f.write("    1 compound-name                 123    0.5\n")
             f.flush()
 
-            flagged, _ = parse_target_rp(f.name)
+            flagged, unknown = parse_target_rp(f.name)
             assert len(flagged) == 0
+            assert unknown == []
+
+    def test_qualifier_suffix_not_treated_as_review_code(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+            f.write("Lab Smp Id: 12345\n")
+            f.write("Compounds                               REVIEW CODE\n")
+            f.write("==========================              ===========\n")
+            f.write("    1 phenol          94  10.780  10.776  (0.899)  10593  0.38005  0.0678(M)\n")
+            f.flush()
+
+            flagged, unknown = parse_target_rp(f.name)
+            assert len(flagged) == 0
+            assert unknown == []

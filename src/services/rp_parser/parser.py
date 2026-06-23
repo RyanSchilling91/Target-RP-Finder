@@ -91,33 +91,28 @@ def _parse_compound_row(line: str) -> Optional[FlaggedCompound]:
     if not name:
         return None
 
-    review_code = ""
     tokens = line_stripped.split()
-
-    for i in range(len(tokens) - 1, -1, -1):
-        token = tokens[i]
-        if token in FLAGGED_REVIEW_CODES:
-            review_code = token
-            break
-        elif _is_known_code_or_anomaly(token):
-            review_code = token
-            break
+    review_code = ""
+    if tokens:
+        last_token = tokens[-1]
+        if last_token in FLAGGED_REVIEW_CODES:
+            review_code = last_token
+        elif not _is_data_value(last_token):
+            review_code = last_token
 
     return FlaggedCompound(name=name, review_code=review_code)
 
-def _is_known_code_or_anomaly(token: str) -> bool:
-    """Check if token is a flagged code or log-worthy anomaly."""
-    if token in FLAGGED_REVIEW_CODES:
-        return True
-    if token in {"(M)", "(Q)", "(QM)"}:
-        return False
-    if _is_numeric_token(token):
-        return False
-    return len(token) > 0 and token[0].isalpha()
+def _is_data_value(token: str) -> bool:
+    """Check if token is a FINAL-concentration value, not a review code.
 
-def _is_numeric_token(token: str) -> bool:
-    """Check if a token is a number (possibly with scientific notation or parentheses)."""
-    token_clean = token.strip("()")
+    REVIEW CODE is the last column in Target.RP — when it's blank, the last
+    whitespace-separated token is actually the FINAL concentration, which
+    carries an optional qualifier suffix glued directly to the number
+    (e.g. "0.0764(M)", "0.128(QM)") with no separating space.
+    """
+    if re.match(r"^\([A-Za-z]+\)$", token):
+        return True
+    token_clean = re.sub(r"\([A-Za-z]+\)$", "", token).strip("()")
     try:
         float(token_clean)
         return True
