@@ -5,7 +5,7 @@ from typing import Optional
 import re
 
 FLAGGED_REVIEW_CODES = {"Udel", "Udelete", "dubious", "E-Code"}
-UNKNOWN_TOKEN_EXCLUSIONS = {"Okay"}
+UNKNOWN_TOKEN_EXCLUSIONS = {"okay", "ok"}  # case-insensitive comparison
 
 @dataclass
 class FlaggedCompound:
@@ -57,7 +57,7 @@ def parse_target_rp(file_path: str | Path) -> tuple[list[FlaggedCompound], list[
                         if compound.review_code in FLAGGED_REVIEW_CODES or compound.has_quad_error:
                             compound.sample_id = sample_id
                             flagged.append(compound)
-                        elif compound.review_code and compound.review_code not in UNKNOWN_TOKEN_EXCLUSIONS:
+                        elif compound.review_code and compound.review_code.lower() not in UNKNOWN_TOKEN_EXCLUSIONS:
                             unknown_tokens.add(compound.review_code)
 
                     i += 1

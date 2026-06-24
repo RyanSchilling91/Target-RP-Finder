@@ -101,11 +101,15 @@ class TestParseTargetRP:
             f.write("Compounds                               REVIEW CODE\n")
             f.write("==========================              ===========\n")
             f.write("    1 compound-a               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     Okay\n")
-            f.write("    2 compound-b               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     Unknown\n")
+            f.write("    2 compound-b               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     OK\n")
+            f.write("    3 compound-c               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     OKAY\n")
+            f.write("    4 compound-d               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     Unknown\n")
             f.flush()
 
             flagged, unknown = parse_target_rp(f.name)
             assert "Okay" not in unknown
+            assert "OK" not in unknown
+            assert "OKAY" not in unknown
             assert "Unknown" in unknown
 
     def test_quad_erronious_on_column_non_numerical(self):
