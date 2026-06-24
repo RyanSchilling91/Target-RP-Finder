@@ -135,244 +135,304 @@
   },
   "nodes": [
     {
-      "label": "target_rp_finder.py",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "label": "DATA_MODEL.md",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder",
-      "community": 22,
-      "norm_label": "target_rp_finder.py"
+      "id": "docs_data_model",
+      "community": 1,
+      "norm_label": "data_model.md"
     },
     {
-      "label": "TargetRPFinderPersistence",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence",
-      "community": 22,
-      "norm_label": "targetrpfinderpersistence"
-    },
-    {
-      "label": ".__init__()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init",
-      "community": 22,
-      "norm_label": ".__init__()"
-    },
-    {
-      "label": ".create_batch()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
-      "community": 22,
-      "norm_label": ".create_batch()"
-    },
-    {
-      "label": ".create_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L62",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision",
-      "community": 22,
-      "norm_label": ".create_revision()"
-    },
-    {
-      "label": ".store_samples_and_compounds()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L99",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds",
-      "community": 22,
-      "norm_label": ".store_samples_and_compounds()"
-    },
-    {
-      "label": ".load_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L113",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision",
-      "community": 22,
-      "norm_label": ".load_revision()"
-    },
-    {
-      "label": ".get_revision_context()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L131",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "community": 22,
-      "norm_label": ".get_revision_context()"
-    },
-    {
-      "label": ".list_recent_batches()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L154",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches",
-      "community": 22,
-      "norm_label": ".list_recent_batches()"
-    },
-    {
-      "label": ".publish_revision()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L195",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
-      "community": 22,
-      "norm_label": ".publish_revision()"
-    },
-    {
-      "label": ".get_batch_revisions()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L211",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
-      "community": 22,
-      "norm_label": ".get_batch_revisions()"
-    },
-    {
-      "label": ".close()",
-      "file_type": "code",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L234",
-      "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close",
-      "community": 22,
-      "norm_label": ".close()"
-    },
-    {
-      "label": "Trinity entry surface for Target RP Finder app.  Provides the single persisten",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "label": "DATA_MODEL.md",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_1",
-      "community": 22,
-      "norm_label": "trinity entry surface for target rp finder app.  provides the single persisten"
+      "id": "docs_data_model_data_model_md",
+      "community": 17,
+      "norm_label": "data_model.md"
     },
     {
-      "label": "Entry point for Target RP Finder persistence through Trinity.",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "label": "Persistence",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_data_model_persistence",
+      "community": 17,
+      "norm_label": "persistence"
+    },
+    {
+      "label": "Entities",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_data_model_entities",
+      "community": 17,
+      "norm_label": "entities"
+    },
+    {
+      "label": "Batch",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_data_model_batch",
+      "community": 17,
+      "norm_label": "batch"
+    },
+    {
+      "label": "Revision",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_16",
-      "community": 22,
-      "norm_label": "entry point for target rp finder persistence through trinity."
+      "id": "docs_data_model_revision",
+      "community": 17,
+      "norm_label": "revision"
     },
     {
-      "label": "Initialize persistence layer with optional custom DB path.",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L19",
+      "label": "Sample",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_19",
-      "community": 22,
-      "norm_label": "initialize persistence layer with optional custom db path."
+      "id": "docs_data_model_sample",
+      "community": 17,
+      "norm_label": "sample"
     },
     {
-      "label": "Create a new batch run and return run_id.          Args:             batch_pa",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "label": "Flagged Compound",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "docs_data_model_flagged_compound",
+      "community": 17,
+      "norm_label": "flagged compound"
+    },
+    {
+      "label": "Derived values (computed, never stored)",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "docs_data_model_derived_values_computed_never_stored",
+      "community": 17,
+      "norm_label": "derived values (computed, never stored)"
+    },
+    {
+      "label": "Entity relationship summary",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "docs_data_model_entity_relationship_summary",
+      "community": 17,
+      "norm_label": "entity relationship summary"
+    },
+    {
+      "label": "Forbidden state transitions",
+      "file_type": "document",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "docs_data_model_forbidden_state_transitions",
+      "community": 17,
+      "norm_label": "forbidden state transitions"
+    },
+    {
+      "label": "FAILURE_CATALOG.md",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_failure_catalog",
+      "community": 2,
+      "norm_label": "failure_catalog.md"
+    },
+    {
+      "label": "FAILURE_CATALOG.md",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_failure_catalog_failure_catalog_md",
+      "community": 2,
+      "norm_label": "failure_catalog.md"
+    },
+    {
+      "label": "Target.RP Parsing Logic Risk",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_failure_catalog_target_rp_parsing_logic_risk",
+      "community": 2,
+      "norm_label": "target.rp parsing logic risk"
+    },
+    {
+      "label": "Known Risks (Open)",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "docs_failure_catalog_known_risks_open",
+      "community": 2,
+      "norm_label": "known risks (open)"
+    },
+    {
+      "label": "Risk: ON-COLUMN Position Detection",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "docs_failure_catalog_risk_on_column_position_detection",
+      "community": 2,
+      "norm_label": "risk: on-column position detection"
+    },
+    {
+      "label": "Risk: Fixed-Width Column Extraction",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_39",
-      "community": 22,
-      "norm_label": "create a new batch run and return run_id.          args:             batch_pa"
+      "id": "docs_failure_catalog_risk_fixed_width_column_extraction",
+      "community": 2,
+      "norm_label": "risk: fixed-width column extraction"
     },
     {
-      "label": "Create a new working revision for a batch.          Args:             run_id:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L63",
+      "label": "Risk: \"Okay\" Exclusion",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L45",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_63",
-      "community": 22,
-      "norm_label": "create a new working revision for a batch.          args:             run_id:"
+      "id": "docs_failure_catalog_risk_okay_exclusion",
+      "community": 2,
+      "norm_label": "risk: \"okay\" exclusion"
     },
     {
-      "label": "Store parsed samples and flagged compounds in revision state.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L100",
+      "label": "Decision Log",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L52",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_100",
-      "community": 22,
-      "norm_label": "store parsed samples and flagged compounds in revision state.          args:"
+      "id": "docs_failure_catalog_decision_log",
+      "community": 2,
+      "norm_label": "decision log"
     },
     {
-      "label": "Load a revision's samples and compounds data.          Args:             revi",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L114",
+      "label": "Decision: Store has_quad_error as boolean, not raw on_column_value",
+      "file_type": "document",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L54",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_114",
-      "community": 22,
-      "norm_label": "load a revision's samples and compounds data.          args:             revi"
+      "id": "docs_failure_catalog_decision_store_has_quad_error_as_boolean_not_raw_on_column_value",
+      "community": 2,
+      "norm_label": "decision: store has_quad_error as boolean, not raw on_column_value"
     },
     {
-      "label": "Get the parent run_id and source batch path for a revision.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L132",
+      "label": "TEST_STRATEGY.md",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_132",
-      "community": 22,
-      "norm_label": "get the parent run_id and source batch path for a revision.          args:"
+      "id": "docs_test_strategy",
+      "community": 18,
+      "norm_label": "test_strategy.md"
     },
     {
-      "label": "List published revisions for the home-page history, newest first.          Sam",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L155",
+      "label": "TEST_STRATEGY.md",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_155",
-      "community": 22,
-      "norm_label": "list published revisions for the home-page history, newest first.          sam"
+      "id": "docs_test_strategy_test_strategy_md",
+      "community": 18,
+      "norm_label": "test_strategy.md"
     },
     {
-      "label": "Publish a revision, marking it as immutable evidence.          Args:",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L196",
+      "label": "Test scope summary",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L3",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_196",
-      "community": 22,
-      "norm_label": "publish a revision, marking it as immutable evidence.          args:"
+      "id": "docs_test_strategy_test_scope_summary",
+      "community": 18,
+      "norm_label": "test scope summary"
     },
     {
-      "label": "Get all revisions for a batch.          Args:             run_id: Batch run_i",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L212",
+      "label": "Unit test targets",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_212",
-      "community": 22,
-      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_i"
+      "id": "docs_test_strategy_unit_test_targets",
+      "community": 18,
+      "norm_label": "unit test targets"
     },
     {
-      "label": "Close both database connections (the app-level one and Trinity's own).",
-      "file_type": "rationale",
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L235",
+      "label": "Integration targets",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_235",
-      "community": 22,
-      "norm_label": "close both database connections (the app-level one and trinity's own)."
+      "id": "docs_test_strategy_integration_targets",
+      "community": 18,
+      "norm_label": "integration targets"
+    },
+    {
+      "label": "Regression scenarios",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "docs_test_strategy_regression_scenarios",
+      "community": 18,
+      "norm_label": "regression scenarios"
+    },
+    {
+      "label": "Required fixtures",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "docs_test_strategy_required_fixtures",
+      "community": 18,
+      "norm_label": "required fixtures"
+    },
+    {
+      "label": "Correctness definition",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "docs_test_strategy_correctness_definition",
+      "community": 18,
+      "norm_label": "correctness definition"
+    },
+    {
+      "label": "Manual validation",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "docs_test_strategy_manual_validation",
+      "community": 18,
+      "norm_label": "manual validation"
+    },
+    {
+      "label": "Test Execution Status (as of ON-COLUMN enhancement)",
+      "file_type": "document",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "docs_test_strategy_test_execution_status_as_of_on_column_enhancement",
+      "community": 18,
+      "norm_label": "test execution status (as of on-column enhancement)"
     },
     {
       "label": "review.py",
@@ -418,7 +478,7 @@
       "label": "_format_scan_date()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L42",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "flag_review_review_format_scan_date",
       "community": 22,
@@ -428,7 +488,7 @@
       "label": "compute_view_stats()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L53",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "flag_review_review_compute_view_stats",
       "community": 22,
@@ -438,7 +498,7 @@
       "label": "list_recent_batches()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L81",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "flag_review_review_list_recent_batches",
       "community": 22,
@@ -448,7 +508,7 @@
       "label": "review_batch()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L97",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "flag_review_review_review_batch",
       "community": 22,
@@ -458,7 +518,7 @@
       "label": "get_review_result()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L189",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "flag_review_review_get_review_result",
       "community": 22,
@@ -468,7 +528,7 @@
       "label": "submit_review()",
       "file_type": "code",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L229",
+      "source_location": "L233",
       "_origin": "ast",
       "id": "flag_review_review_submit_review",
       "community": 22,
@@ -518,9 +578,9 @@
       "label": "Trim an ISO timestamp to 'YYYY-MM-DD HH:MM' for display.",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L43",
+      "source_location": "L47",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_43",
+      "id": "flag_review_review_rationale_47",
       "community": 22,
       "norm_label": "trim an iso timestamp to 'yyyy-mm-dd hh:mm' for display."
     },
@@ -528,9 +588,9 @@
       "label": "Compute derived display stats for the results screen.      All counts are deri",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L54",
+      "source_location": "L58",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_54",
+      "id": "flag_review_review_rationale_58",
       "community": 22,
       "norm_label": "compute derived display stats for the results screen.      all counts are deri"
     },
@@ -538,9 +598,9 @@
       "label": "Return published-revision history for the home page, newest first.      The on",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L82",
+      "source_location": "L86",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_82",
+      "id": "flag_review_review_rationale_86",
       "community": 22,
       "norm_label": "return published-revision history for the home page, newest first.      the on"
     },
@@ -548,9 +608,9 @@
       "label": "Scan and review a batch folder for flagged compounds.      Workflow:     1. D",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L98",
+      "source_location": "L102",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_98",
+      "id": "flag_review_review_rationale_102",
       "community": 22,
       "norm_label": "scan and review a batch folder for flagged compounds.      workflow:     1. d"
     },
@@ -558,9 +618,9 @@
       "label": "Load a previously persisted review result by revision_id.      Args:",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L190",
+      "source_location": "L194",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_190",
+      "id": "flag_review_review_rationale_194",
       "community": 22,
       "norm_label": "load a previously persisted review result by revision_id.      args:"
     },
@@ -568,11 +628,591 @@
       "label": "Publish a working revision, freezing it into immutable evidence.      Args:",
       "file_type": "rationale",
       "source_file": "src/services/flag_review/review.py",
-      "source_location": "L230",
+      "source_location": "L234",
       "_origin": "ast",
-      "id": "flag_review_review_rationale_230",
+      "id": "flag_review_review_rationale_234",
       "community": 22,
       "norm_label": "publish a working revision, freezing it into immutable evidence.      args:"
+    },
+    {
+      "label": "parser.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser",
+      "community": 32,
+      "norm_label": "parser.py"
+    },
+    {
+      "label": "FlaggedCompound",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "rp_parser_parser_flaggedcompound",
+      "community": 32,
+      "norm_label": "flaggedcompound"
+    },
+    {
+      "label": "parse_target_rp()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_target_rp",
+      "community": 32,
+      "norm_label": "parse_target_rp()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "path",
+      "community": 22,
+      "norm_label": "path"
+    },
+    {
+      "label": "_extract_sample_id()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "rp_parser_parser_extract_sample_id",
+      "community": 32,
+      "norm_label": "_extract_sample_id()"
+    },
+    {
+      "label": "_find_on_column_position()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "rp_parser_parser_find_on_column_position",
+      "community": 32,
+      "norm_label": "_find_on_column_position()"
+    },
+    {
+      "label": "_parse_compound_row()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_compound_row",
+      "community": 32,
+      "norm_label": "_parse_compound_row()"
+    },
+    {
+      "label": "_extract_on_column_value()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "rp_parser_parser_extract_on_column_value",
+      "community": 32,
+      "norm_label": "_extract_on_column_value()"
+    },
+    {
+      "label": "_is_on_column_numerical()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_on_column_numerical",
+      "community": 32,
+      "norm_label": "_is_on_column_numerical()"
+    },
+    {
+      "label": "_is_data_value()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_data_value",
+      "community": 32,
+      "norm_label": "_is_data_value()"
+    },
+    {
+      "label": "Parse Target.RP fixed-width text files and extract flagged compounds.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_1",
+      "community": 32,
+      "norm_label": "parse target.rp fixed-width text files and extract flagged compounds."
+    },
+    {
+      "label": "A compound row from Target.RP with a flagged review code.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_12",
+      "community": 32,
+      "norm_label": "a compound row from target.rp with a flagged review code."
+    },
+    {
+      "label": "Parse a Target.RP file and extract flagged compounds.      Returns:         (",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_19",
+      "community": 32,
+      "norm_label": "parse a target.rp file and extract flagged compounds.      returns:         ("
+    },
+    {
+      "label": "Extract the Lab Smp Id from the file header.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_71",
+      "community": 32,
+      "norm_label": "extract the lab smp id from the file header."
+    },
+    {
+      "label": "Find the starting column position of ON-COLUMN from header line.      Scans fo",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_78",
+      "community": 32,
+      "norm_label": "find the starting column position of on-column from header line.      scans fo"
+    },
+    {
+      "label": "Parse a single compound data row using fixed-width column positions.      Comp",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_88",
+      "community": 32,
+      "norm_label": "parse a single compound data row using fixed-width column positions.      comp"
+    },
+    {
+      "label": "Extract ON-COLUMN value from a data line using fixed-width position.      ON-C",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_130",
+      "community": 32,
+      "norm_label": "extract on-column value from a data line using fixed-width position.      on-c"
+    },
+    {
+      "label": "Check if ON-COLUMN value is numerical (valid concentration or empty).      Ret",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_145",
+      "community": 32,
+      "norm_label": "check if on-column value is numerical (valid concentration or empty).      ret"
+    },
+    {
+      "label": "Check if token is a FINAL-concentration value, not a review code.      REVIEW",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_168",
+      "community": 32,
+      "norm_label": "check if token is a final-concentration value, not a review code.      review"
+    },
+    {
+      "label": "test_parser.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser",
+      "community": 32,
+      "norm_label": "test_parser.py"
+    },
+    {
+      "label": "TestParseTargetRP",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp",
+      "community": 32,
+      "norm_label": "testparsetargetrp"
+    },
+    {
+      "label": ".test_parse_with_udel()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel",
+      "community": 32,
+      "norm_label": ".test_parse_with_udel()"
+    },
+    {
+      "label": ".test_parse_missing_file()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file",
+      "community": 32,
+      "norm_label": ".test_parse_missing_file()"
+    },
+    {
+      "label": ".test_parse_empty_file()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file",
+      "community": 32,
+      "norm_label": ".test_parse_empty_file()"
+    },
+    {
+      "label": ".test_flagged_compound_structure()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure",
+      "community": 32,
+      "norm_label": ".test_flagged_compound_structure()"
+    },
+    {
+      "label": ".test_unknown_tokens_logged()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged",
+      "community": 32,
+      "norm_label": ".test_unknown_tokens_logged()"
+    },
+    {
+      "label": ".test_no_false_positives_on_empty_review_code()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code",
+      "community": 32,
+      "norm_label": ".test_no_false_positives_on_empty_review_code()"
+    },
+    {
+      "label": ".test_qualifier_suffix_not_treated_as_review_code()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
+      "community": 32,
+      "norm_label": ".test_qualifier_suffix_not_treated_as_review_code()"
+    },
+    {
+      "label": ".test_e_code_recognition()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
+      "community": 32,
+      "norm_label": ".test_e_code_recognition()"
+    },
+    {
+      "label": ".test_okay_excluded_from_unknown_tokens()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
+      "community": 32,
+      "norm_label": ".test_okay_excluded_from_unknown_tokens()"
+    },
+    {
+      "label": ".test_quad_erronious_on_column_non_numerical()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
+      "community": 32,
+      "norm_label": ".test_quad_erronious_on_column_non_numerical()"
+    },
+    {
+      "label": ".test_on_column_numerical_no_flag()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
+      "community": 32,
+      "norm_label": ".test_on_column_numerical_no_flag()"
+    },
+    {
+      "label": "Tests for rp_parser service.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_rationale_1",
+      "community": 32,
+      "norm_label": "tests for rp_parser service."
+    },
+    {
+      "label": "Test Target.RP file parsing.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_rationale_10",
+      "community": 32,
+      "norm_label": "test target.rp file parsing."
+    },
+    {
+      "label": "target_rp_finder.py",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "target_rp_finder.py",
+      "id": "trinity_target_rp_finder"
+    },
+    {
+      "label": "TargetRPFinderPersistence",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "targetrpfinderpersistence",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".__init__()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init"
+    },
+    {
+      "label": ".create_batch()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".create_batch()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch"
+    },
+    {
+      "label": ".create_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".create_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision"
+    },
+    {
+      "label": ".store_samples_and_compounds()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".store_samples_and_compounds()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds"
+    },
+    {
+      "label": ".load_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L113",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".load_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision"
+    },
+    {
+      "label": ".get_revision_context()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L131",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".get_revision_context()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
+    },
+    {
+      "label": ".list_recent_batches()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L154",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".list_recent_batches()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches"
+    },
+    {
+      "label": ".publish_revision()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L195",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".publish_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
+    },
+    {
+      "label": ".get_batch_revisions()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L211",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".get_batch_revisions()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
+    },
+    {
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L234",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": ".close()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close"
+    },
+    {
+      "label": "Trinity entry surface for Target RP Finder app.  Provides the single persisten",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "trinity entry surface for target rp finder app.  provides the single persisten",
+      "id": "trinity_target_rp_finder_rationale_1"
+    },
+    {
+      "label": "Entry point for Target RP Finder persistence through Trinity.",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "entry point for target rp finder persistence through trinity.",
+      "id": "trinity_target_rp_finder_rationale_16"
+    },
+    {
+      "label": "Initialize persistence layer with optional custom DB path.",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "initialize persistence layer with optional custom db path.",
+      "id": "trinity_target_rp_finder_rationale_19"
+    },
+    {
+      "label": "Create a new batch run and return run_id.          Args:             batch_pa",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "create a new batch run and return run_id.          args:             batch_pa",
+      "id": "trinity_target_rp_finder_rationale_39"
+    },
+    {
+      "label": "Create a new working revision for a batch.          Args:             run_id:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "create a new working revision for a batch.          args:             run_id:",
+      "id": "trinity_target_rp_finder_rationale_63"
+    },
+    {
+      "label": "Store parsed samples and flagged compounds in revision state.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L100",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "store parsed samples and flagged compounds in revision state.          args:",
+      "id": "trinity_target_rp_finder_rationale_100"
+    },
+    {
+      "label": "Load a revision's samples and compounds data.          Args:             revi",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L114",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "load a revision's samples and compounds data.          args:             revi",
+      "id": "trinity_target_rp_finder_rationale_114"
+    },
+    {
+      "label": "Get the parent run_id and source batch path for a revision.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L132",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "get the parent run_id and source batch path for a revision.          args:",
+      "id": "trinity_target_rp_finder_rationale_132"
+    },
+    {
+      "label": "List published revisions for the home-page history, newest first.          Sam",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L155",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "list published revisions for the home-page history, newest first.          sam",
+      "id": "trinity_target_rp_finder_rationale_155"
+    },
+    {
+      "label": "Publish a revision, marking it as immutable evidence.          Args:",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L196",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "publish a revision, marking it as immutable evidence.          args:",
+      "id": "trinity_target_rp_finder_rationale_196"
+    },
+    {
+      "label": "Get all revisions for a batch.          Args:             run_id: Batch run_i",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L212",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_i",
+      "id": "trinity_target_rp_finder_rationale_212"
+    },
+    {
+      "label": "Close both database connections (the app-level one and Trinity's own).",
+      "file_type": "rationale",
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L235",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "close both database connections (the app-level one and trinity's own).",
+      "id": "trinity_target_rp_finder_rationale_235"
     },
     {
       "label": "ARCHITECTURE_SELECTION.md",
@@ -1455,16 +2095,6 @@
       "id": "batch_discovery_discovery_discover_samples"
     },
     {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "src/services/batch_discovery/discovery.py",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "path",
-      "id": "path"
-    },
-    {
       "label": "Discover and classify .d folders in a .b batch folder.",
       "file_type": "rationale",
       "source_file": "src/services/batch_discovery/discovery.py",
@@ -1705,106 +2335,6 @@
       "id": "batch_discovery_test_discovery_rationale_51"
     },
     {
-      "label": "test_parser.py",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "test_parser.py",
-      "id": "rp_parser_test_parser"
-    },
-    {
-      "label": "TestParseTargetRP",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "testparsetargetrp",
-      "id": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "label": ".test_parse_with_udel()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_with_udel()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
-    },
-    {
-      "label": ".test_parse_missing_file()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_missing_file()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
-    },
-    {
-      "label": ".test_parse_empty_file()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_empty_file()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
-    },
-    {
-      "label": ".test_flagged_compound_structure()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_flagged_compound_structure()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
-    },
-    {
-      "label": ".test_unknown_tokens_logged()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_unknown_tokens_logged()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
-    },
-    {
-      "label": ".test_no_false_positives_on_empty_review_code()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_no_false_positives_on_empty_review_code()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
-    },
-    {
-      "label": "Tests for rp_parser service.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "tests for rp_parser service.",
-      "id": "rp_parser_test_parser_rationale_1"
-    },
-    {
-      "label": "Test Target.RP file parsing.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "test target.rp file parsing.",
-      "id": "rp_parser_test_parser_rationale_10"
-    },
-    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "src/services/__init__.py",
@@ -1850,7 +2380,7 @@
       "source_file": "src/services/rp_parser/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 32,
       "norm_label": "__init__.py",
       "id": "rp_parser_init"
     },
@@ -1860,159 +2390,9 @@
       "source_file": "src/services/rp_parser/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 32,
       "norm_label": "rp parser service - extracts flagged compounds from target.rp files.",
       "id": "rp_parser_init_rationale_1"
-    },
-    {
-      "label": "parser.py",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "parser.py",
-      "id": "rp_parser_parser"
-    },
-    {
-      "label": "FlaggedCompound",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "flaggedcompound",
-      "id": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "label": "parse_target_rp()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "parse_target_rp()",
-      "id": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "path",
-      "id": "src_services_rp_parser_parser_py_path"
-    },
-    {
-      "label": "_extract_sample_id()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L66",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_extract_sample_id()",
-      "id": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "label": "_parse_compound_row()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L73",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_parse_compound_row()",
-      "id": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "label": "_is_known_code_or_anomaly()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L108",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_is_known_code_or_anomaly()",
-      "id": "rp_parser_parser_is_known_code_or_anomaly"
-    },
-    {
-      "label": "_is_numeric_token()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L118",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_is_numeric_token()",
-      "id": "rp_parser_parser_is_numeric_token"
-    },
-    {
-      "label": "Parse Target.RP fixed-width text files and extract flagged compounds.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "parse target.rp fixed-width text files and extract flagged compounds.",
-      "id": "rp_parser_parser_rationale_1"
-    },
-    {
-      "label": "A compound row from Target.RP with a flagged review code.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "a compound row from target.rp with a flagged review code.",
-      "id": "rp_parser_parser_rationale_11"
-    },
-    {
-      "label": "Parse a Target.RP file and extract flagged compounds.      Returns:         (fla",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "parse a target.rp file and extract flagged compounds.      returns:         (fla",
-      "id": "rp_parser_parser_rationale_17"
-    },
-    {
-      "label": "Extract the Lab Smp Id from the file header.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L67",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "extract the lab smp id from the file header.",
-      "id": "rp_parser_parser_rationale_67"
-    },
-    {
-      "label": "Parse a single compound data row using fixed-width column positions.      Compou",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L74",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "parse a single compound data row using fixed-width column positions.      compou",
-      "id": "rp_parser_parser_rationale_74"
-    },
-    {
-      "label": "Check if token is a flagged code or log-worthy anomaly.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L109",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "check if token is a flagged code or log-worthy anomaly.",
-      "id": "rp_parser_parser_rationale_109"
-    },
-    {
-      "label": "Check if a token is a number (possibly with scientific notation or parentheses).",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L119",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "check if a token is a number (possibly with scientific notation or parentheses).",
-      "id": "rp_parser_parser_rationale_119"
     },
     {
       "label": "__init__.py",
@@ -2135,116 +2515,6 @@
       "id": "claude_commands"
     },
     {
-      "label": "DATA_MODEL.md",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "data_model.md",
-      "id": "docs_data_model"
-    },
-    {
-      "label": "DATA_MODEL.md",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "data_model.md",
-      "id": "docs_data_model_data_model_md"
-    },
-    {
-      "label": "Persistence",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "persistence",
-      "id": "docs_data_model_persistence"
-    },
-    {
-      "label": "Entities",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "entities",
-      "id": "docs_data_model_entities"
-    },
-    {
-      "label": "Batch",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "batch",
-      "id": "docs_data_model_batch"
-    },
-    {
-      "label": "Revision",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "revision",
-      "id": "docs_data_model_revision"
-    },
-    {
-      "label": "Sample",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "sample",
-      "id": "docs_data_model_sample"
-    },
-    {
-      "label": "Flagged Compound",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "flagged compound",
-      "id": "docs_data_model_flagged_compound"
-    },
-    {
-      "label": "Derived values (computed, never stored)",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "derived values (computed, never stored)",
-      "id": "docs_data_model_derived_values_computed_never_stored"
-    },
-    {
-      "label": "Entity relationship summary",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "entity relationship summary",
-      "id": "docs_data_model_entity_relationship_summary"
-    },
-    {
-      "label": "Forbidden state transitions",
-      "file_type": "document",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 17,
-      "norm_label": "forbidden state transitions",
-      "id": "docs_data_model_forbidden_state_transitions"
-    },
-    {
       "label": "PROJECT_BRIEF.md",
       "file_type": "document",
       "source_file": "docs/PROJECT_BRIEF.md",
@@ -2363,96 +2633,6 @@
       "community": 3,
       "norm_label": "commands",
       "id": "docs_project_brief_commands"
-    },
-    {
-      "label": "TEST_STRATEGY.md",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "test_strategy.md",
-      "id": "docs_test_strategy"
-    },
-    {
-      "label": "TEST_STRATEGY.md",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "test_strategy.md",
-      "id": "docs_test_strategy_test_strategy_md"
-    },
-    {
-      "label": "Test scope summary",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "test scope summary",
-      "id": "docs_test_strategy_test_scope_summary"
-    },
-    {
-      "label": "Unit test targets",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "unit test targets",
-      "id": "docs_test_strategy_unit_test_targets"
-    },
-    {
-      "label": "Integration targets",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "integration targets",
-      "id": "docs_test_strategy_integration_targets"
-    },
-    {
-      "label": "Regression scenarios",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "regression scenarios",
-      "id": "docs_test_strategy_regression_scenarios"
-    },
-    {
-      "label": "Required fixtures",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "required fixtures",
-      "id": "docs_test_strategy_required_fixtures"
-    },
-    {
-      "label": "Correctness definition",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "correctness definition",
-      "id": "docs_test_strategy_correctness_definition"
-    },
-    {
-      "label": "Manual validation",
-      "file_type": "document",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "manual validation",
-      "id": "docs_test_strategy_manual_validation"
     },
     {
       "label": "__init__.py",
@@ -3140,7 +3320,7 @@
       "source_file": "Trinity/trinity/tests/conftest.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 0,
       "norm_label": "conftest.py",
       "id": "tests_conftest"
     },
@@ -3150,7 +3330,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "test_audit_log.py",
       "id": "tests_test_audit_log"
     },
@@ -3160,7 +3340,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "_seed_run_revision()",
       "id": "tests_test_audit_log_seed_run_revision"
     },
@@ -3170,7 +3350,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "trinitydb",
       "id": "trinity_trinity_tests_test_audit_log_py_trinitydb"
     },
@@ -3180,7 +3360,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "append_event()",
       "id": "tests_test_audit_log_append_event"
     },
@@ -3190,7 +3370,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "list_for_run()",
       "id": "tests_test_audit_log_list_for_run"
     },
@@ -3200,7 +3380,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "test_audit_append_and_ordered_retrieval()",
       "id": "tests_test_audit_log_test_audit_append_and_ordered_retrieval"
     },
@@ -3210,7 +3390,7 @@
       "source_file": "Trinity/trinity/tests/test_audit_log.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 0,
+      "community": 5,
       "norm_label": "path",
       "id": "trinity_trinity_tests_test_audit_log_py_path"
     },
@@ -3290,7 +3470,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "test_lock_manager.py",
       "id": "tests_test_lock_manager"
     },
@@ -3300,7 +3480,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "lockhelderror",
       "id": "tests_test_lock_manager_lockhelderror"
     },
@@ -3320,7 +3500,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "lockrecord",
       "id": "tests_test_lock_manager_lockrecord"
     },
@@ -3330,7 +3510,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "_seed_run_revision()",
       "id": "tests_test_lock_manager_seed_run_revision"
     },
@@ -3340,7 +3520,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "trinitydb",
       "id": "trinity_trinity_tests_test_lock_manager_py_trinitydb"
     },
@@ -3350,7 +3530,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "_parse_iso()",
       "id": "tests_test_lock_manager_parse_iso"
     },
@@ -3360,7 +3540,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "datetime",
       "id": "datetime"
     },
@@ -3370,7 +3550,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "acquire_lock()",
       "id": "tests_test_lock_manager_acquire_lock"
     },
@@ -3380,7 +3560,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "timedelta",
       "id": "trinity_trinity_tests_test_lock_manager_py_timedelta"
     },
@@ -3390,7 +3570,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "get_active_lock()",
       "id": "tests_test_lock_manager_get_active_lock"
     },
@@ -3400,7 +3580,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L136",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "release_lock()",
       "id": "tests_test_lock_manager_release_lock"
     },
@@ -3410,7 +3590,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "test_acquire_verify_release_lock()",
       "id": "tests_test_lock_manager_test_acquire_verify_release_lock"
     },
@@ -3420,7 +3600,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "path",
       "id": "trinity_trinity_tests_test_lock_manager_py_path"
     },
@@ -3430,7 +3610,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L168",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "test_acquire_raises_lock_held_error_for_fresh_competing_lock()",
       "id": "tests_test_lock_manager_test_acquire_raises_lock_held_error_for_fresh_competing_lock"
     },
@@ -3440,7 +3620,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L187",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "test_stale_lock_can_be_taken_over_after_expiry_threshold()",
       "id": "tests_test_lock_manager_test_stale_lock_can_be_taken_over_after_expiry_threshold"
     },
@@ -3450,7 +3630,7 @@
       "source_file": "Trinity/trinity/tests/test_lock_manager.py",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 21,
+      "community": 0,
       "norm_label": "raised when another actor still holds an active non-stale lock.",
       "id": "tests_test_lock_manager_rationale_13"
     },
@@ -3839,7 +4019,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "_seed_run_revision (lock manager test)",
       "id": "test_lock_manager_seed_run_revision"
     },
@@ -3852,7 +4032,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "acquire_lock",
       "id": "test_lock_manager_acquire_lock"
     },
@@ -3865,7 +4045,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "get_active_lock",
       "id": "test_lock_manager_get_active_lock"
     },
@@ -3878,7 +4058,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "release_lock",
       "id": "test_lock_manager_release_lock"
     },
@@ -3891,7 +4071,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "test_acquire_verify_release_lock",
       "id": "test_lock_manager_test_acquire_verify_release_lock"
     },
@@ -3904,7 +4084,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "test_acquire_raises_lock_held_error_for_fresh_competing_lock",
       "id": "test_lock_manager_test_acquire_raises_lock_held_error_for_fresh_competing_lock"
     },
@@ -3917,7 +4097,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 0,
       "norm_label": "test_stale_lock_can_be_taken_over_after_expiry_threshold",
       "id": "test_lock_manager_test_stale_lock_can_be_taken_over_after_expiry_threshold"
     },
@@ -3943,7 +4123,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 0,
       "norm_label": "_seed_run_revision (working state test)",
       "id": "test_working_state_seed_run_revision"
     },
@@ -3956,7 +4136,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 0,
       "norm_label": "test_working_state_dict_json_round_trip",
       "id": "test_working_state_test_working_state_dict_json_round_trip"
     },
@@ -4229,7 +4409,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 4,
       "norm_label": "intake summary (problem/goals/constraints/unknowns)",
       "id": "project_designer_intake_summary"
     },
@@ -5079,19 +5259,6 @@
       "id": "data_model_audit_event"
     },
     {
-      "label": "FAILURE_CATALOG.md",
-      "file_type": "document",
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "failure_catalog.md",
-      "id": "failure_catalog"
-    },
-    {
       "label": "Session-state key drift can break rehydration subtly",
       "file_type": "rationale",
       "source_file": "Trinity/docs/FAILURE_CATALOG.md",
@@ -5692,6 +5859,867 @@
   ],
   "links": [
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_required_document_set",
+      "target": "docs_data_model"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/BOOTSTRAP_QUESTIONNAIRE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "bootstrap_questionnaire",
+      "target": "docs_data_model"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_architecture_selection_architecture_selection_md",
+      "target": "docs_data_model"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "adr_0002_persist_mutable_working_state_with_version_aware_rehydration_and_keep_published_evidence_separate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "adr_0003_concurrency_model_single_editor_lock"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "adr_0004_published_revision_reentry_policy"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_audit_event"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_criteria_configuration"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_derived_result_set"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_lock_record"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_match_mapping"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_planned_sample_set_line"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_published_evidence_package"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_raw_instrument_row"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_raw_upload_batch"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_resolved_sample_row"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_review_assignment"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_run"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_user_identity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "data_model_working_revision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model",
+      "target": "docs_data_model_data_model_md"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Trinity/docs/DATA_MODEL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "state_classifier_state_classification_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/.claude/skills/project-init/SKILL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "project_init_claude_md",
+      "target": "docs_data_model"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_data_model_md",
+      "target": "docs_data_model_derived_values_computed_never_stored"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_data_model_md",
+      "target": "docs_data_model_entities"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_data_model_md",
+      "target": "docs_data_model_entity_relationship_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_data_model_md",
+      "target": "docs_data_model_forbidden_state_transitions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_data_model_md",
+      "target": "docs_data_model_persistence"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_entities",
+      "target": "docs_data_model_batch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_entities",
+      "target": "docs_data_model_flagged_compound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_entities",
+      "target": "docs_data_model_revision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA_MODEL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_data_model_entities",
+      "target": "docs_data_model_sample"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_failure_catalog",
+      "target": "docs_failure_catalog_failure_catalog_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "docs_failure_catalog_decision_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "docs_failure_catalog_known_risks_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "docs_failure_catalog_target_rp_parsing_logic_risk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_bad_raw_rows_poison_rebuild"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_derived_truth_stale_persisted"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_draft_save_checkpoint_drift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_duplicate_lims_id_overwrite"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_governed_criteria_drift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_home_review_queue_self_review"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_merge_conflict_artifacts_ship"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_parent_child_state_active_records"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_persisted_action_widget_keys_crash"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_post_run_metadata_fragile_order"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_publish_reopen_incomplete_metadata"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_published_runs_reopen_wrong_page"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_review_open_routing_crash"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_session_state_key_drift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_shared_storage_lock_deadlock"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_snapshot_null_semantics_drift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_stale_pairing_after_categorization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_stale_widget_overwrites_clicks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_step1_navigation_drops_edits"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_step1_sidebar_stale_rows"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_summary_open_route_drift"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_test_collection_fails"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_ui_helpers_drift_from_starter_state"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_failure_catalog_failure_catalog_md",
+      "target": "failure_catalog_version_markers_lie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/INDEX.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "docs_failure_catalog_failure_catalog_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/QUALITY_GATES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "quality_gates",
+      "target": "docs_failure_catalog_failure_catalog_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Trinity/docs/TEST_STRATEGY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_strategy_trinity_docs",
+      "target": "docs_failure_catalog_failure_catalog_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_known_risks_open",
+      "target": "docs_failure_catalog_risk_fixed_width_column_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_known_risks_open",
+      "target": "docs_failure_catalog_risk_okay_exclusion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_known_risks_open",
+      "target": "docs_failure_catalog_risk_on_column_position_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/FAILURE_CATALOG.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_failure_catalog_decision_log",
+      "target": "docs_failure_catalog_decision_store_has_quad_error_as_boolean_not_raw_on_column_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy",
+      "target": "docs_test_strategy_test_strategy_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_correctness_definition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_integration_targets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_manual_validation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_regression_scenarios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_required_fixtures"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_test_execution_status_as_of_on_column_enhancement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_test_scope_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/TEST_STRATEGY.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_strategy_test_strategy_md",
+      "target": "docs_test_strategy_unit_test_targets"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_init",
+      "target": "flag_review_review"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_code_class"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_compute_view_stats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_format_scan_date"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_get_review_result"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_list_recent_batches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_review_batch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_reviewresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_samplereview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review",
+      "target": "flag_review_review_submit_review"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5701,6 +6729,1018 @@
       "confidence_score": 1.0,
       "source": "flag_review_review",
       "target": "trinity_target_rp_finder"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_rationale_1",
+      "target": "flag_review_review"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_get_review_result",
+      "target": "flag_review_review_samplereview"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_rationale_15",
+      "target": "flag_review_review_samplereview"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "flag_review_review_samplereview"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "flag_review_review_samplereview",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_init",
+      "target": "flag_review_review_reviewresult"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_get_review_result",
+      "target": "flag_review_review_reviewresult"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_rationale_23",
+      "target": "flag_review_review_reviewresult"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "flag_review_review_reviewresult"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "flag_review_review_reviewresult",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_compute_view_stats",
+      "target": "flag_review_review_code_class"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_rationale_33",
+      "target": "flag_review_review_code_class"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_get_review_result",
+      "target": "flag_review_review_format_scan_date"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_review_list_recent_batches",
+      "target": "flag_review_review_format_scan_date"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_47",
+      "target": "flag_review_review_format_scan_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_58",
+      "target": "flag_review_review_compute_view_stats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "flag_review_review_list_recent_batches",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_86",
+      "target": "flag_review_review_list_recent_batches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_init",
+      "target": "flag_review_review_review_batch"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_102",
+      "target": "flag_review_review_review_batch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "batch_discovery_discovery_discover_samples"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "target_rp_finder_main_submit_batch_review",
+      "target": "flag_review_review_review_batch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_scan_batch",
+      "target": "flag_review_review_review_batch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_init",
+      "target": "flag_review_review_get_review_result"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "flag_review_review_get_review_result",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_194",
+      "target": "flag_review_review_get_review_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/main.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "target_rp_finder_main_get_batch_results",
+      "target": "flag_review_review_get_review_result"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_view_results",
+      "target": "flag_review_review_get_review_result"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "flag_review_init",
+      "target": "flag_review_review_submit_review"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "flag_review_review_rationale_234",
+      "target": "flag_review_review_submit_review",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "flag_review_review_submit_review",
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/target_rp_finder/ui.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "target_rp_finder_ui_publish_and_return_home",
+      "target": "flag_review_review_submit_review"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_extract_on_column_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_extract_sample_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_find_on_column_position",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_data_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_on_column_numerical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_compound_row"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_1",
+      "target": "rp_parser_parser"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_12",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_parser_flaggedcompound",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_extract_sample_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_find_on_column_position",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_parse_compound_row"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_19",
+      "target": "rp_parser_parser_parse_target_rp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser_parse_target_rp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "batch_discovery_discovery_discover_samples",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "trinity_target_rp_finder_targetrpfinderpersistence_init",
+      "target": "path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_71",
+      "target": "rp_parser_parser_extract_sample_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_78",
+      "target": "rp_parser_parser_find_on_column_position",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_extract_on_column_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_is_data_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_is_on_column_numerical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_88",
+      "target": "rp_parser_parser_parse_compound_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_130",
+      "target": "rp_parser_parser_extract_on_column_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_145",
+      "target": "rp_parser_parser_is_on_column_numerical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "rp_parser_parser_rationale_168",
+      "target": "rp_parser_parser_is_data_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_test_parser_testparsetargetrp"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_rationale_1",
+      "target": "rp_parser_test_parser"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_rationale_10",
+      "target": "rp_parser_test_parser_testparsetargetrp"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
     },
     {
       "relation": "imports_from",
@@ -5732,70 +7772,6 @@
       "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_1",
       "target": "trinity_target_rp_finder"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L130",
-      "weight": 1.0,
-      "source": "flag_review_review_get_review_result",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "flag_review_review_list_recent_batches",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L9",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "flag_review_review_reviewresult",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L9",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "flag_review_review_samplereview",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L166",
-      "weight": 1.0,
-      "source": "flag_review_review_submit_review",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence"
     },
     {
       "relation": "rationale_for",
@@ -5873,9 +7849,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_targetrpfinderpersistence",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches"
     },
     {
       "relation": "method",
@@ -5918,17 +7894,6 @@
       "target": "trinity_target_rp_finder_targetrpfinderpersistence_init"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "trinity_target_rp_finder_targetrpfinderpersistence_init",
-      "target": "path"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "Trinity/trinity/target_rp_finder.py",
@@ -5939,25 +7904,14 @@
       "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
-      "target": "path"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_63",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision"
     },
     {
       "relation": "rationale_for",
@@ -5965,9 +7919,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_100",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds"
     },
     {
       "relation": "rationale_for",
@@ -5975,9 +7929,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_114",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision"
     },
     {
       "relation": "rationale_for",
@@ -5985,9 +7939,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_132",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
     },
     {
       "relation": "rationale_for",
@@ -5995,9 +7949,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_155",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches"
     },
     {
       "relation": "rationale_for",
@@ -6005,9 +7959,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_196",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
     },
     {
       "relation": "rationale_for",
@@ -6015,9 +7969,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_212",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
     },
     {
       "relation": "rationale_for",
@@ -6025,408 +7979,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_235",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "re_exports",
-      "context": "export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_init",
-      "target": "flag_review_review"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_code_class",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L53",
-      "weight": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_compute_view_stats",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_format_scan_date",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L120",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_get_review_result"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_list_recent_batches",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_review_batch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_reviewresult"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_samplereview"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L159",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review",
-      "target": "flag_review_review_submit_review"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_rationale_1",
-      "target": "flag_review_review"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L141",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_get_review_result",
-      "target": "flag_review_review_samplereview"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_rationale_15",
-      "target": "flag_review_review_samplereview"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L65",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "flag_review_review_samplereview"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_init",
-      "target": "flag_review_review_reviewresult"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L120",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_get_review_result",
-      "target": "flag_review_review_reviewresult"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_rationale_23",
-      "target": "flag_review_review_reviewresult"
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "flag_review_review_reviewresult"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "flag_review_review_compute_view_stats",
-      "target": "flag_review_review_code_class",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_33",
-      "target": "flag_review_review_code_class",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L226",
-      "weight": 1.0,
-      "source": "flag_review_review_get_review_result",
-      "target": "flag_review_review_format_scan_date",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L93",
-      "weight": 1.0,
-      "source": "flag_review_review_list_recent_batches",
-      "target": "flag_review_review_format_scan_date",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_43",
-      "target": "flag_review_review_format_scan_date",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_54",
-      "target": "flag_review_review_compute_view_stats",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L82",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_82",
-      "target": "flag_review_review_list_recent_batches",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_init",
-      "target": "flag_review_review_review_batch"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L98",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_98",
-      "target": "flag_review_review_review_batch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "batch_discovery_discovery_discover_samples"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "target_rp_finder_main_submit_batch_review",
-      "target": "flag_review_review_review_batch"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_scan_batch",
-      "target": "flag_review_review_review_batch"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_init",
-      "target": "flag_review_review_get_review_result"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L190",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_190",
-      "target": "flag_review_review_get_review_result",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/main.py",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "target_rp_finder_main_get_batch_results",
-      "target": "flag_review_review_get_review_result"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_view_results",
-      "target": "flag_review_review_get_review_result"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "flag_review_init",
-      "target": "flag_review_review_submit_review"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L230",
-      "weight": 1.0,
-      "source": "flag_review_review_rationale_230",
-      "target": "flag_review_review_submit_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/target_rp_finder/ui.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "target_rp_finder_ui_publish_and_return_home",
-      "target": "flag_review_review_submit_review"
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close"
     },
     {
       "relation": "contains",
@@ -6567,16 +8122,6 @@
       "weight": 1.0,
       "source": "docs_architecture_selection_architecture_selection_md",
       "target": "docs_assumptions_and_open_questions_assumptions_and_open_questions_md"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/ARCHITECTURE_SELECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_architecture_selection_architecture_selection_md",
-      "target": "docs_data_model"
     },
     {
       "relation": "references",
@@ -7481,17 +9026,6 @@
       "target": "batch_discovery_discovery_classify_folder"
     },
     {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/batch_discovery/discovery.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "batch_discovery_discovery_discover_samples",
-      "target": "path"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/services/batch_discovery/discovery.py",
@@ -7703,96 +9237,6 @@
       "target": "batch_discovery_test_discovery_testdiscoversamples_test_discover_samples_sorted"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser",
-      "target": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_rationale_1",
-      "target": "rp_parser_test_parser"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_rationale_10",
-      "target": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/services/__init__.py",
@@ -7813,39 +9257,6 @@
       "target": "batch_discovery_init"
     },
     {
-      "relation": "re_exports",
-      "context": "export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/services/rp_parser/__init__.py",
@@ -7854,213 +9265,6 @@
       "confidence_score": 1.0,
       "source": "rp_parser_init_rationale_1",
       "target": "rp_parser_init"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L108",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_is_known_code_or_anomaly"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L118",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_is_numeric_token"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_1",
-      "target": "rp_parser_parser"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_11",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "src_services_rp_parser_parser_py_path"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_17",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_67",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_is_known_code_or_anomaly"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_74",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L114",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_is_known_code_or_anomaly",
-      "target": "rp_parser_parser_is_numeric_token"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L109",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_109",
-      "target": "rp_parser_parser_is_known_code_or_anomaly"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L119",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_119",
-      "target": "rp_parser_parser_is_numeric_token"
     },
     {
       "relation": "rationale_for",
@@ -8161,316 +9365,6 @@
       "confidence_score": 1.0,
       "source": "claude_target_rp_finder",
       "target": "claude_what_this_is"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/AGENTS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "agents_required_document_set",
-      "target": "docs_data_model"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/BOOTSTRAP_QUESTIONNAIRE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "bootstrap_questionnaire",
-      "target": "docs_data_model"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "adr_0002_persist_mutable_working_state_with_version_aware_rehydration_and_keep_published_evidence_separate"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "adr_0003_concurrency_model_single_editor_lock"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "adr_0004_published_revision_reentry_policy"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_audit_event"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_criteria_configuration"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_derived_result_set"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_lock_record"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_match_mapping"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_planned_sample_set_line"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_published_evidence_package"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_raw_instrument_row"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_raw_upload_batch"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_resolved_sample_row"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_review_assignment"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_run"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_user_identity"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "data_model_working_revision"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model",
-      "target": "docs_data_model_data_model_md"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Trinity/docs/DATA_MODEL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model",
-      "target": "state_classifier_state_classification_doc"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/.claude/skills/project-init/SKILL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "project_init_claude_md",
-      "target": "docs_data_model"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_derived_values_computed_never_stored"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_entities"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_entity_relationship_summary"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_forbidden_state_transitions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_data_model_md",
-      "target": "docs_data_model_persistence"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_entities",
-      "target": "docs_data_model_batch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_entities",
-      "target": "docs_data_model_flagged_compound"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_entities",
-      "target": "docs_data_model_revision"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DATA_MODEL.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_data_model_entities",
-      "target": "docs_data_model_sample"
     },
     {
       "relation": "contains",
@@ -8581,86 +9475,6 @@
       "confidence_score": 1.0,
       "source": "docs_project_brief_app_specific_details_intake_gaps",
       "target": "docs_project_brief_integrations"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy",
-      "target": "docs_test_strategy_test_strategy_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_correctness_definition"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_integration_targets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_manual_validation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_regression_scenarios"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_required_fixtures"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_test_scope_summary"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/TEST_STRATEGY.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_test_strategy_test_strategy_md",
-      "target": "docs_test_strategy_unit_test_targets"
     },
     {
       "relation": "rationale_for",
@@ -12401,276 +13215,6 @@
     },
     {
       "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_bad_raw_rows_poison_rebuild"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_derived_truth_stale_persisted"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_draft_save_checkpoint_drift"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_duplicate_lims_id_overwrite"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_governed_criteria_drift"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_home_review_queue_self_review"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_merge_conflict_artifacts_ship"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_parent_child_state_active_records"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_persisted_action_widget_keys_crash"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_post_run_metadata_fragile_order"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_publish_reopen_incomplete_metadata"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_published_runs_reopen_wrong_page"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_review_open_routing_crash"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_session_state_key_drift"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_shared_storage_lock_deadlock"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_snapshot_null_semantics_drift"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_stale_pairing_after_categorization"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_stale_widget_overwrites_clicks"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_step1_navigation_drops_edits"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_step1_sidebar_stale_rows"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_summary_open_route_drift"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_test_collection_fails"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_ui_helpers_drift_from_starter_state"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/FAILURE_CATALOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "failure_catalog",
-      "target": "failure_catalog_version_markers_lie"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/INDEX.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "index",
-      "target": "failure_catalog"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/QUALITY_GATES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "quality_gates",
-      "target": "failure_catalog"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Trinity/docs/TEST_STRATEGY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_strategy_trinity_docs",
-      "target": "failure_catalog"
-    },
-    {
-      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "Trinity/docs/RETROSPECTIVE.md",
@@ -13330,5 +13874,5 @@
       "source_file": "docs/DATA_MODEL.md"
     }
   ],
-  "built_at_commit": "717a2ced2d9ecc46b4743271f66f02fab2f3a271"
+  "built_at_commit": "cd0bceabe19a3618513a3b53dd594875a1547379"
 }
