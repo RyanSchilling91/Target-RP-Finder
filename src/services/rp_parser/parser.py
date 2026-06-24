@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Optional
 import re
 
-FLAGGED_REVIEW_CODES = {"Udel", "Udelete", "dubious", "E-Code","E-code"}
+FLAGGED_REVIEW_CODES = {"Udel", "Udelete", "UDel", "dubious", "E-Code", "E-code"}
 UNKNOWN_TOKEN_EXCLUSIONS = {"okay", "ok"}  # case-insensitive comparison
 
 @dataclass
