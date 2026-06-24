@@ -1,13 +1,18 @@
 # Graph Report - Target RP finder  (2026-06-24)
 
 ## Corpus Check
-- 85 files · ~54,132 words
+- 85 files · ~54,140 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 526 nodes · 771 edges · 38 communities (32 shown, 6 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 74 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `db04e6a1`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Trinity DB Engine|Trinity DB Engine]]
@@ -61,9 +66,9 @@
 10. `Working Revision (entity)` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `SampleReview` --uses--> `TargetRPFinderPersistence`  [INFERRED]
-  src/services/flag_review/review.py → Trinity/trinity/target_rp_finder.py
 - `ReviewResult` --uses--> `TargetRPFinderPersistence`  [INFERRED]
+  src/services/flag_review/review.py → Trinity/trinity/target_rp_finder.py
+- `SampleReview` --uses--> `TargetRPFinderPersistence`  [INFERRED]
   src/services/flag_review/review.py → Trinity/trinity/target_rp_finder.py
 - `LockRecord` --semantically_similar_to--> `LockToken`  [INFERRED] [semantically similar]
   Trinity/trinity/tests/test_lock_manager.py → Trinity/trinity/lock_manager.py
@@ -233,5 +238,5 @@ _Questions this graph is uniquely positioned to answer:_
   _`TargetRPFinderPersistence` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `datetime` (e.g. with `DBConfig` and `TrinityDB`) actually correct?**
   _`datetime` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Persistence`, `Batch`, `Revision` to the rest of the system?**
+- **What connects `Trinity entry surface for Target RP Finder app.  Provides the single persisten`, `Entry point for Target RP Finder persistence through Trinity.`, `Initialize persistence layer with optional custom DB path.` to the rest of the system?**
   _220 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -135,14 +135,354 @@
   },
   "nodes": [
     {
+      "label": "parser.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser",
+      "community": 32,
+      "norm_label": "parser.py"
+    },
+    {
+      "label": "FlaggedCompound",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "rp_parser_parser_flaggedcompound",
+      "community": 32,
+      "norm_label": "flaggedcompound"
+    },
+    {
+      "label": "parse_target_rp()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_target_rp",
+      "community": 32,
+      "norm_label": "parse_target_rp()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "path",
+      "community": 22,
+      "norm_label": "path"
+    },
+    {
+      "label": "_extract_sample_id()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "rp_parser_parser_extract_sample_id",
+      "community": 32,
+      "norm_label": "_extract_sample_id()"
+    },
+    {
+      "label": "_find_on_column_position()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "rp_parser_parser_find_on_column_position",
+      "community": 32,
+      "norm_label": "_find_on_column_position()"
+    },
+    {
+      "label": "_parse_compound_row()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "rp_parser_parser_parse_compound_row",
+      "community": 32,
+      "norm_label": "_parse_compound_row()"
+    },
+    {
+      "label": "_extract_on_column_value()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "rp_parser_parser_extract_on_column_value",
+      "community": 32,
+      "norm_label": "_extract_on_column_value()"
+    },
+    {
+      "label": "_is_on_column_numerical()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_on_column_numerical",
+      "community": 32,
+      "norm_label": "_is_on_column_numerical()"
+    },
+    {
+      "label": "_is_data_value()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "rp_parser_parser_is_data_value",
+      "community": 32,
+      "norm_label": "_is_data_value()"
+    },
+    {
+      "label": "Parse Target.RP fixed-width text files and extract flagged compounds.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_1",
+      "community": 32,
+      "norm_label": "parse target.rp fixed-width text files and extract flagged compounds."
+    },
+    {
+      "label": "A compound row from Target.RP with a flagged review code.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_12",
+      "community": 32,
+      "norm_label": "a compound row from target.rp with a flagged review code."
+    },
+    {
+      "label": "Parse a Target.RP file and extract flagged compounds.      Returns:         (",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_19",
+      "community": 32,
+      "norm_label": "parse a target.rp file and extract flagged compounds.      returns:         ("
+    },
+    {
+      "label": "Extract the Lab Smp Id from the file header.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_71",
+      "community": 32,
+      "norm_label": "extract the lab smp id from the file header."
+    },
+    {
+      "label": "Find the starting column position of ON-COLUMN from header line.      Scans fo",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_78",
+      "community": 32,
+      "norm_label": "find the starting column position of on-column from header line.      scans fo"
+    },
+    {
+      "label": "Parse a single compound data row using fixed-width column positions.      Comp",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_88",
+      "community": 32,
+      "norm_label": "parse a single compound data row using fixed-width column positions.      comp"
+    },
+    {
+      "label": "Extract ON-COLUMN value from a data line using fixed-width position.      ON-C",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_130",
+      "community": 32,
+      "norm_label": "extract on-column value from a data line using fixed-width position.      on-c"
+    },
+    {
+      "label": "Check if ON-COLUMN value is numerical (valid concentration or empty).      Ret",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_145",
+      "community": 32,
+      "norm_label": "check if on-column value is numerical (valid concentration or empty).      ret"
+    },
+    {
+      "label": "Check if token is a FINAL-concentration value, not a review code.      REVIEW",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "rp_parser_parser_rationale_168",
+      "community": 32,
+      "norm_label": "check if token is a final-concentration value, not a review code.      review"
+    },
+    {
+      "label": "test_parser.py",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser",
+      "community": 32,
+      "norm_label": "test_parser.py"
+    },
+    {
+      "label": "TestParseTargetRP",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp",
+      "community": 32,
+      "norm_label": "testparsetargetrp"
+    },
+    {
+      "label": ".test_parse_with_udel()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel",
+      "community": 32,
+      "norm_label": ".test_parse_with_udel()"
+    },
+    {
+      "label": ".test_parse_missing_file()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file",
+      "community": 32,
+      "norm_label": ".test_parse_missing_file()"
+    },
+    {
+      "label": ".test_parse_empty_file()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file",
+      "community": 32,
+      "norm_label": ".test_parse_empty_file()"
+    },
+    {
+      "label": ".test_flagged_compound_structure()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure",
+      "community": 32,
+      "norm_label": ".test_flagged_compound_structure()"
+    },
+    {
+      "label": ".test_unknown_tokens_logged()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged",
+      "community": 32,
+      "norm_label": ".test_unknown_tokens_logged()"
+    },
+    {
+      "label": ".test_no_false_positives_on_empty_review_code()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code",
+      "community": 32,
+      "norm_label": ".test_no_false_positives_on_empty_review_code()"
+    },
+    {
+      "label": ".test_qualifier_suffix_not_treated_as_review_code()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
+      "community": 32,
+      "norm_label": ".test_qualifier_suffix_not_treated_as_review_code()"
+    },
+    {
+      "label": ".test_e_code_recognition()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
+      "community": 32,
+      "norm_label": ".test_e_code_recognition()"
+    },
+    {
+      "label": ".test_okay_excluded_from_unknown_tokens()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
+      "community": 32,
+      "norm_label": ".test_okay_excluded_from_unknown_tokens()"
+    },
+    {
+      "label": ".test_quad_erronious_on_column_non_numerical()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
+      "community": 32,
+      "norm_label": ".test_quad_erronious_on_column_non_numerical()"
+    },
+    {
+      "label": ".test_on_column_numerical_no_flag()",
+      "file_type": "code",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
+      "community": 32,
+      "norm_label": ".test_on_column_numerical_no_flag()"
+    },
+    {
+      "label": "Tests for rp_parser service.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_rationale_1",
+      "community": 32,
+      "norm_label": "tests for rp_parser service."
+    },
+    {
+      "label": "Test Target.RP file parsing.",
+      "file_type": "rationale",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "rp_parser_test_parser_rationale_10",
+      "community": 32,
+      "norm_label": "test target.rp file parsing."
+    },
+    {
       "label": "target_rp_finder.py",
       "file_type": "code",
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder",
       "community": 22,
-      "norm_label": "target_rp_finder.py"
+      "norm_label": "target_rp_finder.py",
+      "id": "trinity_target_rp_finder"
     },
     {
       "label": "TargetRPFinderPersistence",
@@ -150,9 +490,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence",
       "community": 22,
-      "norm_label": "targetrpfinderpersistence"
+      "norm_label": "targetrpfinderpersistence",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence"
     },
     {
       "label": ".__init__()",
@@ -160,9 +500,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init",
       "community": 22,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_init"
     },
     {
       "label": ".create_batch()",
@@ -170,9 +510,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
       "community": 22,
-      "norm_label": ".create_batch()"
+      "norm_label": ".create_batch()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch"
     },
     {
       "label": ".create_revision()",
@@ -180,9 +520,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision",
       "community": 22,
-      "norm_label": ".create_revision()"
+      "norm_label": ".create_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision"
     },
     {
       "label": ".store_samples_and_compounds()",
@@ -190,9 +530,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L101",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds",
       "community": 22,
-      "norm_label": ".store_samples_and_compounds()"
+      "norm_label": ".store_samples_and_compounds()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds"
     },
     {
       "label": ".load_revision()",
@@ -200,9 +540,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L115",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision",
       "community": 22,
-      "norm_label": ".load_revision()"
+      "norm_label": ".load_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision"
     },
     {
       "label": ".get_revision_context()",
@@ -210,9 +550,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L133",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
       "community": 22,
-      "norm_label": ".get_revision_context()"
+      "norm_label": ".get_revision_context()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
     },
     {
       "label": ".list_recent_batches()",
@@ -220,9 +560,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L156",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches",
       "community": 22,
-      "norm_label": ".list_recent_batches()"
+      "norm_label": ".list_recent_batches()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches"
     },
     {
       "label": ".publish_revision()",
@@ -230,9 +570,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L197",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
       "community": 22,
-      "norm_label": ".publish_revision()"
+      "norm_label": ".publish_revision()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
     },
     {
       "label": ".get_batch_revisions()",
@@ -240,9 +580,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L213",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
       "community": 22,
-      "norm_label": ".get_batch_revisions()"
+      "norm_label": ".get_batch_revisions()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
     },
     {
       "label": ".close()",
@@ -250,9 +590,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L236",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close",
       "community": 22,
-      "norm_label": ".close()"
+      "norm_label": ".close()",
+      "id": "trinity_target_rp_finder_targetrpfinderpersistence_close"
     },
     {
       "label": "Trinity entry surface for Target RP Finder app.  Provides the single persisten",
@@ -260,9 +600,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_1",
       "community": 22,
-      "norm_label": "trinity entry surface for target rp finder app.  provides the single persisten"
+      "norm_label": "trinity entry surface for target rp finder app.  provides the single persisten",
+      "id": "trinity_target_rp_finder_rationale_1"
     },
     {
       "label": "Entry point for Target RP Finder persistence through Trinity.",
@@ -270,9 +610,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_16",
       "community": 22,
-      "norm_label": "entry point for target rp finder persistence through trinity."
+      "norm_label": "entry point for target rp finder persistence through trinity.",
+      "id": "trinity_target_rp_finder_rationale_16"
     },
     {
       "label": "Initialize persistence layer with optional custom DB path.",
@@ -280,9 +620,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_19",
       "community": 22,
-      "norm_label": "initialize persistence layer with optional custom db path."
+      "norm_label": "initialize persistence layer with optional custom db path.",
+      "id": "trinity_target_rp_finder_rationale_19"
     },
     {
       "label": "Create a new batch run and return run_id.          Args:             batch_pa",
@@ -290,9 +630,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_41",
       "community": 22,
-      "norm_label": "create a new batch run and return run_id.          args:             batch_pa"
+      "norm_label": "create a new batch run and return run_id.          args:             batch_pa",
+      "id": "trinity_target_rp_finder_rationale_41"
     },
     {
       "label": "Create a new working revision for a batch.          Args:             run_id:",
@@ -300,9 +640,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L65",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_65",
       "community": 22,
-      "norm_label": "create a new working revision for a batch.          args:             run_id:"
+      "norm_label": "create a new working revision for a batch.          args:             run_id:",
+      "id": "trinity_target_rp_finder_rationale_65"
     },
     {
       "label": "Store parsed samples and flagged compounds in revision state.          Args:",
@@ -310,9 +650,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L102",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_102",
       "community": 22,
-      "norm_label": "store parsed samples and flagged compounds in revision state.          args:"
+      "norm_label": "store parsed samples and flagged compounds in revision state.          args:",
+      "id": "trinity_target_rp_finder_rationale_102"
     },
     {
       "label": "Load a revision's samples and compounds data.          Args:             revi",
@@ -320,9 +660,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L116",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_116",
       "community": 22,
-      "norm_label": "load a revision's samples and compounds data.          args:             revi"
+      "norm_label": "load a revision's samples and compounds data.          args:             revi",
+      "id": "trinity_target_rp_finder_rationale_116"
     },
     {
       "label": "Get the parent run_id and source batch path for a revision.          Args:",
@@ -330,9 +670,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_134",
       "community": 22,
-      "norm_label": "get the parent run_id and source batch path for a revision.          args:"
+      "norm_label": "get the parent run_id and source batch path for a revision.          args:",
+      "id": "trinity_target_rp_finder_rationale_134"
     },
     {
       "label": "List published revisions for the home-page history, newest first.          Sam",
@@ -340,9 +680,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L157",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_157",
       "community": 22,
-      "norm_label": "list published revisions for the home-page history, newest first.          sam"
+      "norm_label": "list published revisions for the home-page history, newest first.          sam",
+      "id": "trinity_target_rp_finder_rationale_157"
     },
     {
       "label": "Publish a revision, marking it as immutable evidence.          Args:",
@@ -350,9 +690,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L198",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_198",
       "community": 22,
-      "norm_label": "publish a revision, marking it as immutable evidence.          args:"
+      "norm_label": "publish a revision, marking it as immutable evidence.          args:",
+      "id": "trinity_target_rp_finder_rationale_198"
     },
     {
       "label": "Get all revisions for a batch.          Args:             run_id: Batch run_i",
@@ -360,9 +700,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L214",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_214",
       "community": 22,
-      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_i"
+      "norm_label": "get all revisions for a batch.          args:             run_id: batch run_i",
+      "id": "trinity_target_rp_finder_rationale_214"
     },
     {
       "label": "Close both database connections (the app-level one and Trinity's own).",
@@ -370,9 +710,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L237",
       "_origin": "ast",
-      "id": "trinity_target_rp_finder_rationale_237",
       "community": 22,
-      "norm_label": "close both database connections (the app-level one and trinity's own)."
+      "norm_label": "close both database connections (the app-level one and trinity's own).",
+      "id": "trinity_target_rp_finder_rationale_237"
     },
     {
       "label": "DATA_MODEL.md",
@@ -873,346 +1213,6 @@
       "community": 22,
       "norm_label": "publish a working revision, freezing it into immutable evidence.      args:",
       "id": "flag_review_review_rationale_234"
-    },
-    {
-      "label": "parser.py",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "parser.py",
-      "id": "rp_parser_parser"
-    },
-    {
-      "label": "FlaggedCompound",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "flaggedcompound",
-      "id": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "label": "parse_target_rp()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "parse_target_rp()",
-      "id": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "path",
-      "id": "path"
-    },
-    {
-      "label": "_extract_sample_id()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L70",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_extract_sample_id()",
-      "id": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "label": "_find_on_column_position()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L77",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_find_on_column_position()",
-      "id": "rp_parser_parser_find_on_column_position"
-    },
-    {
-      "label": "_parse_compound_row()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L87",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_parse_compound_row()",
-      "id": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "label": "_extract_on_column_value()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L129",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_extract_on_column_value()",
-      "id": "rp_parser_parser_extract_on_column_value"
-    },
-    {
-      "label": "_is_on_column_numerical()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L144",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_is_on_column_numerical()",
-      "id": "rp_parser_parser_is_on_column_numerical"
-    },
-    {
-      "label": "_is_data_value()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L167",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "_is_data_value()",
-      "id": "rp_parser_parser_is_data_value"
-    },
-    {
-      "label": "Parse Target.RP fixed-width text files and extract flagged compounds.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "parse target.rp fixed-width text files and extract flagged compounds.",
-      "id": "rp_parser_parser_rationale_1"
-    },
-    {
-      "label": "A compound row from Target.RP with a flagged review code.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "a compound row from target.rp with a flagged review code.",
-      "id": "rp_parser_parser_rationale_12"
-    },
-    {
-      "label": "Parse a Target.RP file and extract flagged compounds.      Returns:         (",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "parse a target.rp file and extract flagged compounds.      returns:         (",
-      "id": "rp_parser_parser_rationale_19"
-    },
-    {
-      "label": "Extract the Lab Smp Id from the file header.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L71",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "extract the lab smp id from the file header.",
-      "id": "rp_parser_parser_rationale_71"
-    },
-    {
-      "label": "Find the starting column position of ON-COLUMN from header line.      Scans fo",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L78",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "find the starting column position of on-column from header line.      scans fo",
-      "id": "rp_parser_parser_rationale_78"
-    },
-    {
-      "label": "Parse a single compound data row using fixed-width column positions.      Comp",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L88",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "parse a single compound data row using fixed-width column positions.      comp",
-      "id": "rp_parser_parser_rationale_88"
-    },
-    {
-      "label": "Extract ON-COLUMN value from a data line using fixed-width position.      ON-C",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L130",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "extract on-column value from a data line using fixed-width position.      on-c",
-      "id": "rp_parser_parser_rationale_130"
-    },
-    {
-      "label": "Check if ON-COLUMN value is numerical (valid concentration or empty).      Ret",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L145",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "check if on-column value is numerical (valid concentration or empty).      ret",
-      "id": "rp_parser_parser_rationale_145"
-    },
-    {
-      "label": "Check if token is a FINAL-concentration value, not a review code.      REVIEW",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L168",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "check if token is a final-concentration value, not a review code.      review",
-      "id": "rp_parser_parser_rationale_168"
-    },
-    {
-      "label": "test_parser.py",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "test_parser.py",
-      "id": "rp_parser_test_parser"
-    },
-    {
-      "label": "TestParseTargetRP",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "testparsetargetrp",
-      "id": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "label": ".test_parse_with_udel()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_with_udel()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
-    },
-    {
-      "label": ".test_parse_missing_file()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_missing_file()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
-    },
-    {
-      "label": ".test_parse_empty_file()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_parse_empty_file()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
-    },
-    {
-      "label": ".test_flagged_compound_structure()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_flagged_compound_structure()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
-    },
-    {
-      "label": ".test_unknown_tokens_logged()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_unknown_tokens_logged()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
-    },
-    {
-      "label": ".test_no_false_positives_on_empty_review_code()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_no_false_positives_on_empty_review_code()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
-    },
-    {
-      "label": ".test_qualifier_suffix_not_treated_as_review_code()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L73",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_qualifier_suffix_not_treated_as_review_code()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code"
-    },
-    {
-      "label": ".test_e_code_recognition()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L85",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_e_code_recognition()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition"
-    },
-    {
-      "label": ".test_okay_excluded_from_unknown_tokens()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L98",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_okay_excluded_from_unknown_tokens()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens"
-    },
-    {
-      "label": ".test_quad_erronious_on_column_non_numerical()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L111",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_quad_erronious_on_column_non_numerical()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical"
-    },
-    {
-      "label": ".test_on_column_numerical_no_flag()",
-      "file_type": "code",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L125",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": ".test_on_column_numerical_no_flag()",
-      "id": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag"
-    },
-    {
-      "label": "Tests for rp_parser service.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "tests for rp_parser service.",
-      "id": "rp_parser_test_parser_rationale_1"
-    },
-    {
-      "label": "Test Target.RP file parsing.",
-      "file_type": "rationale",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 32,
-      "norm_label": "test target.rp file parsing.",
-      "id": "rp_parser_test_parser_rationale_10"
     },
     {
       "label": "ARCHITECTURE_SELECTION.md",
@@ -5859,6 +5859,667 @@
   ],
   "links": [
     {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_extract_on_column_value"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_extract_sample_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_find_on_column_position"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_data_value"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_is_on_column_numerical"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_compound_row"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_1",
+      "target": "rp_parser_parser"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_12",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_parser_flaggedcompound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_init",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_extract_sample_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_find_on_column_position"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_target_rp",
+      "target": "rp_parser_parser_parse_compound_row"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_19",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged",
+      "target": "rp_parser_parser_parse_target_rp"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/batch_discovery/discovery.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "batch_discovery_discovery_discover_samples",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/services/flag_review/review.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "flag_review_review_review_batch",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Trinity/trinity/target_rp_finder.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "trinity_target_rp_finder_targetrpfinderpersistence_init",
+      "target": "path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_71",
+      "target": "rp_parser_parser_extract_sample_id"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_78",
+      "target": "rp_parser_parser_find_on_column_position"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_extract_on_column_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_is_data_value"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_parse_compound_row",
+      "target": "rp_parser_parser_is_on_column_numerical"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_88",
+      "target": "rp_parser_parser_parse_compound_row"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_130",
+      "target": "rp_parser_parser_extract_on_column_value"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_145",
+      "target": "rp_parser_parser_is_on_column_numerical"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/parser.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_parser_rationale_168",
+      "target": "rp_parser_parser_is_data_value"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser",
+      "target": "rp_parser_test_parser_testparsetargetrp"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_rationale_1",
+      "target": "rp_parser_test_parser"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_rationale_10",
+      "target": "rp_parser_test_parser_testparsetargetrp"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/rp_parser/test_parser.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rp_parser_test_parser_testparsetargetrp",
+      "target": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6085,36 +6746,14 @@
       "target": "trinity_target_rp_finder_targetrpfinderpersistence_init"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "trinity_target_rp_finder_targetrpfinderpersistence_init",
-      "target": "path"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_41",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Trinity/trinity/target_rp_finder.py",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch",
-      "target": "path"
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_batch"
     },
     {
       "relation": "rationale_for",
@@ -6122,9 +6761,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_65",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_create_revision"
     },
     {
       "relation": "rationale_for",
@@ -6132,9 +6771,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_102",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_store_samples_and_compounds"
     },
     {
       "relation": "rationale_for",
@@ -6142,9 +6781,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_116",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_load_revision"
     },
     {
       "relation": "rationale_for",
@@ -6152,9 +6791,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_134",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_revision_context"
     },
     {
       "relation": "rationale_for",
@@ -6162,9 +6801,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_157",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_list_recent_batches"
     },
     {
       "relation": "rationale_for",
@@ -6172,9 +6811,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_198",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_publish_revision"
     },
     {
       "relation": "rationale_for",
@@ -6182,9 +6821,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_214",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_get_batch_revisions"
     },
     {
       "relation": "rationale_for",
@@ -6192,9 +6831,9 @@
       "source_file": "Trinity/trinity/target_rp_finder.py",
       "source_location": "L237",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "trinity_target_rp_finder_rationale_237",
-      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close",
-      "confidence_score": 1.0
+      "target": "trinity_target_rp_finder_targetrpfinderpersistence_close"
     },
     {
       "relation": "references",
@@ -7252,28 +7891,6 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/services/flag_review/review.py",
-      "source_location": "L146",
-      "weight": 1.0,
-      "source": "flag_review_review_review_batch",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "src/target_rp_finder/main.py",
       "source_location": "L42",
       "weight": 1.0,
@@ -7365,623 +7982,6 @@
       "weight": 1.0,
       "source": "target_rp_finder_ui_publish_and_return_home",
       "target": "flag_review_review_submit_review"
-    },
-    {
-      "relation": "re_exports",
-      "context": "export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L129",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_extract_on_column_value"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L77",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_find_on_column_position"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L167",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_is_data_value"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L144",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_is_on_column_numerical"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_1",
-      "target": "rp_parser_parser"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser",
-      "target": "rp_parser_parser"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_12",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_parser_flaggedcompound"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/__init__.py",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_init",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_find_on_column_position"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_target_rp",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_19",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L93",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L107",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L119",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged",
-      "target": "rp_parser_parser_parse_target_rp"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/batch_discovery/discovery.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "batch_discovery_discovery_discover_samples",
-      "target": "path"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_71",
-      "target": "rp_parser_parser_extract_sample_id"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L78",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_78",
-      "target": "rp_parser_parser_find_on_column_position"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L122",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_extract_on_column_value"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L117",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_is_data_value"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L123",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_parse_compound_row",
-      "target": "rp_parser_parser_is_on_column_numerical"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_88",
-      "target": "rp_parser_parser_parse_compound_row"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_130",
-      "target": "rp_parser_parser_extract_on_column_value"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_145",
-      "target": "rp_parser_parser_is_on_column_numerical"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/parser.py",
-      "source_location": "L168",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_parser_rationale_168",
-      "target": "rp_parser_parser_is_data_value"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser",
-      "target": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_rationale_1",
-      "target": "rp_parser_test_parser"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_rationale_10",
-      "target": "rp_parser_test_parser_testparsetargetrp"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L85",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_e_code_recognition"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_flagged_compound_structure"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_no_false_positives_on_empty_review_code"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_okay_excluded_from_unknown_tokens"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L125",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_on_column_numerical_no_flag"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_empty_file"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_missing_file"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_parse_with_udel"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L111",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_quad_erronious_on_column_non_numerical"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_qualifier_suffix_not_treated_as_review_code"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/rp_parser/test_parser.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rp_parser_test_parser_testparsetargetrp",
-      "target": "rp_parser_test_parser_testparsetargetrp_test_unknown_tokens_logged"
     },
     {
       "relation": "contains",
@@ -13874,5 +13874,5 @@
       "source_file": "docs/DATA_MODEL.md"
     }
   ],
-  "built_at_commit": "db04e6a1a9d6e60a96bdf45486273efad59725e4"
+  "built_at_commit": "3901e16d1cc083ff6457160d37b01ece68f8e8ae"
 }
