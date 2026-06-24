@@ -10,5 +10,6 @@ build/
 .env
 .DS_Store
 logs/
+data/
 *.db
 *.log

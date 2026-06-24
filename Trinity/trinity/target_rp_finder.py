@@ -18,7 +18,9 @@ class TargetRPFinderPersistence:
     def __init__(self, db_path: Optional[str] = None):
         """Initialize persistence layer with optional custom DB path."""
         if db_path is None:
-            db_path = Path.home() / ".local" / "share" / "TargetRPFinder" / "trinity.db"
+            # Store database in project-relative data/ folder for portability
+            project_root = Path(__file__).parent.parent.parent
+            db_path = project_root / "data" / "trinity.db"
         else:
             db_path = Path(db_path)
 
