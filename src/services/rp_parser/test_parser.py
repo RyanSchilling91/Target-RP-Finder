@@ -81,3 +81,55 @@ class TestParseTargetRP:
             flagged, unknown = parse_target_rp(f.name)
             assert len(flagged) == 0
             assert unknown == []
+
+    def test_e_code_recognition(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+            f.write("Lab Smp Id: 20181070022\n")
+            f.write("Compounds                               REVIEW CODE\n")
+            f.write("==========================              ===========\n")
+            f.write("    1 benzene                  100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     E-Code\n")
+            f.flush()
+
+            flagged, unknown = parse_target_rp(f.name)
+            assert len(flagged) == 1
+            assert flagged[0].review_code == "E-Code"
+            assert "benzene" in flagged[0].name
+
+    def test_okay_excluded_from_unknown_tokens(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+            f.write("Lab Smp Id: 12345\n")
+            f.write("Compounds                               REVIEW CODE\n")
+            f.write("==========================              ===========\n")
+            f.write("    1 compound-a               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     Okay\n")
+            f.write("    2 compound-b               100    10.500 10.450 (1.001)    100000    0.12345     0.0456(M)     Unknown\n")
+            f.flush()
+
+            flagged, unknown = parse_target_rp(f.name)
+            assert "Okay" not in unknown
+            assert "Unknown" in unknown
+
+    def test_quad_erronious_on_column_non_numerical(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+            f.write("Lab Smp Id: 12345\n")
+            f.write("Compounds                               QUANT SIG                         ON-COLUMN    FINAL         REVIEW CODE\n")
+            f.write("==========================              ====          ==== ======== ====== ========    =======    =======    ===========\n")
+            f.write("    1 benzene                  100    10.500 10.450 (1.001)    100000    ERROR           0.0456(M)\n")
+            f.flush()
+
+            flagged, unknown = parse_target_rp(f.name)
+            assert len(flagged) == 1
+            assert flagged[0].review_code == "Quad Erronious"
+            assert flagged[0].has_quad_error is True
+            assert "benzene" in flagged[0].name
+
+    def test_on_column_numerical_no_flag(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+            f.write("Lab Smp Id: 12345\n")
+            f.write("Compounds                               QUANT SIG                         ON-COLUMN    FINAL         REVIEW CODE\n")
+            f.write("==========================              ====          ==== ======== ====== ========    =======    =======    ===========\n")
+            f.write("    1 benzene                  100    10.500 10.450 (1.001)    100000    1.23456         0.0456(M)\n")
+            f.flush()
+
+            flagged, unknown = parse_target_rp(f.name)
+            assert len(flagged) == 0
+            assert unknown == []

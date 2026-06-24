@@ -30,12 +30,12 @@ All entities below are persisted exclusively through Trinity (see [TRINITY.md](T
 - Must never happen: a `missing`/`malformed` Sample carrying any Flagged Compound rows; a Sample existing without a parent Revision.
 
 ### Flagged Compound
-- What it is: one compound row from a sample's `Target.RP` whose REVIEW CODE carried `Udel`, `Udelete`, or `dubious`.
+- What it is: one compound row from a sample's `Target.RP` whose REVIEW CODE carried `Udel`, `Udelete`, `dubious`, `E-Code`, or `Quad Erronious` (non-numerical ON-COLUMN).
 - Identifier: no standalone business key — identity is (`sample_id`, `revision_id`, `compound_name`).
-- Fields: `compound_name` (system), `comment` (system, one of `Udel`/`Udelete`/`dubious`), `sample_id` (system), `revision_id` (system).
+- Fields: `compound_name` (system), `comment` (system, one of `Udel`/`Udelete`/`dubious`/`E-Code`/`Quad Erronious`), `sample_id` (system), `revision_id` (system), `has_quad_error` (system, boolean, True if ON-COLUMN contains non-numerical value).
 - Owner: fully system-derived from parsing; never user-edited.
 - Allowed states: none — exists or doesn't, immutable once parsed into a revision.
-- Must never happen: a Flagged Compound without a parent Sample and Revision; a comment value outside the three allowed tokens.
+- Must never happen: a Flagged Compound without a parent Sample and Revision; a comment value outside the allowed tokens; `has_quad_error` set to True if comment is not `Quad Erronious`.
 
 ## Derived values (computed, never stored)
 - Per-sample flagged-compound count.

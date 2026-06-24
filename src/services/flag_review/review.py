@@ -36,6 +36,10 @@ def _code_class(code: str) -> str:
         return "code-dubious"
     if c in ("udel", "udelete"):
         return "code-udel"
+    if c in ("quad erronious", "quad-erronious"):
+        return "code-quad-error"
+    if c == "e-code":
+        return "code-e-code"
     return "code-other"
 
 
